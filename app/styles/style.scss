@@ -19,53 +19,166 @@ anthonyjones is based on Underscores http://underscores.me/, (C) 2012-2015 Autom
 
 @charset "UTF-8";
 
-// Mixins
-@import "components/prefixer";
-@import "components/mixins";
-@import "components/color";
+// import all components
+@import "components/components";
 
-// Variables;
-@import "components/variables";
-
-// Reset
-@import "components/normalize";
-
-// components
-@import "components/global";
-@import "components/icons-material-design";
-@import "components/grid";
-@import "components/navbar";
-@import "components/roboto";
-@import "components/typography";
-@import "components/cards";
-@import "components/toast";
-@import "components/tabs";
-@import "components/tooltip";
-@import "components/buttons";
-@import "components/dropdown";
-@import "components/waves";
-@import "components/modal";
-@import "components/collapsible";
-@import "components/materialbox";
-@import "components/form";
-@import "components/table_of_contents";
-@import "components/sideNav";
-@import "components/preloader";
-@import "components/slider";
-@import "components/date_picker/default.scss";
-@import "components/date_picker/default.date.scss";
-@import "components/date_picker/default.time.scss";
+// import html5 boilerplate 
 @import '_h5bp';
 
-// date picker
-@import 'components/date_picker/default.date';
-@import 'components/date_picker/default';
-@import 'components/date_picker/default.time';
-
 /*--------------------------------------------------------------
-# Theme for Rainbow.js code syntax highlighting
+>>> TABLE OF CONTENTS: If you don't use Sass, just add styles here.
+----------------------------------------------------------------
+# Typography
+# Page Elements
+# Forms
+# Navigation
+  ## Links
+  ## Menus
+# Accessibility
+# Alignments
+# Clearings
+# Widgets
+# Content
+  ## Posts and pages
+  ## Asides
+  ## Comments
+  ## Syntax Highlighting
+# Infinite scroll
+# Media
+  ## Captions
+  ## Galleries
 --------------------------------------------------------------*/
 
+/*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+@font-face {
+  font-family: "Brandon-Grotesque";
+  src: url("/wp-content/themes/anthonyjones/dist/fonts/brandon/Brandon_thin.otf");
+  font-weight: 200; 
+}
+
+@font-face {
+  font-family: "Brandon-Grotesque";
+  src: url("/wp-content/themes/anthonyjones/dist/fonts/brandon/Brandon_light.otf");
+  font-weight: 300; 
+}
+
+@font-face {
+  font-family: "Brandon-Grotesque";
+  src: url("/wp-content/themes/anthonyjones/dist/fonts/brandon/Brandon_reg.otf");
+  font-weight: 400; 
+}
+
+@font-face {
+  font-family: "Brandon-Grotesque";
+  src: url("/wp-content/themes/anthonyjones/dist/fonts/brandon/Brandon_med.otf");
+  font-weight: 500; 
+}
+
+@font-face {
+  font-family: "Brandon-Grotesque";
+  src: url("/wp-content/themes/anthonyjones/dist/fonts/brandon/Brandon_blk.otf");
+  font-weight: 700; 
+}
+
+h1 {
+    color: #595959;
+    font-family: 'Brandon-Grotesque', sans-serif;
+    font-size: 36px;
+    line-height: 48px;
+    font-weight: 400;
+}
+h2 {
+    color: #595959;
+    font-family: 'Brandon-Grotesque', sans-serif;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 36px;
+}
+h3 {
+    color: #595959;
+    font-family: 'Brandon-Grotesque', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px
+}
+h4 {
+    font-family: 'Brandon-Grotesque', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px
+}
+h5 {
+    font-family: 'Brandon-Grotesque', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px
+}
+h6 {
+    color: #595959;
+}
+
+/*--------------------------------------------------------------
+# Elements
+--------------------------------------------------------------*/
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: relative;
+  font-family: 'Brandon-Grotesque', sans-serif;
+  font-weight: 300;
+  background-color: #fff;
+  box-sizing: border-box;
+  min-height: 100%;
+  color: rgba(0, 0, 0, 0.87);
+  line-height: 1.5;
+}
+
+/*--------------------------------------------------------------
+# Accessibility
+--------------------------------------------------------------*/
+/* Text meant only for screen readers. */
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
+.screen-reader-text:hover,
+.screen-reader-text:active,
+.screen-reader-text:focus {
+  background-color: #f1f1f1;
+  border-radius: 3px;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+  clip: auto !important;
+  color: #21759b;
+  display: block;
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: bold;
+  height: auto;
+  left: 5px;
+  line-height: normal;
+  padding: 15px 23px 14px;
+  text-decoration: none;
+  top: 5px;
+  width: auto;
+  z-index: 100000; /* Above WP toolbar. */
+}
+
+/*--------------------------------------------------------------
+# Content
+--------------------------------------------------------------*/
+// rainbow.js syntax highlighting
 code,kbd,tt {
 border:1px solid #eaeaea;
 font-size:16px;
@@ -143,112 +256,10 @@ pre {
   line-height: 19px;
   margin: 30px 0;
 }
+
 /*--------------------------------------------------------------
-# Accessibility
+# To be organized
 --------------------------------------------------------------*/
-/* Text meant only for screen readers. */
-.screen-reader-text {
-  clip: rect(1px, 1px, 1px, 1px);
-  position: absolute !important;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-}
-
-.screen-reader-text:hover,
-.screen-reader-text:active,
-.screen-reader-text:focus {
-  background-color: #f1f1f1;
-  border-radius: 3px;
-  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
-  clip: auto !important;
-  color: #21759b;
-  display: block;
-  font-size: 14px;
-  font-size: 0.875rem;
-  font-weight: bold;
-  height: auto;
-  left: 5px;
-  line-height: normal;
-  padding: 15px 23px 14px;
-  text-decoration: none;
-  top: 5px;
-  width: auto;
-  z-index: 100000; /* Above WP toolbar. */
-}
-
-@font-face {
-  font-family: "Brandon-Grotesque";
-  src: url("/wp-content/themes/anthonyjones/dist/fonts/brandon/Brandon_thin.otf");
-  font-weight: 200; 
-}
-
-@font-face {
-  font-family: "Brandon-Grotesque";
-  src: url("/wp-content/themes/anthonyjones/dist/fonts/brandon/Brandon_light.otf");
-  font-weight: 300; 
-}
-
-@font-face {
-  font-family: "Brandon-Grotesque";
-  src: url("/wp-content/themes/anthonyjones/dist/fonts/brandon/Brandon_reg.otf");
-  font-weight: 400; 
-}
-
-@font-face {
-  font-family: "Brandon-Grotesque";
-  src: url("/wp-content/themes/anthonyjones/dist/fonts/brandon/Brandon_med.otf");
-  font-weight: 500; 
-}
-
-@font-face {
-  font-family: "Brandon-Grotesque";
-  src: url("/wp-content/themes/anthonyjones/dist/fonts/brandon/Brandon_blk.otf");
-  font-weight: 700; 
-}
-
-h1 {
-    color: #595959;
-    font-family: 'Brandon-Grotesque', sans-serif;
-    font-size: 36px;
-    line-height: 48px;
-    font-weight: 400;
-}
-h2 {
-    color: #595959;
-    font-family: 'Brandon-Grotesque', sans-serif;
-    font-size: 26px;
-    font-weight: 400;
-    line-height: 36px;
-}
-h3 {
-    color: #595959;
-    font-family: 'Brandon-Grotesque', sans-serif;
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 32px
-}
-h4 {
-    font-family: 'Brandon-Grotesque', sans-serif;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 24px
-}
-h5 {
-    font-family: 'Brandon-Grotesque', sans-serif;
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 24px
-}
-h6 {
-    color: #595959;
-}
-html {
-  line-height: 1.5;
-  font-family: 'Open Sans', sans-serif;
-  color: rgba(0, 0, 0, 0.87); 
-  /* font-family: "Brandon-Grotesque", sans-serif; */
-  }
 .close-arrow  {
   font-size: 2rem;
   color: #383838;
@@ -812,7 +823,3 @@ a:hover {
   top: -5%;
   padding: 0px 6px 0px 6px;
 }
-
-
-
-
