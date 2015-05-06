@@ -512,8 +512,7 @@ span.badge {
   font-size: 1rem;
   line-height: inherit;
   color: color('grey', 'darken-1');
-  position: absolute;
-  right: 15px;
+  float: right;
   @include box-sizing(border-box);
 
   &.new {

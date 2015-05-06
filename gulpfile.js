@@ -50,9 +50,9 @@ gulp.task('jshint', function () {
     .pipe($.if(!browserSync.active, $.jshint.reporter('fail')));
 });
 
-// Lint PHP
+// Not included in the build pipeline. Have to run manually. I use a sublime plugin now.
 gulp.task('phplint', function(cb) {
-  phplint(['**/*.php'], {limit: 10}, function (err, stdout, stderr) {
+  phplint(['*.php'], {limit: 10}, function (err, stdout, stderr) {
     if (err) {
       cb(err);
       process.exit(1);
@@ -173,8 +173,7 @@ gulp.task('serve', ['styles'], function () {
   });
 
   gulp.watch(['app/**/*.html'], reload);
-  gulp.watch(['app/styles/**/*.{scss,css}'], ['styles', reload]);
-  gulp.watch(['./*.css'], reload);
+  gulp.watch(['app/styles/**/**/*.{scss,css}'], ['styles', reload]);
   gulp.watch(['app/scripts/*.js'], ['jshint', reload ]);
   gulp.watch(['app/images/**/*'], reload);
   gulp.watch(['**/*.php'], reload);

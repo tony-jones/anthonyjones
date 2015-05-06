@@ -65,14 +65,11 @@
 	<!-- Desktop Navigation -->
   <header role="banner" class="hide-on-small-only">
     <div id="toolbar" class="navbar-fixed">
-      <nav id="banner" data-0="height:150px" data-128="height: 64px" class="uva-blue headroom" role="navigation">
+      <nav id="banner" data-0="height:130px" data-128="height: 64px" class="uva-blue headroom" role="navigation">
         <div class="container">
           <div class="nav-wrapper">
             <a href="#" aria-controls="primary-menu" aria-expanded="false" data-activates="mobile-demo" style="background: rgba(255, 255, 255, 0.97); box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);" class="hide-on-large-only sidenav_button btn-floating waves-effect clear-icon">
               <i style="line-height: 39px; color:#383838" class="mdi-navigation-menu"></i>
-            </a>
-            <a href="<?php echo esc_url( home_url( '/' ) ); ?>" data-0="opacity: 1;" data-128="opacity: 0;" class="">
-              <img class="logo" src="/wp-content/uploads/2015/04/logo.png">
             </a>
             <ul id="nav-mobile" class="right">
             <li>
@@ -87,7 +84,9 @@
             </div>
           </div>
           <div id="title" data-0="font-size: 45px; padding: 0 0 24px 35px;" data-128="font-size: 26px; padding: 0 0 15px 50px;">
-           <?php bloginfo( 'name' ); ?>
+           <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
+             <?php bloginfo( 'name' ); ?><span class="orange-text text-darken-2">.</span>
+           </a>           
           </div>
         </div>
       </nav>

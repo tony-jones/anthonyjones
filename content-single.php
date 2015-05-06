@@ -7,26 +7,41 @@
   <!-- Set your background image for this header on the line below. -->
   <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
     <main role="main">
-      <div id="content" style="margin-top: -60px;">
+      <div id="content" style="margin-top: -100px;">
         <?php
 			  $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
 			  ?>
         <div class="section no-pad-bot" id="index-banner" style="background-position: center top;
 																																 background: linear-gradient( 
-																																  rgba(0, 0, 0, 0.15), 
-																																  rgba(0, 0, 0, 0.15) ), 
+																																  rgba(0, 0, 0, 0.3), 
+																																  rgba(0, 0, 0, 0.3) ), 
 																																 url('<?=$url?>');
 																																 background-repeat: no-repeat;
-																																 background-color: grgulp serve
+																																 background-color: grey
 																																 ;
 																																 background-attachment: scroll;
 																																 background-size: cover;
 																																 -o-background-size: cover;">
           <div class="container">
             <div class="heading">
+              <div class="badges center">
+              <?php echo get_the_category_list(', '); ?>
+              </div>
               <h1 class="header center white-text"><?php the_title(); ?></h1>
               <div class="row center">
                 <h5 class="header col s12 light white-text"><?php get_the_subtitle( $post ); ?></h5>
+              </div>
+              <div class="post-details center">
+                <span class="date updated white-text">
+                  <?php echo human_time_diff( get_the_time('U'), current_time('timestamp') ) . ' ago'; ?>
+                </span>
+                
+                <span class="bullet white-text">&nbsp;•&nbsp;</span>
+                <span class="author vcard white-text">By
+                  <span class="fn">
+                    <a class="white-text" title="" rel="author"><?php the_author(); ?></p></a>                    
+                  </span>
+                </span>
               </div>
             </div>
             <br><br>
@@ -53,13 +68,42 @@
 									?>
 	              </div> <!-- .entry-content -->
                 <br>
-                <div class="center">
-                  <a class="waves-effect waves-light btn red"><i class="fa fa-google-plus left"></i>Share</a>
-                  <a class="waves-effect waves-light btn blue darken-2"><i class="fa fa-facebook left"></i>Share</a>
-                  <a class="waves-effect waves-light btn blue darken-3"><i class="fa fa-linkedin left"></i>Share</a>
+                <div class="row">
+                  <div class="badges inverse right">
+                    <?php
+                      $tags_list = get_the_tag_list( '', __( '', 'anthonyjones' ) );
+                      if ( $tags_list ) {
+                        printf( '<span class="tags-links">' . __( '%1$s', 'anthonyjones' ) . '</span>', $tags_list );
+                      }
+                    ?>
+                  </div> 
+                  <div class="waves-effect badges inverse large left">
+                    <a href="#"><i class="fa fa-thumbs-o-up"></i> Like</a>
+                  </div>
+                  <div class="badges inverse large left">
+                    <!-- Modal Trigger -->
+                    <a href="#modal1" class="waves-effect modal-trigger"><i class="fa fa-share"></i> Share</a>
+                  </div>
+                  <!-- Modal Structure -->
+                  <div id="modal1" class="modal">
+                    <div class="modal-content center">
+                      <h6 class="grey-text">Share This Article</h6>
+                      <br>
+                      <h3><?php the_title(); ?></h3>
+                      
+                      <br>
+                      <a href="https://plusone.google.com/_/+1/confirm?hl=en-US&amp;url=<?php the_permalink() ?>" target="_new" class="modal-close sharer btn red"><i class="fa fa-google-plus"></i></a>
+                      <a href="http://www.facebook.com/sharer.php?u=<?php the_permalink();?>&amp;t=<?php the_title(); ?>" target="_new" class="modal-close sharer btn blue darken-2"><i class="fa fa-facebook"></i></a>
+                      <a href="http://www.linkedin.com/shareArticle?mini=true&url=<?php the_permalink() ?>&title=<?php the_title(); ?>&summary=&source=<?php bloginfo('name'); ?>" target="_new" class="modal-close sharer btn blue darken-3"><i class="fa fa-linkedin"></i></a>
+                      <a href="https://twitter.com/intent/tweet?original_referer=<?php the_permalink(); ?>&amp;text=<?php the_title(); ?>&tw_p=tweetbutton&url=<?php the_permalink(); ?>&via=<?php bloginfo( 'name' ); ?>" target="_new" class="modal-close sharer btn blue"><i class="fa fa-twitter"></i></a>
+                    </div>
+                    <div class="modal-footer">
+                      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <br><br> 
+                 <br>
+              </div>    
             </div>  
             <div class="col hide-on-small-only m2 l2">
 		          <div class="tabs-wrapper">
@@ -74,7 +118,6 @@
         </div> <!-- End Post Content -->
       </div>
     </main>
-
     <footer class="entry-footer">
 		  <?php anthonyjones_entry_footer(); ?>
 	  </footer><!-- .entry-footer -->

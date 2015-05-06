@@ -25,6 +25,7 @@ anthonyjones is based on Underscores http://underscores.me/, (C) 2012-2015 Autom
 // import html5 boilerplate 
 @import '_h5bp';
 
+
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS: If you don't use Sass, just add styles here.
 ----------------------------------------------------------------
@@ -49,97 +50,17 @@ anthonyjones is based on Underscores http://underscores.me/, (C) 2012-2015 Autom
   ## Galleries
 --------------------------------------------------------------*/
 
+
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
-@font-face {
-  font-family: "Brandon-Grotesque";
-  src: url("/wp-content/themes/anthonyjones/dist/fonts/brandon/Brandon_thin.otf");
-  font-weight: 200; 
-}
 
-@font-face {
-  font-family: "Brandon-Grotesque";
-  src: url("/wp-content/themes/anthonyjones/dist/fonts/brandon/Brandon_light.otf");
-  font-weight: 300; 
-}
-
-@font-face {
-  font-family: "Brandon-Grotesque";
-  src: url("/wp-content/themes/anthonyjones/dist/fonts/brandon/Brandon_reg.otf");
-  font-weight: 400; 
-}
-
-@font-face {
-  font-family: "Brandon-Grotesque";
-  src: url("/wp-content/themes/anthonyjones/dist/fonts/brandon/Brandon_med.otf");
-  font-weight: 500; 
-}
-
-@font-face {
-  font-family: "Brandon-Grotesque";
-  src: url("/wp-content/themes/anthonyjones/dist/fonts/brandon/Brandon_blk.otf");
-  font-weight: 700; 
-}
-
-h1 {
-    color: #595959;
-    font-family: 'Brandon-Grotesque', sans-serif;
-    font-size: 36px;
-    line-height: 48px;
-    font-weight: 400;
-}
-h2 {
-    color: #595959;
-    font-family: 'Brandon-Grotesque', sans-serif;
-    font-size: 26px;
-    font-weight: 400;
-    line-height: 36px;
-}
-h3 {
-    color: #595959;
-    font-family: 'Brandon-Grotesque', sans-serif;
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 32px
-}
-h4 {
-    font-family: 'Brandon-Grotesque', sans-serif;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 24px
-}
-h5 {
-    font-family: 'Brandon-Grotesque', sans-serif;
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 24px
-}
-h6 {
-    color: #595959;
-}
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400|Montserrat:400,700);
 
 /*--------------------------------------------------------------
 # Elements
 --------------------------------------------------------------*/
-html,
-body {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
 
-body {
-  position: relative;
-  font-family: 'Brandon-Grotesque', sans-serif;
-  font-weight: 300;
-  background-color: #fff;
-  box-sizing: border-box;
-  min-height: 100%;
-  color: rgba(0, 0, 0, 0.87);
-  line-height: 1.5;
-}
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -288,18 +209,12 @@ ul.table-of-contents a:hover {
     color: rgba(0, 0, 0, 0.87); 
 }
 ul.table-of-contents a {
-  font-size: 20px;
+  font-size: 16px;
   padding: 16px 35px 35px 35px;
 }
 nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
   height: 64px;
   line-height: 64px;
-}
-h1.header {
-  font-size: 60px;
-}
-h5.header {
-  font-size: 32px;
 }
 .heading {
   padding-top: 30%;
@@ -338,6 +253,12 @@ a {
 }
 a:visited {
   color: #383838;
+}
+a.sharer {
+  color: white;
+}
+a.sharer:hover {
+  color: #E4E4E4;
 }
 .flow-text {
   margin-top: 0px; 
@@ -419,8 +340,9 @@ div.legal a {
   bottom: 0;
   color: #383838;
   line-height: 35px;
-  font-weight: 300;
-  font-family: "Brandon-Grotesque";
+  font-weight: 500;
+  //font-family: "Brandon-Grotesque";
+  font-family: 'Lato', sans-serif;
 }
 footer {
   position: fixed;
@@ -432,6 +354,7 @@ footer {
 }
 nav ul a {
   color: #383838;
+  font-size: 13px;
 }
 .footer-bar {
   
@@ -765,9 +688,6 @@ nav ul li:hover, nav ul li.active {
 .clear-icon {
   background-color: rgba(255, 255, 255, 0)!important;
 }
-.updated {
-  display:none;
-}
 a.my-social.waves-effect.waves-circle.waves-light.btn-floating.secondary-content {
     margin-left: 10px;
 }
@@ -785,7 +705,7 @@ span.badge.category {
   border-radius: 2px;
 }
 a:hover {
-  color: #838383;
+  color: #B6B6B6;
 }
 
 #disqus_thread {
@@ -794,6 +714,7 @@ a:hover {
   padding: 0 .75rem;
   width: 95%;
   margin-left: 10px;
+  margin-bottom: 80px;
 }
 @media only screen and (min-width: 601px) {
   #disqus_thread {
@@ -822,4 +743,64 @@ a:hover {
   right: 0%;
   top: -5%;
   padding: 0px 6px 0px 6px;
+}
+.badges a {
+  display: inline-block;
+  color: #fff;
+  padding: 14px 12px;
+  margin-bottom: 2px;
+  margin-right: 5px;
+  border: 2px solid #fff;
+  border-radius: 100px;
+  font-size: 10px;
+  line-height: 0 !important;
+  filter: alpha(opacity=50);
+  -moz-opacity: 0.8;
+  -khtml-opacity: 0.8;
+  opacity: 0.8;
+} 
+.badges.inverse a {
+  border: 2px solid #ccc;
+  color: #000;
+  opacity: 0.5;
+}
+.badges.inverse.large a {
+  font-size: 14px;
+  padding: 10px 20px;
+}
+.badges.inverse a:hover {
+  background-color: #ccc;
+  color: #000;
+}
+.badges a:hover {
+  background-color: white;
+  color: black;
+}
+.post-details {
+  opacity: .7;
+}
+aside.aside-left {
+  float: left;
+  margin-left: -155px;
+  text-align: left;
+}
+aside:before {
+  content: "________";
+  display: block;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  filter: alpha(opacity=50);
+  -moz-opacity: 0.5;
+  -khtml-opacity: 0.5;
+  opacity: 0.5;
+}
+aside {
+  line-height: 1.8em;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 0.8em;
+}
+aside {
+  color: #777;
+  max-width: 150px;
 }
