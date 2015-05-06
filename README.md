@@ -6,6 +6,11 @@ The WordPress theme for anthonyjones.me
 
 * Font Awesome icons (.scss files) included. Visit [Font Awesome](http://fontawesome.io/) for usage examples.
 
+## Todos
+
+* remove all inline styles 
+* organize any remaining styles from styles.css into sass files.
+
 ## Getting Started
 
 1. Clone the repository into your local WordPress theme directory. 
