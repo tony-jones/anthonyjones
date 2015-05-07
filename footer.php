@@ -15,13 +15,15 @@
     <div class="footer-bar">
       <div class="row">
         <div class="copyright">
-          <div class="left location">
-            <?php printf( __( '%1$s %2$s.', 'anthonyjones' ), 'Source code @', '<a href="https://github.com/tony-jones" class="orange-text text-darken-3" rel="designer">GitHub</a>' ); ?>
+          <div class="left location hide-on-small-only">
+            <?php printf( __( '%1$s %2$s.', 'anthonyjones' ), 'Source code:', '<a href="https://github.com/tony-jones/anthonyjones" target="_blank" class="orange-text text-darken-3" rel="designer"><i class="fa fa-github"></i> GitHub</a>' ); ?>
           </div>
           <div class="right">
+            <div class="waves-effect waves-black top-article">
+              <a href="#back-to-top"><i class="fa fa-caret-square-o-up"></i> TOP</a>
+            </div>
             <div class="waves-effect waves-black next-article">
-              <a rel="next" class="modal-trigger" href="#modal3">More Articles <i class="mdi-navigation-arrow-forward"></i></a>
-              
+              <a rel="next" class="modal-trigger" href="#modal3">More Articles <i class="mdi-navigation-arrow-forward"></i></a>      
             </div>
           </div>
         </div>
@@ -34,7 +36,7 @@
       <a href="#" class="waves-effect close-arrow close-x">
         <i class="mdi-navigation-close"></i>
       </a>
-      <h4 class="footer-title">Recommended Articles</h4>
+      <h5 class="footer-title">Recommended Articles</h5>
        <ul class="collection">
         <div class="row">
           <div class="col s12 m6 l6">
@@ -92,6 +94,17 @@
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
+<script>
+/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+var disqus_shortname = 'anthonyjones'; // required: replace example with your forum shortname
 
+/* * * DON'T EDIT BELOW THIS LINE * * */
+(function () {
+var s = document.createElement('script'); s.async = true;
+s.type = 'text/javascript';
+s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+(document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+}());
+</script>
 </body>
 </html>

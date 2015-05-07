@@ -97,6 +97,57 @@ function the_post_thumbnail_caption() {
 }
 
 /**
+ * Display the post likes for count.
+ *
+ */
+function display_post_likes( $post_id = null ) {
+	$value = '';
+	if( is_null( $post_id ) ) {
+		global $post;
+		$value = get_post_meta( $post->ID, 'my-post-likes', true );
+		
+	} else {
+		$value = get_post_meta( $post_id, 'my-post-likes', true );	
+	}
+	
+	echo $value;
+}
+
+/**
+ * update the post with the like.
+ *
+ */
+function update_like_count() {
+		
+	  $post_id = intval( $_GET['post_id'] );
+		
+	  if( filter_var( $post_id, FILTER_VALIDATE_INT ) ) {
+	  
+	  	$article = get_post( $post_id );
+	  	$output_count = 0;
+	  	
+	  	if( !is_null( $article ) ) {
+			$count = get_post_meta( $post_id, 'my-post-likes', true );
+			if( $count == '' ) {
+				update_post_meta( $post_id, 'my-post-likes', '1' );
+				$output_count = 1;
+			} else {
+				$n = intval( $count );
+				$n++;
+				update_post_meta( $post_id, 'my-post-likes', $n );
+				$output_count = $n;
+			}
+		}
+		
+	  }
+	  $output = array( 'count' => $output_count );
+	  echo json_encode( $output );
+	  exit();
+}
+add_action( 'wp_ajax_my_update_likes', 'update_like_count' );
+add_action( 'wp_ajax_nopriv_my_update_likes', 'update_like_count' );
+
+/**
  * Get the Section Title before colon for side navigation polulation
  *
  */

@@ -37,11 +37,11 @@
                 </span>
                 
                 <span class="bullet white-text">&nbsp;•&nbsp;</span>
-                <span class="author vcard white-text">By
-                  <span class="fn">
-                    <a class="white-text" title="" rel="author"><?php the_author(); ?></p></a>                    
-                  </span>
+                <span class="author vcard white-text">
+                by <a class="white-text" title="" rel="author"><?php the_author(); ?></a>                      
                 </span>
+                <span class="bullet white-text">&nbsp;•&nbsp;</span>
+                <a class="white-text" href="#disqus_thread"><i class="fa fa-comments"></i> <?php echo $post->comment_count?> Comments</a> 
               </div>
             </div>
             <br><br>
@@ -77,29 +77,15 @@
                       }
                     ?>
                   </div> 
-                  <div class="waves-effect badges inverse large left">
-                    <a href="#"><i class="fa fa-thumbs-o-up"></i> Like</a>
+                  <div class="badges inverse large left">
+                    <a class="waves-effect my-post-like" data-id="<?php the_ID(); ?>">
+                      <i class="fa fa-thumbs-o-up"></i> Like
+                      <span class="like-count"><?php display_post_likes( get_the_ID() ); ?></span>
+                    </a>
                   </div>
                   <div class="badges inverse large left">
                     <!-- Modal Trigger -->
                     <a href="#modal1" class="waves-effect modal-trigger"><i class="fa fa-share"></i> Share</a>
-                  </div>
-                  <!-- Modal Structure -->
-                  <div id="modal1" class="modal">
-                    <div class="modal-content center">
-                      <h6 class="grey-text">Share This Article</h6>
-                      <br>
-                      <h3><?php the_title(); ?></h3>
-                      
-                      <br>
-                      <a href="https://plusone.google.com/_/+1/confirm?hl=en-US&amp;url=<?php the_permalink() ?>" target="_new" class="modal-close sharer btn red"><i class="fa fa-google-plus"></i></a>
-                      <a href="http://www.facebook.com/sharer.php?u=<?php the_permalink();?>&amp;t=<?php the_title(); ?>" target="_new" class="modal-close sharer btn blue darken-2"><i class="fa fa-facebook"></i></a>
-                      <a href="http://www.linkedin.com/shareArticle?mini=true&url=<?php the_permalink() ?>&title=<?php the_title(); ?>&summary=&source=<?php bloginfo('name'); ?>" target="_new" class="modal-close sharer btn blue darken-3"><i class="fa fa-linkedin"></i></a>
-                      <a href="https://twitter.com/intent/tweet?original_referer=<?php the_permalink(); ?>&amp;text=<?php the_title(); ?>&tw_p=tweetbutton&url=<?php the_permalink(); ?>&via=<?php bloginfo( 'name' ); ?>" target="_new" class="modal-close sharer btn blue"><i class="fa fa-twitter"></i></a>
-                    </div>
-                    <div class="modal-footer">
-                      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
-                    </div>
                   </div>
                 </div>
                  <br>

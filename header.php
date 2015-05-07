@@ -60,8 +60,9 @@
 
 <body id="skrollr-body" <?php body_class(); ?>>
 <div id="page" class="hfeed site">
+  <span id="back-to-top" class="section scrollspy"></span>
 	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'anthonyjones' ); ?></a>
-
+  
 	<!-- Desktop Navigation -->
   <header role="banner" class="hide-on-small-only">
     <div id="toolbar" class="navbar-fixed">
@@ -69,12 +70,12 @@
         <div class="container">
           <div class="nav-wrapper">
             <a href="#" aria-controls="primary-menu" aria-expanded="false" data-activates="mobile-demo" style="background: rgba(255, 255, 255, 0.97); box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);" class="hide-on-large-only sidenav_button btn-floating waves-effect clear-icon">
-              <i style="line-height: 39px; color:#383838" class="mdi-navigation-menu"></i>
+              <i style="line-height: 39px; color: #383838" class="mdi-navigation-menu"></i>
             </a>
             <ul id="nav-mobile" class="right">
-            <li>
-              <a style="background: rgba(255, 255, 255, 0.97); box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);" class="btn-floating waves-effect grey clear-icon"><i style="line-height: 39px; color:#383838" class="mdi-action-search"></i></a>
-            </li>
+              <li>
+                <a style="background: rgba(255, 255, 255, 0.97); box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);" class="btn-floating waves-effect grey clear-icon"><i style="line-height: 39px; color:#383838" class="mdi-action-search"></i></a>
+              </li>
               <!-- <li class="collection-item avatar">
                 <img src="http://materializecss.com/images/yuna.jpg" alt="" class="circle">
               </li> -->
@@ -84,9 +85,9 @@
             </div>
           </div>
           <div id="title" data-0="font-size: 45px; padding: 0 0 24px 35px;" data-128="font-size: 26px; padding: 0 0 15px 50px;">
-           <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
-             <?php bloginfo( 'name' ); ?><span class="orange-text text-darken-2">.</span>
-           </a>           
+            <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
+              <?php bloginfo( 'name' ); ?><span class="orange-text text-darken-2">.</span>
+            </a>           
           </div>
         </div>
       </nav>

@@ -350,7 +350,7 @@ footer {
   z-index:999999;
   width:100%;
   box-shadow: 0 0 1px rgba(0, 0, 0, 0.05);
-  height:50px;
+  height:55px;
 }
 nav ul a {
   color: #383838;
@@ -408,15 +408,15 @@ nav a.button-collapse {
   height: 0;
 }
 .next-article {
-  padding: 13px 40px 15px 20px;
-  margin-right: -21px;
+  padding: 16px;
   color: #383838;
   border-left: solid 1px rgba(0,0,0,0.05);
-  font-size: 16px;
   text-transform: uppercase;
 }
 .next-article a.modal-trigger {
-  padding: 14px 0px 14px 0px;
+  padding: 17px 15px;
+  margin-left: -15px;
+  margin-right: -12px;
 }
 
 #loadingbar.waiting dd, #loadingbar.waiting dt {
@@ -584,14 +584,16 @@ clip: rect(-6px,185px,14px,25px);
   height: 55px;
 }
 @media only screen and (min-width: 992px) {
-    .logo {
-      max-height: 50px;
-      padding-top: 15px;
-      padding-left: 35px;
-    }
+  .logo {
+    max-height: 50px;
+    padding-top: 15px;
+    padding-left: 35px;
+  }
 }
-@media only screen and (max-width: 992px) {
-
+@media only screen and (max-width: 480px) {
+  .container {
+    padding: 0 0.5rem;
+  }
 }
 .tabs {
   position: relative;
@@ -742,7 +744,7 @@ a:hover {
   position: absolute;
   right: 0%;
   top: -5%;
-  padding: 0px 6px 0px 6px;
+  padding: 0px 9px;
 }
 .badges a {
   display: inline-block;
@@ -803,4 +805,28 @@ aside {
 aside {
   color: #777;
   max-width: 150px;
+}
+.top-article a {
+  border-left: solid 1px rgba(0,0,0,.05);
+  padding: 17px 20px;
+  margin-right: -20px;
+}
+.top-article {
+  padding: 17px 15px 17px 0px;
+  margin-right: -4px;
+}
+#staggered-test li {
+  opacity: 0;
+}
+.collapsible-headings {
+  padding-left: 2rem;
+}
+.collapsible-body p {
+  padding: 10px 20px 20px 30px;
+}
+.footer-padding {
+  padding-bottom: 60px;
+}
+a[disabled] {
+    pointer-events: none;
 }
