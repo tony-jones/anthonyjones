@@ -7,82 +7,55 @@
 
 get_header(); ?>
 
+<?php query_posts('post_type=post&post_status=publish&posts_per_page=10&paged='. get_query_var('paged')); ?>
+
   <div id="primary" class="content-area">
     <main id="main" class="site-main" role="main">
+      <div id="content" data-0="padding-top: 150px; margin-top: 63px;" data-192="padding-top: 190px; margin-top: -39.28125px;">
+      <?php if ( have_posts() ) : ?>
 
+      <?php /* Start the Loop */ ?>
       <?php while ( have_posts() ) : the_post(); ?>
 
-        <?php get_template_part( 'content', 'page' ); ?>
+      <?php
+        /* Include the Post-Format-specific template for the content.
+         * If you want to override this in a child theme, then include a file
+         * called content-___.php (where ___ is the Post Format name) and that will be used instead.
+         */
+        get_template_part( 'content', get_post_format() );
+      ?>
 
-        <?php
-          // If comments are open or we have at least one comment, load up the comment template
-          if ( comments_open() || get_comments_number() ) :
-            comments_template();
-          endif;
-        ?>
+      <?php endwhile; ?>
 
-      <?php endwhile; // end of the loop. ?>
+      <?php the_posts_navigation(); ?>
 
-      <div id="content" data-0="padding-top: 150px; margin-top: -63px;" data-192="padding-top: 190px; margin-top: -39.28125px;">
-      <div class="container">
-        <div class="row">
-          <div class="col s12 m8 l6 offset-m2 offset-l3">
-            <div style="border-bottom: 1px solid rgba(0,0,0,0.05); padding: 20px 0px 20px 0px">
-              <img class="responsive-img" src="https://d262ilb51hltx0.cloudfront.net/fit/t/800/240/1*bSaHQ6YRyGNbnzbzQJ2Y7A.jpeg">
-              <div class="collection collection-item">Feb 19
-                <a href="#!"><span class="new badge">design</span></a>
-              </div>
-              <h2 class="black-text" style="margin: 8px 0px 0px 0px;">Designing accessible experiences is important! </h2>
-              <h5 class="grey-text" style="margin-top: 0px;">Mobile accessibility study conducted with blind users at Cardinal Solutions</h5>
-              <p>
-                As more and more of our users and content move to mobile as the primary medium, it becomes critical that we design good mobile user experiences. Taking into consideration the differences in interactions and control methods 
-              </p>
-              <a href="#" class="teal-text">Continue reading</a>
-              <span class="readingTime grey-text">4 min read</span>
-            </div>
-            <div style="border-bottom: 1px solid rgba(0,0,0,0.05); padding: 20px 0px 20px 0px">
-              <img class="responsive-img" src="https://d262ilb51hltx0.cloudfront.net/fit/t/1600/480/1*tggdvHXv7Msm1-spLYVinA.jpeg">
-              <div class="collection collection-item">Feb 19
-                <a href="#!"><span class="new badge">design</span></a>
-              </div>
-              <h2 class="black-text" style="margin: 8px 0px 0px 0px;">Designing accessible experiences is important! </h2>
-              <h5 class="grey-text" style="margin-top: 0px;">Mobile accessibility study conducted with blind users at Cardinal Solutions</h5>
-              <p>
-                As more and more of our users and content move to mobile as the primary medium, it becomes critical that we design good mobile user experiences. Taking into consideration the differences in interactions and control methods 
-              </p>
-              <a href="#" class="teal-text">Continue reading</a>
-              <span class="readingTime grey-text">4 min read</span>
-            </div>
-            <div style="border-bottom: 1px solid rgba(0,0,0,0.05); padding: 20px 0px 20px 0px">
-              <img class="responsive-img" src="https://d262ilb51hltx0.cloudfront.net/fit/t/1600/480/1*sYLl2wF7ApZ6qGriiMFVlw.jpeg">
-              <div class="collection collection-item">Feb 19
-                <a href="#!"><span class="new badge">design</span></a>
-              </div>
-              <h2 class="black-text" style="margin: 8px 0px 0px 0px;">Designing accessible experiences is important! </h2>
-              <h5 class="grey-text" style="margin-top: 0px;">Mobile accessibility study conducted with blind users at Cardinal Solutions</h5>
-              <p>
-                As more and more of our users and content move to mobile as the primary medium, it becomes critical that we design good mobile user experiences. Taking into consideration the differences in interactions and control methods 
-              </p>
-              <a href="#" class="teal-text">Continue reading</a>
-              <span class="readingTime grey-text">4 min read</span>
-            </div>
-            <div style="border-bottom: 1px solid rgba(0,0,0,0.05); padding: 20px 0px 20px 0px">
-              <img class="responsive-img" src="https://d262ilb51hltx0.cloudfront.net/fit/t/1600/480/1*9yDGld-FnFZCCcntTT75yg.jpeg">
-              <div class="collection collection-item">Feb 19
-                <a href="#!"><span class="new badge">design</span></a>
-              </div>
-              <h2 class="black-text" style="margin: 8px 0px 0px 0px;">Designing accessible experiences is important! </h2>
-              <h5 class="grey-text" style="margin-top: 0px;">Mobile accessibility study conducted with blind users at Cardinal Solutions</h5>
-              <p>
-                As more and more of our users and content move to mobile as the primary medium, it becomes critical that we design good mobile user experiences. Taking into consideration the differences in interactions and control methods 
-              </p>
-              <a href="#" class="teal-text">Continue reading</a>
-              <span class="readingTime grey-text">4 min read</span>
+      <?php else : ?>
+
+      <?php get_template_part( 'content', 'none' ); ?>
+
+      <?php endif; ?>
+
+      
+        <div class="container">
+        <div class="row no-padding">
+          <div class="blog-link">
+            <div class="blog-item col s12 m10 offset-m1">
+              <a href="#">
+                <div class="col s6 m5">
+                  <h2 class="orange-text">Designing accessible experiences</h2>
+                  <h5 class="grey-text">Mobile accessibility study conducted with blind users at Cardinal Solutions</h5>
+                  <span class="date grey-text">Feb 19</span><br>
+                  <span class="readingTime grey-text">4 min read</span>
+                </div>
+                <div class="col s5 m7">
+                  <p style="color: #787f8c; font-size: 1.2em;">“So what’s the secret behind Slack? What did you guys do that was so special?” the voice crackled over my car’s Bluetooth, “I want you guys to do whatever you did for them.” I was on a call with a prospective client, the CEO of a successful SaaS app who wanted to hire us to redesign...</p>
+                </div>
+              </a>
             </div>
           </div>
         </div>
+        </div>
       </div>
-
     </main><!-- #main -->
   </div><!-- #primary -->
 

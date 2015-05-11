@@ -41,7 +41,7 @@
                 by <a class="white-text" title="" rel="author"><?php the_author(); ?></a>                      
                 </span>
                 <span class="bullet white-text">&nbsp;•&nbsp;</span>
-                <a class="white-text" href="#disqus_thread"></a> 
+                <a class="white-text" href="#disqus_thread"> <?php echo $post->comment_count?> <i class="fa fa-comments"></i> Comments</a> 
               </div>
             </div>
             <br><br>

@@ -693,9 +693,6 @@ nav ul li:hover, nav ul li.active {
 a.my-social.waves-effect.waves-circle.waves-light.btn-floating.secondary-content {
     margin-left: 10px;
 }
-.entry-title {
-  display:none;
-}
 .footer-title {
   padding-left: 25px;
 }
@@ -828,5 +825,8 @@ aside {
   padding-bottom: 60px;
 }
 a[disabled] {
-    pointer-events: none;
+  pointer-events: none;
+}
+.entry-date {
+  display: none;
 }

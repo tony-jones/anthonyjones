@@ -197,6 +197,11 @@ gulp.task('default', ['clean'], function (cb) {
   runSequence('styles', ['jshint', 'html', 'images', 'fonts', 'copy', 'phplint'], cb);
 });
 
+// Gulp serve shortcut
+gulp.task('s', function (cb) {
+  runSequence('serve', cb);
+});
+
 // Run PageSpeed Insights
 gulp.task('pagespeed', function (cb) {
   // Update the below URL to the public URL of your site
