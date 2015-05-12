@@ -25,14 +25,15 @@
   <div class="modal-content center">
     <h6 class="grey-text">Share This Article</h6>
     <br>
-    <h3 class="blue-text text-darken-3"><?php the_title(); ?></h3>
-    <h4 class="grey-text text-darken-2"><?php get_the_subtitle( $post ); ?></h4>
+    <h4 class="blue-text text-darken-3"><?php the_title(); ?></h4>
+    <h5 class="grey-text text-darken-2"><?php get_the_subtitle( $post ); ?></h>
     by <a class="grey-text" title="" rel="author"><?php the_author(); ?></a>
     <br><br>
-    <a href="https://plusone.google.com/_/+1/confirm?hl=en-US&amp;url=<?php the_permalink() ?>" target="_new" class="modal-close sharer btn red"><i class="fa fa-google-plus"></i></a>
-    <a href="http://www.facebook.com/sharer.php?u=<?php the_permalink();?>&amp;t=<?php the_title(); ?>" target="_new" class="modal-close sharer btn blue darken-2"><i class="fa fa-facebook"></i></a>
-    <a href="http://www.linkedin.com/shareArticle?mini=true&url=<?php the_permalink() ?>&title=<?php the_title(); ?>&summary=&source=<?php bloginfo('name'); ?>" target="_new" class="modal-close sharer btn blue darken-3"><i class="fa fa-linkedin"></i></a>
-    <a href="https://twitter.com/intent/tweet?original_referer=<?php the_permalink(); ?>&amp;text=<?php the_title(); ?>&tw_p=tweetbutton&url=<?php the_permalink(); ?>&via=<?php bloginfo( 'name' ); ?>" target="_new" class="modal-close sharer btn blue"><i class="fa fa-twitter"></i></a>
+    <a href="https://plusone.google.com/_/+1/confirm?hl=en-US&amp;url=<?php the_permalink() ?>" target="_new" class="social-share sharer btn red"><i class="fa fa-google-plus"></i></a>
+    <a href="http://www.facebook.com/sharer.php?u=<?php the_permalink();?>&amp;t=<?php the_title(); ?>" target="_new" class="social-share sharer btn blue darken-2"><i class="fa fa-facebook"></i></a>
+    
+    <a href="http://www.linkedin.com/shareArticle?mini=true&url=<?php the_permalink() ?>&title=<?php the_title(); ?>&summary=&source=<?php bloginfo('name'); ?>" target="_new" class="social-share sharer btn blue darken-3"><i class="fa fa-linkedin"></i></a>
+    <a href="https://twitter.com/intent/tweet?original_referer=<?php the_permalink(); ?>&amp;text=<?php the_title(); ?>&tw_p=tweetbutton&url=<?php the_permalink(); ?>&via=<?php bloginfo( 'name' ); ?>" target="_new" class="social-share sharer btn blue"><i class="fa fa-twitter"></i></a>
   </div>
   <div class="modal-footer">
     <a href="#!" class="modal-action modal-close waves-effect waves-orange btn-flat">Close</a>

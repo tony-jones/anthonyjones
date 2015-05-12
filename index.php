@@ -14,14 +14,37 @@
 get_header(); ?>
 
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main" style="margin-top:100px;">
-
-		<?php if ( have_posts() ) : ?>
-
-			<?php /* Start the Loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
-
-				<?php
+		<main id="main" class="site-main" role="main" style="margin-top:125px;">
+		<?php $c = 0; $style = '';
+		  if ( have_posts() ) : 
+			  while ( have_posts() ) : the_post(); 
+			  $c++; 
+			  if( $c == 1) {
+					$style = 'first';
+					$text = 'orange-text';
+				}
+				else if( $c == 2) {
+					$style = 'second';
+					$text = 'blue-text';
+				}
+				else if( $c == 3) {
+					$style = 'third';
+					$text = 'red-text';
+				}
+				else if( $c == 4) {
+					$style = 'fourth';
+					$text = 'green-text';
+				}
+				else if( $c == 5) {
+					$style = 'fifth';
+					$text = 'purple-text';
+				}
+				elseif ( $c == $wp_query->post_count ) {
+			    $style='last';
+			  }
+        ?>
+        <article <?php post_class($style);?> id="post-<?php the_ID(); ?>">
+        <?php
 					/* Include the Post-Format-specific template for the content.
 					 * If you want to override this in a child theme, then include a file
 					 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
@@ -41,6 +64,7 @@ get_header(); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
-
+ 
 <?php get_sidebar(); ?>
+<div class="footer-padding"></div>
 <?php get_footer(); ?>

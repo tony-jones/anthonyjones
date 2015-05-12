@@ -187,94 +187,72 @@ get_header(); ?>
           <div class="row">
           <div class="col s12 m10 l8 offset-m1 offset-l2">
           <h2 class="center">Some of the tools I used in making this site</h2>
-          <div class="col s12 m6 l4">
-            <div class="card small">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="http://cdn.himpfen.com/post/sass.png">
-              </div>
-              <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4">SASS <i class="mdi-navigation-more-vert right"></i></span>
-                <p><a href="#">Visit SASS</a></p>
-              </div>
-              <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4">SASS <i class="mdi-navigation-close right"></i></span>
-                <p>Sass is the most mature, stable, and powerful professional grade CSS extension language in the world</p>
-              </div>
-            </div>
-          </div>
-          <div class="col s12 m6 l4">
-            <div class="card small">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="https://cask.scotch.io/2015/01/gulp.png">
-              </div>
-              <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4">Gulp <i class="mdi-navigation-more-vert right"></i></span>
-                <p><a href="#">Visit Gulp</a></p>
-              </div>
-              <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4">Gulp <i class="mdi-navigation-close right"></i></span>
-                <p>Gulp is a build system that can improve how you develop websites by automating common tasks.</p>
+
+          <div class="row">
+            <div class="col s12 m6 l4">
+              <div class="card">
+                <div class="card-content">
+                  <span class="card-title black-text">SASS</span>
+                  <p>Sass is the most mature, stable, and powerful CSS extension language out there. But LESS is good also.</p>
+                </div>
+                <div class="card-action">
+                  <a href="http://sass-lang.com/">Visit SASS</a>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col s12 m6 l4">
-            <div class="card small">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="http://s.7learn.com/uploads/2015/01/materialize.png">
-              </div>
-              <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4">Materialize <i class="mdi-navigation-more-vert right"></i></span>
-                <p><a href="#">Visit Materialize</a></p>
-              </div>
-              <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4">Materialize <i class="mdi-navigation-close right"></i></span>
-                <p>Materialize is a modern responsive front-end framework based on Material Design.</p>
+            <div class="col s12 m6 l4">
+              <div class="card">
+                <div class="card-content">
+                  <span class="card-title black-text">Gulp</span>
+                  <p>Gulp is a build system that can improve how you develop websites by automating common tasks.</p>
+                </div>
+                <div class="card-action">
+                  <a href="http://gulpjs.com/">Visit Gulp</a>
+                </div>
               </div>
             </div>
-          </div>
-           
-          <div class="col s12 m6 l4">
-            <div class="card small">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="http://www.headzeal.com/wp-content/uploads/2014/04/wordpress.jpg">
-              </div>
-              <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4">WordPress <i class="mdi-navigation-more-vert right"></i></span>
-                <p><a href="#">Visit WordPress</a></p>
-              </div>
-              <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4">Materialize <i class="mdi-navigation-close right"></i></span>
-                <p>WordPress is probably the easiest and most flexible website content management systems</p>
+            <div class="col s12 m6 l4">
+              <div class="card">
+                <div class="card-content">
+                  <span class="card-title black-text">Materialize</span>
+                  <p>Materialize is a modern responsive front-end framework based on Google's Material Design principles.</p>
+                </div>
+                <div class="card-action">
+                  <a href="http://materializecss.com/">Visit Materialize</a>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col s12 m6 l4">
-            <div class="card small">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="http://yubinbai.com/wp-content/uploads/2015/01/sublime-text-2-logo.jpg">
-              </div>
-              <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4">Sublime <i class="mdi-navigation-more-vert right"></i></span>
-                <p><a href="#">Visit Sublime</a></p>
-              </div>
-              <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4">Sublime Text <i class="mdi-navigation-close right"></i></span>
-                <p>Sublime is my favorite text editor for code and markup. Lots of great plugins and is a good complement to an IDE.</p>
+            <div class="col s12 m6 l4">
+              <div class="card">
+                <div class="card-content">
+                  <span class="card-title black-text">WordPress</span>
+                  <p>WordPress is one of the easiest and most flexible website content management systems to develop with. </p>
+                </div>
+                <div class="card-action">
+                  <a href="http://wordpress.com/">Visit WordPress</a>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col s12 m6 l4">
-            <div class="card small">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="http://public2.bemyapp.com/media/wp-content/uploads/2014/07/headroomjs-logo.png">
+            <div class="col s12 m6 l4">
+              <div class="card">
+                <div class="card-content">
+                  <span class="card-title black-text">Sublime</span>
+                  <p>Sublime is my favorite text editor for code and markup. Great plugins, user friendly, and very customizable</p>
+                </div>
+                <div class="card-action">
+                  <a href="http://www.sublimetext.com/">Visit Sublime</a>
+                </div>
               </div>
-              <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4">Headroom <i class="mdi-navigation-more-vert right"></i></span>
-                <p><a href="#">Visit Headroom.JS</a></p>
-              </div>
-              <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4">Headroom.JS <i class="mdi-navigation-close right"></i></span>
-                <p>A simple plugin that hides the header on scroll down for a better user experience</p>
+            </div>
+            <div class="col s12 m6 l4">
+              <div class="card">
+                <div class="card-content">
+                  <span class="card-title black-text">Skrollr</span>
+                  <p>A scrolling animation javascript library. It works well with mobile (Android, iOS, etc.) and desktop screens</p>
+                </div>
+                <div class="card-action">
+                  <a href="https://github.com/Prinzhorn/skrollr">Visit Skrollr</a>
+                </div>
               </div>
             </div>
           </div>

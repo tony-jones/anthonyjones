@@ -72,16 +72,14 @@
             <a href="#" aria-controls="primary-menu" aria-expanded="false" data-activates="mobile-demo" style="background: rgba(255, 255, 255, 0.97); box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);" class="hide-on-large-only sidenav_button btn-floating waves-effect clear-icon">
               <i style="line-height: 39px; color: #383838" class="mdi-navigation-menu"></i>
             </a>
-            <ul id="nav-mobile" class="right">
-              <li>
-                <a style="background: rgba(255, 255, 255, 0.97); box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);" class="btn-floating waves-effect grey clear-icon"><i style="line-height: 39px; color:#383838" class="mdi-action-search"></i></a>
-              </li>
+            <ul id="nav-mobile" class="right">    
+              <a style="background: rgba(255, 255, 255, 0.97); box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);" class="btn-floating waves-effect grey clear-icon"><i style="line-height: 39px; color:#383838" class="mdi-action-search"></i></a>
               <!-- <li class="collection-item avatar">
                 <img src="http://materializecss.com/images/yuna.jpg" alt="" class="circle">
               </li> -->
             </ul>
-            <div class="right" style="width:450px;">
-              <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'tabs hide-on-med-and-down' ) ); ?>     
+            <div class="right" style="width:350px;">
+              <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'hide-on-med-and-down' ) ); ?>     
             </div>
           </div>
           <div id="title" data-0="font-size: 45px; padding: 0 0 24px 35px;" data-128="font-size: 26px; padding: 0 0 15px 50px;">
@@ -129,10 +127,7 @@
           <i class="mdi-navigation-arrow-back"></i>
         </a>   
       </div>
-      <li><a id="about" href="#!"><i class="mdi-communication-quick-contacts-mail left two-rem"></i>About</a></li>
-      <li><a id="articles" href="#!"><i class="mdi-editor-format-align-left left two-rem"></i>Articles</a></li>
-      <li><a id="resources" href="#!"><i class="mdi-social-school left two-rem"></i>Resources</a></li>
-      <li><a id="freebies" href="#!"><i class="mdi-action-redeem left two-rem"></i>Freebies</a></li>
+      <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?> 
     </ul>
   </nav>
 

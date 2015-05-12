@@ -97,6 +97,17 @@ function the_post_thumbnail_caption() {
 }
 
 /**
+ * Add the flow text class to all excerpts in WordPress
+ *
+ */
+
+ add_filter( "the_excerpt", "add_class_to_excerpt" );
+ 
+ function add_class_to_excerpt( $excerpt ) {
+   return str_replace('<p', '<p class="grey-text text-darken-1"', $excerpt);
+ }
+
+/**
  * Display the post likes for count.
  *
  */

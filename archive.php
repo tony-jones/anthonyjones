@@ -10,14 +10,15 @@
 get_header(); ?>
 
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
-			<div id="content" data-0="padding-top: 150px; margin-top: -63px;" data-192="padding-top: 190px; margin-top: -39.28125px;">
+		<main id="main" class="site-main" role="main" style="margin-top:100px">
 			<div class="container">
-			<?php if ( have_posts() ) : ?>
+			 <div class="row">
+			  <div class="col s12 offset-s1">
+			  <?php if ( have_posts() ) : ?>
 
 			
 				<?php
-					the_archive_title( '<h1 class="page-title">', '</h1>' );
+					the_archive_title( '<h3 class="page-title">', '</h3>' );
 					the_archive_description( '<div class="taxonomy-description">', '</div>' );
 				?>
 				
@@ -44,8 +45,9 @@ get_header(); ?>
 		<?php endif; ?>
 		</div>
 		</div>
+		</div>
 		</main><!-- #main -->
 	</div><!-- #primary -->
-
+ 
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>

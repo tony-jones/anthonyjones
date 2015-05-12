@@ -4,31 +4,36 @@
  */
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<?php the_title( sprintf( '<h2><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
-		<h4><?php get_the_subtitle( $post ); ?></h4>
-		<?php if ( 'post' == get_post_type() ) : ?>
-		<div class="entry-meta">
-			<?php anthonyjones_posted_on(); ?>
-		</div><!-- .entry-meta -->
-		<?php endif; ?>
-	</header><!-- .entry-header -->
-
-	<div class="entry-content">
-		<?php
-			the_excerpt();
-		?>
-
-		<?php
-			wp_link_pages( array(
-				'before' => '<div class="page-links">' . __( 'Pages:', 'anthonyjones' ),
-				'after'  => '</div>',
-			) );
-		?>
-	</div><!-- .entry-content -->
-
+  <div class="container">
+		<div class="row no-padding">
+		  <div class="blog-link">
+		    <div class="blog-item col s12 m12 l10 offset-l1">
+		      <a href="<?php echo get_permalink(); ?>" style="cursor: pointer; display: block; overflow: hidden; padding: 50px;">
+		        <div class="col s12 m6">
+		          <h5><?php the_title(); ?></h5>
+		          <!-- <h6 class="grey-text"><?php get_the_subtitle( $post ); ?></h6> -->
+		          <!-- <br> -->
+		          <?php if ( 'post' == get_post_type() ) : ?>
+		          <span class="date grey-text"><?php echo human_time_diff( get_the_time('U'), current_time('timestamp') ) . ' ago'; ?></span><br>
+		          <span class="readingTime grey-text"><?php post_read_time(); ?></span>
+		          <?php endif; ?>
+		        </div>
+		        <div class="col s12 m6">
+		          <?php the_excerpt(); ?>
+							<?php
+							 wp_link_pages( array(
+							  'before' => '<div class="page-links">' . __( 'Pages:', 'anthonyjones' ),
+								'after'  => '</div>',
+							 ) );
+							?>
+		        </div>
+		      </a>
+		    </div>
+		  </div>
+		</div>
+	</div>
 	<footer class="entry-footer">
 		<?php anthonyjones_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->
+

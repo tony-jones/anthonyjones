@@ -260,9 +260,6 @@ a.sharer {
 a.sharer:hover {
   color: #E4E4E4;
 }
-.flow-text {
-  margin-top: 0px; 
-}
 .uva-blue {
   background: rgba(255,255,255,0.97);
   box-shadow: 0 0 1px rgba(0,0,0,0.15);
@@ -595,36 +592,11 @@ clip: rect(-6px,185px,14px,25px);
     padding: 0 0.5rem;
   }
 }
-.tabs {
-  position: relative;
-  height: 48px;
-  background: rgba(255, 255, 255, 0);
-  margin: 8px auto;
-  white-space: nowrap;
-}
-.tabs li.tab {
-  background: rgba(255, 255, 255, 0);
-}
-.tabs li.tab a {
-  color: #383838;
-}
-.tabs li.tab a:hover {
-    color: #747474;
-}
-.tabs .indicator {
-  background-color: #383838;
-}
 .waves-effect.waves-clear .waves-ripple {
   background-color: rgba(111, 111, 111, 0.07);
 }
 #sidenav-overlay {
   z-index: 998;
-}
-nav {
-  box-shadow: none;
-}
-nav ul li:hover, nav ul li.active {
-  background-color: rgba(0, 0, 0, 0); 
 }
 .waves-effect.close-arrow {
   display:inline-block;
@@ -703,10 +675,6 @@ span.badge.category {
   background-color: #26a69a;
   border-radius: 2px;
 }
-a:hover {
-  color: #B6B6B6;
-}
-
 #disqus_thread {
   float: left;
   box-sizing: border-box;
@@ -734,9 +702,7 @@ a:hover {
 .recommended {
   padding: 5px;
 }
-.modal .modal-content {
-  padding: 20px 10px 0px 10px;
-}
+
 .close-x {
   position: absolute;
   right: 0%;
@@ -822,11 +788,53 @@ aside {
   padding: 10px 20px 20px 30px;
 }
 .footer-padding {
-  padding-bottom: 60px;
+  padding-bottom: 100px;
 }
 a[disabled] {
   pointer-events: none;
 }
 .entry-date {
   display: none;
+}
+article .blog-item {
+  border-radius: 2px;
+}
+article.first .blog-item:hover {
+  background: #FFFBEE;
+}
+article.second .blog-item:hover {
+  background: #f2f8fb;
+}
+article.third .blog-item:hover {
+  background: #FDF0F0;
+}
+article.fourth .blog-item:hover {
+  background: #F2FBF3;
+}
+article.first h5 {
+  color: #f57c00;
+}
+article.second h5 {
+  color: #3C72C5;
+}
+article.third h5 {
+  color: #EA5B42;
+}
+article.fourth h5 {
+  color: #39AE48;
+}
+.row.no-padding {
+  margin-bottom: 0;
+}
+.footer-categories {
+  font-weight: 300;
+  font-size: .8rem;
+  color: #fff;
+  background-color: #26a69a;
+  border-radius: 2px;
+  padding: 3px 5px;
+}
+.social-share {
+  width: 70px;
+  margin-bottom: 10px;
 }

@@ -41,7 +41,8 @@
                 by <a class="white-text" title="" rel="author"><?php the_author(); ?></a>                      
                 </span>
                 <span class="bullet white-text">&nbsp;•&nbsp;</span>
-                <a class="white-text" href="#disqus_thread"> <?php echo $post->comment_count?> <i class="fa fa-comments"></i> Comments</a> 
+                <i class="fa fa-comments white-text"></i>
+                 <a class="white-text" href="#disqus_thread"></a> 
               </div>
             </div>
             <br><br>
@@ -91,12 +92,17 @@
                  <br>
               </div>    
             </div>  
+
+            <?php $key_1 = get_post_meta( get_the_ID(), 'title_one', true ); ?>
+            <?php $key_2 = get_post_meta( get_the_ID(), 'title_two', true ); ?>
+            <?php $key_3 = get_post_meta( get_the_ID(), 'title_three', true ); ?>
+
             <div class="col hide-on-small-only m2 l2">
 		          <div class="tabs-wrapper">
 					      <ul class="section table-of-contents">
-					        <li><a href="#introduction">Rules</a></li>
-					        <li><a href="#structure">Design</a></li>
-					        <li><a href="#initialization">Download</a></li>
+					        <li><a href="#<?php echo $key_1 ?>"><?php echo $key_1 ?></a></li>
+					        <li><a href="#<?php echo $key_2 ?>"><?php echo $key_2 ?></a></li>
+					        <li><a href="#<?php echo $key_3 ?>"><?php echo $key_3 ?></a></li>
 					      </ul>
 					    </div>
 				    </div> 

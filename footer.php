@@ -30,6 +30,7 @@
       </div>
     </div>
   </footer>
+  
   <!-- Recommended Articles Footer -->
   <div id="modal3" class="modal bottom-sheet">
     <div class="modal-content">
@@ -39,54 +40,26 @@
       <h5 class="footer-title">Recommended Articles</h5>
        <ul class="collection">
         <div class="row">
+          <?php $recentPosts = new WP_Query(); ?>
+          <?php $recentPosts->query('showposts=5'); ?>
+          <?php while ($recentPosts->have_posts()) : $recentPosts->the_post(); ?>
+          <?php $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?>
           <div class="col s12 m6 l6">
+            <a href="<?php echo get_permalink(); ?>" style="cursor: pointer; display: block; overflow: hidden;">
             <div class="recommended">
               <li class="collection-item avatar">
-                <img src="http://lorempixel.com/300/300/technics/" alt="" class="circle">
-                <span class="title grey-text">Good Ideas Are Not Enough</span>
-                <p>Every year around this time, the town I lived in is decorated throughout 
-                  with lots of gorgeous Christmas illuminations.
+                <img src="<?=$url?>" alt="" class="circle responsive-img">
+                <span class="title grey-text"><?php the_title(); ?></span>
+                <p><?php get_the_subtitle( $post ); ?>
                 </p>
-                <a href="#!" class="secondary-content"><span class="category badge hide-on-med-and-down">accessibility</span></a>
+                <?php $category = get_the_category_list( __( ', ', 'anthonyjones' ) ); ?>
+                <span class="footer-categories" 
+                  <?php echo $category ?>
+                </span>
               </li>
             </div>
           </div>
-          <div class="col s12 m6 l6">
-            <div class="recommended">
-              <li class="collection-item avatar">
-                <img src="http://lorempixel.com/300/300/food/" alt="" class="circle">
-                <span class="title grey-text">The Future of UI and the Dream of the ‘90s</span>
-                <p>The people living around the Elementary School I attended would work together 
-                   I lived in is decorated throughout.
-                </p>
-                <a href="#!" class="secondary-content"><span class="category badge hide-on-med-and-down">design</span></a>
-              </li>
-            </div>
-          </div>
-          <div class="col s12 m6 l6">
-            <div class="recommended">
-              <li class="collection-item avatar">
-                <img src="http://lorempixel.com/300/300/city/" alt="" class="circle">
-                <span class="title grey-text">How to Improve Your Workflow</span>
-                <p>The people living around the Elementary School I attended would work together 
-                   I lived in is decorated throughout with lots.
-                </p>
-                <a href="#!" class="secondary-content"><span class="category badge hide-on-med-and-down">development</span></a>
-              </li>
-            </div>
-          </div>
-          <div class="col s12 m6 l6">
-            <div class="recommended">
-              <li class="collection-item avatar">
-                <img src="http://lorempixel.com/300/300/transport/" alt="" class="circle">
-                <span class="title grey-text">UI vs UX Design Tools</span>
-                <p>The people living around the Elementary School I attended would work together
-                decorated throughout with lots. The Future of UI
-                </p>
-                <a href="#!" class="secondary-content"><span class="category badge hide-on-med-and-down">design</span></a>
-              </li>
-            </div>
-          </div>
+          <?php endwhile; ?>
         </div>
         </ul>
     </div>
