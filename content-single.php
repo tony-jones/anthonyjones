@@ -17,8 +17,7 @@
 																																  rgba(0, 0, 0, 0.3) ), 
 																																 url('<?=$url?>');
 																																 background-repeat: no-repeat;
-																																 background-color: grey
-																																 ;
+																																 background-color: rgba(0, 148, 255, 0.26);
 																																 background-attachment: scroll;
 																																 background-size: cover;
 																																 -o-background-size: cover;">
@@ -40,15 +39,17 @@
                 <span class="author vcard white-text">
                 by <a class="white-text" title="" rel="author"><?php the_author(); ?></a>                      
                 </span>
-                <span class="bullet white-text">&nbsp;•&nbsp;</span>
+                <!-- <span class="bullet white-text">&nbsp;•&nbsp;</span>
                 <i class="fa fa-comments white-text"></i>
-                 <a class="white-text" href="#disqus_thread"></a> 
+                <a class="white-text" href="#disqus_thread"></a>  -->
+                <span class="bullet white-text">&nbsp;•&nbsp;</span>
+                <span class="white-text">  <?php if(function_exists('the_views')) { the_views(); } ?> </span>
               </div>
             </div>
             <br><br>
           </div>
         </div>
-  		
+  		  
         <!-- Post Content -->
         <div class="container">
           <div class="row">

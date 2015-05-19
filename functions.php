@@ -158,22 +158,11 @@ function update_like_count() {
 add_action( 'wp_ajax_my_update_likes', 'update_like_count' );
 add_action( 'wp_ajax_nopriv_my_update_likes', 'update_like_count' );
 
-/**
- * Get the Section Title before colon for side navigation polulation
- *
- */
-function getTextBetweenTags() 
- {
-  $html= file_get_contents(get_the_content() );
-	echo $html;
-	$matches = array();
-	//preg_match_all('#<h([1-2])>(.+?)</h\1>#is', $html, $matches);
-  preg_match( '#<h2>(.*?)</h2>#', $page, $matches );
-	echo $matches;
-	for ($i = 0, $j = count($matches[0]); $i < $j; $i++) {
-	  echo print str_repeat(' ', 2 * ($matches[1][$i] - 1)) . $matches[2][$i] . "\n";
-	}
- }
+//[foobar]
+function foobar_func( $atts ){
+	return "foo and bar";
+}
+add_shortcode( 'foobar', 'foobar_func' );
 
 /**
  * Register widget area.

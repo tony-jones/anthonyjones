@@ -41,13 +41,13 @@
        <ul class="collection">
         <div class="row">
           <?php $recentPosts = new WP_Query(); ?>
-          <?php $recentPosts->query('showposts=5'); ?>
+          <?php $recentPosts->query('showposts=4'); ?>
           <?php while ($recentPosts->have_posts()) : $recentPosts->the_post(); ?>
           <?php $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?>
           <div class="col s12 m6 l6">
             <a href="<?php echo get_permalink(); ?>" style="cursor: pointer; display: block; overflow: hidden;">
             <div class="recommended">
-              <li class="collection-item avatar">
+              <li class="waves-effect waves-teal collection-item avatar">
                 <img src="<?=$url?>" alt="" class="circle responsive-img">
                 <span class="title grey-text"><?php the_title(); ?></span>
                 <p><?php get_the_subtitle( $post ); ?>

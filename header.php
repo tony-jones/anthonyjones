@@ -50,11 +50,7 @@
   <link rel="shortcut icon" href="/favicon.ico">
 
   <!-- External Styles  -->
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
-  <!-- To be added to script files, external js for now-->
-  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src='http://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.11/skrollr.min.js'></script>
   <?php wp_head(); ?>
 </head>
 

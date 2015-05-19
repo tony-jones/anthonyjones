@@ -25,6 +25,11 @@ anthonyjones is based on Underscores http://underscores.me/, (C) 2012-2015 Autom
 // import html5 boilerplate 
 @import '_h5bp';
 
+/*
+ * import Font Awesome icons
+ */
+@import 'font-awesome/font-awesome';
+
 
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS: If you don't use Sass, just add styles here.
@@ -54,8 +59,7 @@ anthonyjones is based on Underscores http://underscores.me/, (C) 2012-2015 Autom
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
-
-@import url(http://fonts.googleapis.com/css?family=Lato:300,400|Montserrat:400,700);
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400|Open+Sans:400,600);
 
 /*--------------------------------------------------------------
 # Elements
@@ -811,6 +815,9 @@ article.third .blog-item:hover {
 article.fourth .blog-item:hover {
   background: #F2FBF3;
 }
+article.fifth .blog-item:hover {
+  background: #f2f8fb;
+}
 article.first h5 {
   color: #f57c00;
 }
@@ -822,6 +829,9 @@ article.third h5 {
 }
 article.fourth h5 {
   color: #39AE48;
+}
+article.fifth h5 {
+  color: #3C72C5;
 }
 .row.no-padding {
   margin-bottom: 0;
@@ -837,4 +847,7 @@ article.fourth h5 {
 .social-share {
   width: 70px;
   margin-bottom: 10px;
+}
+body {
+  background-color: #F9F9F9;
 }
