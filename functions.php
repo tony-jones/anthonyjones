@@ -190,8 +190,6 @@ function anthonyjones_scripts() {
 	
 	wp_enqueue_script( 'anthonyjones-main', get_template_directory_uri() . '/dist/scripts/main.min.js', array(), '20150415', true );
 
-	wp_enqueue_script( 'anthonyjones-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
-
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
