@@ -69,7 +69,7 @@
               <i style="line-height: 39px; color: #383838" class="mdi-navigation-menu"></i>
             </a>
             <ul id="nav-mobile" class="right">    
-              <a style="background: rgba(255, 255, 255, 0.97); box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);" class="btn-floating waves-effect grey clear-icon"><i style="line-height: 39px; color:#383838" class="mdi-action-search"></i></a>
+              <!-- <a style="background: rgba(255, 255, 255, 0.97); box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);" class="btn-floating waves-effect grey clear-icon"><i style="line-height: 39px; color:#383838" class="mdi-action-search"></i></a> -->
               <!-- <li class="collection-item avatar">
                 <img src="http://materializecss.com/images/yuna.jpg" alt="" class="circle">
               </li> -->
