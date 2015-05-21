@@ -97,13 +97,57 @@
             <?php $key_1 = get_post_meta( get_the_ID(), 'title_one', true ); ?>
             <?php $key_2 = get_post_meta( get_the_ID(), 'title_two', true ); ?>
             <?php $key_3 = get_post_meta( get_the_ID(), 'title_three', true ); ?>
+            <?php $key_4 = get_post_meta( get_the_ID(), 'title_four', true ); ?>
+            <?php $key_5 = get_post_meta( get_the_ID(), 'title_five', true ); ?>
+            <?php $key_6 = get_post_meta( get_the_ID(), 'title_six', true ); ?>
 
             <div class="col hide-on-small-only m2 l2">
 		          <div class="tabs-wrapper">
 					      <ul class="section table-of-contents">
-					        <li><a href="#<?php echo $key_1 ?>"><?php echo $key_1 ?></a></li>
-					        <li><a href="#<?php echo $key_2 ?>"><?php echo $key_2 ?></a></li>
-					        <li><a href="#<?php echo $key_3 ?>"><?php echo $key_3 ?></a></li>
+                  <?php 
+                    if(!empty($key_1)) {
+                      echo '<li><a href="#';
+                      print $key_1;
+                      echo '">';
+                      print $key_1;  
+                      echo '</a></li>';
+                    }
+                    if(!empty($key_2)) {
+                      echo '<li><a href="#';
+                      print $key_2;
+                      echo '">';
+                      print $key_2;  
+                      echo '</a></li>';
+                    }
+                    if(!empty($key_3)) {
+                      echo '<li><a href="#';
+                      print $key_3;
+                      echo '">';
+                      print $key_3;  
+                      echo '</a></li>';
+                    }
+                    if(!empty($key_4)) {
+                      echo '<li><a href="#';
+                      print $key_4;
+                      echo '">';
+                      print $key_4;  
+                      echo '</a></li>';
+                    }
+                    if(!empty($key_5)) {
+                      echo '<li><a href="#';
+                      print $key_5;
+                      echo '">';
+                      print $key_5;  
+                      echo '</a></li>';
+                    }
+                    if(!empty($key_6)) {
+                      echo '<li><a href="#';
+                      print $key_6;
+                      echo '">';
+                      print $key_6;  
+                      echo '</a></li>';
+                    }
+                  ?>
 					      </ul>
 					    </div>
 				    </div> 

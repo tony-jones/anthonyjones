@@ -26,7 +26,7 @@
     <h6 class="grey-text">Share This Article</h6>
     <br>
     <h4 class="blue-text text-darken-3"><?php the_title(); ?></h4>
-    <h5 class="grey-text text-darken-2"><?php get_the_subtitle( $post ); ?></h>
+    <h5 class="grey-text text-darken-2"><?php get_the_subtitle( $post ); ?></h5>
     by <a class="grey-text" title="" rel="author"><?php the_author(); ?></a>
     <br><br>
     <a href="https://plusone.google.com/_/+1/confirm?hl=en-US&amp;url=<?php the_permalink() ?>" target="_new" class="social-share sharer btn red"><i class="fa fa-google-plus"></i></a>
