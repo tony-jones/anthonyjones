@@ -1,5 +1,5 @@
-$titles-font: 'Open Sans', sans-serif;
-$body-font: 'Lato', sans-serif;
+$title-font: 'Lato', sans-serif;
+$body-font: 'Open Sans', sans-serif;
 
 a {
   text-decoration: none;
@@ -24,7 +24,7 @@ html{
   color: $off-black;
 }
 h1, h2, h3, h4, h5, h6 {
-  font-family: $titles-font;
+  font-family: $title-font;
 }
 
 // Header Styles

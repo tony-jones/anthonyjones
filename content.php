@@ -15,7 +15,9 @@
 		          <!-- <br> -->
 		          <?php if ( 'post' == get_post_type() ) : ?>
 		          <span class="date grey-text"><?php echo human_time_diff( get_the_time('U'), current_time('timestamp') ) . ' ago'; ?></span><br>
-		          <span class="readingTime grey-text"><?php post_read_time(); ?></span>
+		          <span class="readingTime grey-text"><?php post_read_time(); ?></span><br>
+		          <span class="<?php foreach((get_the_category()) as $category) { echo $category->cat_name . ' '; } ?>badge">
+		          <?php foreach((get_the_category()) as $category) { echo $category->cat_name . ' '; } ?></span>
 		          <?php endif; ?>
 		        </div>
 		        <div class="col s12 m6">

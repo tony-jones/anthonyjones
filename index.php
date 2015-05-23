@@ -44,6 +44,7 @@ get_header(); ?>
 			  }
         ?>
         <article <?php post_class($style);?> id="post-<?php the_ID(); ?>">
+        
         <?php
 					/* Include the Post-Format-specific template for the content.
 					 * If you want to override this in a child theme, then include a file

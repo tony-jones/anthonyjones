@@ -383,6 +383,11 @@ nav ul a {
   color: #383838;
   font-size: 13px;
 }
+nav ul a:visited {
+  color: #383838;
+  //color: #a8adb0;
+  font-size: 13px;
+}
 .footer-bar {
   
 }
@@ -739,6 +744,52 @@ span.badge.category {
   top: -5%;
   padding: 0px 9px;
 }
+
+span.badge.Development {
+  font-weight: 300;
+  font-size: .8rem;
+  color: #fff;
+  background-color: #3C72C5;
+  border-radius: 2px;
+  float:left;
+  margin-top: 10px;
+}
+span.badge.Uncategorized {
+  font-weight: 300;
+  font-size: .8rem;
+  color: #fff;
+  background-color: #f57c00;
+  border-radius: 2px;
+  float:left;
+  margin-top: 10px;
+}
+span.badge.Design {
+  font-weight: 300;
+  font-size: .8rem;
+  color: #fff;
+  background-color: #EA5B42;
+  border-radius: 2px;
+  float:left;
+  margin-top: 10px;
+}
+span.badge.Technology {
+  font-weight: 300;
+  font-size: .8rem;
+  color: #fff;
+  background-color: #39AE48;
+  border-radius: 2px;
+  float:left;
+  margin-top: 10px;
+}
+span.badge.Business {
+  font-weight: 300;
+  font-size: .8rem;
+  color: #fff;
+  background-color: #099DB0;
+  border-radius: 2px;
+  float:left;
+  margin-top: 10px;
+}
 .badges a {
   display: inline-block;
   color: #fff;
@@ -830,19 +881,19 @@ article .blog-item {
   border-radius: 2px;
 }
 article.first .blog-item:hover {
-  background: #FFFBEE;
+  background: #ffffff;
 }
 article.second .blog-item:hover {
-  background: #f2f8fb;
+  background: #ffffff;
 }
 article.third .blog-item:hover {
-  background: #FDF0F0;
+  background: #ffffff;
 }
 article.fourth .blog-item:hover {
-  background: #F2FBF3;
+  background: #ffffff;
 }
 article.fifth .blog-item:hover {
-  background: #f2f8fb;
+  background: #ffffff;
 }
 article.first h5 {
   color: #f57c00;
@@ -857,7 +908,7 @@ article.fourth h5 {
   color: #39AE48;
 }
 article.fifth h5 {
-  color: #3C72C5;
+  color: #099DB0;
 }
 .row.no-padding {
   margin-bottom: 0;
@@ -876,4 +927,11 @@ article.fifth h5 {
 }
 body {
   background-color: #F9F9F9;
+}
+.blog-item:hover {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.02),0 2px 10px 0 rgba(0, 0, 0, 0.08);
+}
+.current_page_item {
+  font-weight: 600;
+  color: #383838;
 }
