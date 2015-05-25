@@ -9,7 +9,7 @@
 ?>
 
 	</div><!-- #content -->
-
+  </div> <!-- animsition div -->
   <!-- Footer -->
   <footer class="site-footer white" role="contentinfo">
     <div class="footer-bar">
@@ -34,7 +34,7 @@
   <!-- Recommended Articles Footer -->
   <div id="modal3" class="modal bottom-sheet">
     <div class="modal-content">
-      <a href="#" class="waves-effect close-arrow close-x">
+      <a href="#" class="waves-effect close-arrow close-x close-button">
         <i class="mdi-navigation-close"></i>
       </a>
       <h5 class="footer-title">Recommended Articles</h5>
@@ -45,15 +45,17 @@
           <?php while ($recentPosts->have_posts()) : $recentPosts->the_post(); ?>
           <?php $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?>
           <div class="col s12 m6 l6">
-            <a href="<?php echo get_permalink(); ?>" style="cursor: pointer; display: block; overflow: hidden;">
+            <a class="close-x" href="<?php echo get_permalink(); ?>" style="cursor: pointer; display: block; overflow: hidden;">
             <div class="recommended">
-              <li class="waves-effect waves-teal collection-item avatar">
+              <li class="waves-effect waves-dark collection-item avatar">
                 <img src="<?=$url?>" alt="" class="circle responsive-img">
                 <span class="title grey-text"><?php the_title(); ?></span>
-                <p><?php get_the_subtitle( $post ); ?>
+                <p>
+                  <?php get_the_subtitle( $post ); ?>
                 </p>
+
                 <?php $category = get_the_category_list( __( ', ', 'anthonyjones' ) ); ?>
-                <span class="footer-categories" 
+                <span class="footer-categories"
                   <?php echo $category ?>
                 </span>
               </li>
@@ -65,6 +67,7 @@
     </div>
   </div>
 </div><!-- #page -->
+
 
 <?php wp_footer(); ?>
 <script>
@@ -117,5 +120,33 @@ s.src = '//' + disqus_shortname + '.disqus.com/count.js';
 })( jQuery );
 </script>
 
+<script>
+$(document).ready(function() {
+  
+  $(".animsition").animsition({
+  
+    inClass               :   'fade-in-down-sm',
+    outClass              :   'fade-out-down-sm',
+    inDuration            :    1500,
+    outDuration           :    800,
+    linkElement           :   '.animsition-link',
+    // e.g. linkElement   :   'a:not([target="_blank"]):not([href^=#])'
+    loading               :    true,
+    loadingParentElement  :   'body', //animsition wrapper element
+    loadingClass          :   'animsition-loading',
+    unSupportCss          : [ 'animation-duration',
+                              '-webkit-animation-duration',
+                              '-o-animation-duration'
+                            ],
+    //"unSupportCss" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
+    //The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
+    
+    overlay               :   false,
+    
+    overlayClass          :   'animsition-overlay-slide',
+    overlayParentElement  :   'body'
+  });
+});
+</script>
 </body>
 </html>

@@ -36,7 +36,7 @@ get_header(); ?>
           $text = 'purple-text';
         }
         elseif ( $c == $wp_query->post_count ) {
-          $style='last';
+          $style='fifth';
         }
         ?>
       <article <?php post_class($style);?> id="post-<?php the_ID(); ?>">

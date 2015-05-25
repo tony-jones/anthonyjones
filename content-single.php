@@ -7,7 +7,7 @@
   <!-- Set your background image for this header on the line below. -->
   <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
     <main role="main">
-      <div id="content" style="margin-top: -100px;">
+      <div style="margin-top: -100px;">
         <?php
 			  $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
 			  ?>
@@ -155,9 +155,6 @@
         </div> <!-- End Post Content -->
       </div>
     </main>
-    <footer class="entry-footer">
-		  <?php anthonyjones_entry_footer(); ?>
-	  </footer><!-- .entry-footer -->
 
   </article> <!-- #post-## -->
 

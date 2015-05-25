@@ -25,9 +25,7 @@
 
   <link rel="profile" href="http://gmpg.org/xfn/11">
   <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-  
-  <title>Anthony Jones | UX Developer & Accessibility Consultant</title>
-  
+    
   <!-- Add to homescreen for Chrome on Android -->
   <meta name="mobile-web-app-capable" content="yes">
   <link rel="icon" sizes="192x192" href="images/touch/chrome-touch-icon-192x192.png">
@@ -55,6 +53,7 @@
 </head>
 
 <body id="skrollr-body" <?php body_class(); ?>>
+
 <div id="page" class="hfeed site">
   <span id="back-to-top" class="section scrollspy"></span>
 	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'anthonyjones' ); ?></a>
@@ -126,5 +125,5 @@
       <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?> 
     </ul>
   </nav>
-
+  <div class="animsition">
 	<div id="content" class="site-content">

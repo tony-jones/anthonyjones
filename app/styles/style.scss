@@ -28,6 +28,8 @@ anthonyjones is based on Underscores http://underscores.me/, (C) 2012-2015 Autom
 // import Font Awesome icons
 @import 'font-awesome/font-awesome';
 
+// import vendor css for plugins
+@import 'vendor/animsition.min.css';
 
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS: If you don't use Sass, just add styles here.
@@ -301,9 +303,6 @@ a.sharer:hover {
 .progress .indeterminate {
   background-color: #383838;
 }
-.sidenav-logo {
-  height: 110px;
-}
 nav.orange ul li {
   border-bottom: 1px solid rgba(0, 0, 0, 0.04);
 }
@@ -440,7 +439,7 @@ nav a.button-collapse {
   height: 0;
 }
 .next-article {
-  padding: 16px;
+  padding: 17px;
   color: #383838;
   border-left: solid 1px rgba(0,0,0,0.05);
   text-transform: uppercase;
@@ -738,7 +737,7 @@ span.badge.category {
   padding: 5px;
 }
 
-.close-x {
+.close-button {
   position: absolute;
   right: 0%;
   top: -5%;
@@ -754,6 +753,9 @@ span.badge.Development {
   float:left;
   margin-top: 10px;
 }
+h5.Development {
+  color: #3C72C5;
+}
 span.badge.Uncategorized {
   font-weight: 300;
   font-size: .8rem;
@@ -762,6 +764,9 @@ span.badge.Uncategorized {
   border-radius: 2px;
   float:left;
   margin-top: 10px;
+}
+h5.Uncategorized {
+  color: #f57c00;
 }
 span.badge.Design {
   font-weight: 300;
@@ -772,6 +777,9 @@ span.badge.Design {
   float:left;
   margin-top: 10px;
 }
+h5.Design {
+  color: #EA5B42;
+}
 span.badge.Technology {
   font-weight: 300;
   font-size: .8rem;
@@ -781,6 +789,9 @@ span.badge.Technology {
   float:left;
   margin-top: 10px;
 }
+h5.Technology {
+  color: #39AE48;
+}
 span.badge.Business {
   font-weight: 300;
   font-size: .8rem;
@@ -789,6 +800,9 @@ span.badge.Business {
   border-radius: 2px;
   float:left;
   margin-top: 10px;
+}
+h5.Business {
+  color: #099DB0;
 }
 .badges a {
   display: inline-block;
@@ -895,20 +909,8 @@ article.fourth .blog-item:hover {
 article.fifth .blog-item:hover {
   background: #ffffff;
 }
-article.first h5 {
-  color: #f57c00;
-}
-article.second h5 {
-  color: #3C72C5;
-}
-article.third h5 {
-  color: #EA5B42;
-}
-article.fourth h5 {
-  color: #39AE48;
-}
-article.fifth h5 {
-  color: #099DB0;
+article.sixth .blog-item:hover {
+  background: #ffffff;
 }
 .row.no-padding {
   margin-bottom: 0;
@@ -917,7 +919,7 @@ article.fifth h5 {
   font-weight: 300;
   font-size: .8rem;
   color: #fff;
-  background-color: #26a69a;
+  background-color: #8B8B8B;
   border-radius: 2px;
   padding: 3px 5px;
 }
@@ -934,4 +936,13 @@ body {
 .current_page_item {
   font-weight: 600;
   color: #383838;
+}
+.sidenav-logo {
+  height: 160px;
+  background-image: url('//localhost:3000/wp-content/uploads/2015/05/apple-iphone-books-desk.jpg');
+  background-position: center top;
+  background-size: cover;
+  background-attachment: scroll;
+  -o-background-size: cover;
+  background-repeat: no-repeat;
 }
