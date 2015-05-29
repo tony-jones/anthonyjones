@@ -56,7 +56,7 @@
             <div class="image-caption center-align">
               <?php echo the_post_thumbnail_caption(); ?>
             </div>
-            <div class="col s12 m9 l8 offset-l2">
+            <div class="col s12 m12 l8 offset-l2">
               <?php get_template_part('share'); ?>   
               <div class="container">
 	              <div class="flow-text">
@@ -101,7 +101,7 @@
             <?php $key_5 = get_post_meta( get_the_ID(), 'title_five', true ); ?>
             <?php $key_6 = get_post_meta( get_the_ID(), 'title_six', true ); ?>
 
-            <div class="col hide-on-small-only m2 l2">
+            <div class="col hide-on-med-and-down m2 l2">
 		          <div class="tabs-wrapper">
 					      <ul class="section table-of-contents">
                   <?php 

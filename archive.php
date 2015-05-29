@@ -11,17 +11,9 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main" style="margin-top:100px">
-			<div class="container">
-			 <div class="row">
-			  <div class="col s12 offset-s1">
 			  <?php if ( have_posts() ) : ?>
 
-			
-				<?php
-					the_archive_title( '<h3 class="page-title">', '</h3>' );
-					the_archive_description( '<div class="taxonomy-description">', '</div>' );
-				?>
-				
+		
 
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
@@ -43,9 +35,7 @@ get_header(); ?>
 			<?php get_template_part( 'content', 'none' ); ?>
 
 		<?php endif; ?>
-		</div>
-		</div>
-		</div>
+	
 		</main><!-- #main -->
 	</div><!-- #primary -->
  

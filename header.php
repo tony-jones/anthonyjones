@@ -78,7 +78,7 @@
             </div>
           </div>
           <div id="title" data-0="font-size: 45px; padding: 0 0 24px 35px;" data-128="font-size: 26px; padding: 0 0 15px 50px;">
-            <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
+            <a id="home-logo" href="<?php echo esc_url( home_url( '/' ) ); ?>">
               <?php bloginfo( 'name' ); ?><span class="orange-text text-darken-2">.</span>
             </a>           
           </div>

@@ -2,21 +2,28 @@ $title-font: 'Lato', sans-serif;
 $body-font: 'Open Sans', sans-serif;
 
 a {
+  color: #099DB0;
   text-decoration: none;
 }
 
 html{
   line-height: 1.5;
   
-  @media only screen and (min-width: 0) {
+  @media only screen and (max-width: $small-screen) {
     font-size: 14px;
+    h1 {
+      font-size: 2.56rem;
+    }
+    h3 {
+      font-size: 1.5rem;
+    }
   }
   
-  @media only screen and (min-width: $medium-screen) {
+  @media only screen and (max-width: $medium-screen) {
     font-size: 14.5px;
   }
   
-  @media only screen and (min-width: $large-screen) {
+  @media only screen and (max-width: $large-screen) {
     font-size: 15px;
   }
   font-family: $body-font;
@@ -26,7 +33,9 @@ html{
 h1, h2, h3, h4, h5, h6 {
   font-family: $title-font;
 }
-
+h4 {
+  padding-top: 25px;
+}
 // Header Styles
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; }
 h1 { font-size: $h1-fontsize; line-height: 1.1*$h1-fontsize; margin: ($h1-fontsize / 2) 0 ($h1-fontsize / 2.5) 0;}

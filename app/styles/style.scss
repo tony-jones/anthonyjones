@@ -129,87 +129,12 @@ anthonyjones is based on Underscores http://underscores.me/, (C) 2012-2015 Autom
 }
 
 /*--------------------------------------------------------------
-# Content
+#  Content
 --------------------------------------------------------------*/
-// rainbow.js syntax highlighting
-code,kbd,tt {
-border:1px solid #eaeaea;
-font-size:16px;
-line-height:32px;
-margin:0 2px;
-padding:0 5px;
+.crayon-theme-github-white {
+  border-radius: 3px;
+  background-color: #FFFFFF;
 }
-
-pre code {
-border:0;
--moz-border-radius:0;
--webkit-border-radius:0;
-border-radius:0;
-margin:0;
-padding:0;
-}
-
-code,kbd,pre,tt {
-font-family:Consolas,'Liberation Mono',Courier,monospace;
-color:#444;
-background:#ffffff;
--moz-border-radius:3px;
--webkit-border-radius:3px;
-border-radius:3px;
-}
-
-pre,pre code {
-font-size:16px;
-}
-
-pre .comment {
-color:#998;
-}
-
-pre .support {
-color:#0086B3;
-}
-
-pre .tag,pre .tag-name {
-color:navy;
-}
-
-pre .css-property,pre .css-value,pre .support.namespace,pre .vendor-prefix {
-color:#333;
-}
-
-pre .constant.numeric,pre .hex-color,pre .keyword.unit {
-font-weight:400;
-color:#099;
-}
-
-pre .entity.class {
-color:#458;
-}
-
-pre .entity.function,pre .entity.id {
-color:#900;
-}
-
-pre .attribute,pre .variable {
-color:teal;
-}
-
-pre .string,pre .support.value {
-font-weight:400;
-color:#d14;
-}
-
-pre .regexp {
-color:#009926;
-}
-pre {
-  word-wrap: initial;
-  padding: 20px 30px;
-  line-height: 19px;
-  margin: 30px 0;
-}
-
 /*--------------------------------------------------------------
 # To be organized
 --------------------------------------------------------------*/
@@ -279,12 +204,8 @@ background-size: cover;
 #page-faq .card-panel h3 {
   margin: 0 0 16px 0;
 }
-a {
-  color: #383838;
-  text-decoration: none; 
-}
 a:visited {
-  color: #383838;
+  color: #551A8B;
 }
 a.sharer {
   color: white;
@@ -743,7 +664,54 @@ span.badge.category {
   top: -5%;
   padding: 0px 9px;
 }
-
+span.badge.Decor {
+  font-weight: 300;
+  font-size: .8rem;
+  color: #fff;
+  background-color: #f57c00;
+  border-radius: 2px;
+  float:left;
+  margin-top: 10px;
+}
+h5.Decor {
+  color: #f57c00;
+}
+span.badge.UX {
+  font-weight: 300;
+  font-size: .8rem;
+  color: #fff;
+  background-color: #3C72C5;
+  border-radius: 2px;
+  float:left;
+  margin-top: 10px;
+}
+h5.UX {
+  color: #3C72C5;
+}
+span.badge.Code {
+  font-weight: 300;
+  font-size: .8rem;
+  color: #fff;
+  background-color: #3C72C5;
+  border-radius: 2px;
+  float:left;
+  margin-top: 10px;
+}
+h5.Code {
+  color: #3C72C5;
+}
+span.badge.Accessibility {
+  font-weight: 300;
+  font-size: .8rem;
+  color: #fff;
+  background-color: #39AE48;
+  border-radius: 2px;
+  float:left;
+  margin-top: 10px;
+}
+h5.Accessibility {
+  color: #39AE48;
+}
 span.badge.Development {
   font-weight: 300;
   font-size: .8rem;
@@ -933,10 +901,10 @@ body {
 .blog-item:hover {
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.02),0 2px 10px 0 rgba(0, 0, 0, 0.08);
 }
-.current_page_item {
+/* .current_page_item {
   font-weight: 600;
   color: #383838;
-}
+} */
 .sidenav-logo {
   height: 160px;
   background-image: url('//localhost:3000/wp-content/uploads/2015/05/apple-iphone-books-desk.jpg');
@@ -945,4 +913,41 @@ body {
   background-attachment: scroll;
   -o-background-size: cover;
   background-repeat: no-repeat;
+}
+
+a.modal-trigger {
+    -webkit-animation-name: example; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 6s; /* Chrome, Safari, Opera */
+    animation-name: example;
+    animation-duration: 6s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes example {
+    0%   {color: #099DB0;}
+    25%  {color: #f57c00;}
+    50%  {color: #3C72C5;}
+    100% {color: #EA5B42;}
+}
+
+/* Standard syntax */
+@keyframes example {
+    0%   {color: #099DB0;;}
+    25%  {color: #f57c00;}
+    50%  {color: #3C72C5;}
+    100% {color: #EA5B42;}
+}
+.caption-secondary {
+  margin-top: -30px;
+}
+.radius-three {
+  border-radius: 3px;
+}
+#home-logo {
+  color: #383838;
+}
+#home-logo:visited {
+  color: #383838;
 }

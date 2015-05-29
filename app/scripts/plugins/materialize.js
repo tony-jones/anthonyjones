@@ -1916,7 +1916,7 @@ $(document).ready(function(){
           });
         }
         //delay close, so wave effect can be shown
-       $('.close-arrow').click( function() {
+       $('.close-nav, .close-arrow').click( function() {
          setTimeout(function(){
          	removeMenu();
          }, 450);
