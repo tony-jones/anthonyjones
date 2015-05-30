@@ -112,72 +112,49 @@ get_header(); ?>
             <div class="col s12 m10 l8 offset-m1 offset-l2">
               <h4 class="center"> My Recent Positions </h4>
               <br>
-              <ul class="collapsible popout" data-collapsible="accordion">
-                <li>
-                  <div class="collapsible-header"><img src="/wp-content/uploads/2015/05/virginia.png" alt="uva" width="60">  &nbsp; UI UX Designer & Developer</div>
-                  <div class="collapsible-body">
-                    <div class="collapsible-headings">
-                      <h4 class="orange-text">University of Virginia</h4>
-                      <h6 class="grey-text">February 2014 – Present</h6>
-                    </div>
-                    <p> I design & develop user interfaces and custom software 
-                      applications with some awesome people in our Library IT and 
-                      Communications teams , designed to enhance user appeal, accessibility, 
-                      and overall functionality. Technologies I frequent are Rails, jQuery, 
-                      Polymer, Bootstrap, SASS, and WordPress.
-                    </p>
-                  </div>
-                </li>
-                <li>
-                  <div class="collapsible-header"><img src="/wp-content/uploads/2015/05/csc.png" alt="uva" width="40">  &nbsp; Front-End Engineer</div>
-                  <div class="collapsible-body">
-                    <div class="collapsible-headings">
-                      <h4 class="red-text">Computer Sciences Corporation (CSC)</h4>
-                      <h6 class="grey-text">January 2013 – February 2014</h6>
-                    </div>
-                    <p> On this project, I worked closely with a cross-functional team that includes engineers, product managers, 
-                      and business analysts to build New York's Health Benefit Exchange <a href="http://nysoh.ny.gov">NY State of Health</a>
-                    </p>
-                  </div>
-                </li>
-                <li>
-                  <div class="collapsible-header"><img src="/wp-content/uploads/2015/05/csc.png" alt="uva" width="40">  &nbsp; Java Web Developer</div>
-                  <div class="collapsible-body">
-                    <div class="collapsible-headings">
-                      <h4 class="red-text">Computer Sciences Corporation (CSC)</h4>
-                      <h6 class="grey-text">September 2012 – January 2013</h6>
-                    </div>
-                    <p> I provided a service-oriented architecture (SOA)-compliant for the construction of NYS's Health Benefit Exchange system. 
-                      Our major goal is to cover uninsured consumers, thus helping to create a healthier community and reducing overall healthcare costs.
-                    </p>
-                  </div>
-                </li>
-                <li>
-                  <div class="collapsible-header"><img src="/wp-content/uploads/2015/05/csc.png" alt="uva" width="40">  &nbsp; Programmer Analyst Associate Professional</div>
-                  <div class="collapsible-body">
-                    <div class="collapsible-headings">
-                      <h4 class="red-text">Computer Sciences Corporation (CSC)</h4>
-                      <h6 class="grey-text">June 2011 – September 2012</h6>
-                    </div>
-                    <p> Implemented programs and features for NYS’s Medicare and Medicaid system using Java EE architecture and IBM Rational Tools.
-                    </p>
-                  </div>
-                </li>
-                <li>
-                <div class="collapsible-header"><img src="/wp-content/uploads/2015/05/csc.png" alt="uva" width="40">  &nbsp; System Engineer Senior Assistant</div>
-                  <div class="collapsible-body">
-                    <div class="collapsible-headings">
-                      <h4 class="red-text">Computer Sciences Corporation (CSC)</h4>
-                      <h6 class="grey-text">August 2010 – May 2011</h6>
-                    </div>
-                    <p> Implemented, monitored, reporting day-to-day run and maintain engineering activities in multiple RDC Lines of Service 
-                     (Security, Architecture, Wintel, CNS (Network), Production Operations).  Provided assistant to CSC’s Global Security Solutions and was involved in security scans, 
-                     user permissions, and various security tools like Backtrack (via VMware).
-                    </p>
-                  </div>
-                </li>
-              </ul>
-              <br>
+               <ul class="collection">
+              <li class="collection-item avatar">
+                <i class="mdi-av-web circle orange darken-2"></i>
+                <span class="title">UI UX Designer & Developer</span>
+                <p>University of Virginia <br>
+                   Technologies: Rails, jQuery, Polymer, Bootstrap, SASS, and WordPress
+                </p>
+                <a href="#!" class="secondary-content"><i class="mdi-action-account-balance"></i></a>
+              </li>
+              <li class="collection-item avatar">
+                <i class="mdi-action-accessibility circle red"></i>
+                <span class="title">Front-End Engineer</span>
+                <p>Computer Sciences Corporation (CSC) <br>
+                   Built New York's Health Benefit Exchange <a href="http://www.nystateofhealth.ny.gov"> NY State of Health</a> (UX Team)
+                </p>
+                <a href="#!" class="secondary-content"><i class="mdi-communication-business"></i></a>
+              </li>
+              <li class="collection-item avatar">
+                <i class="mdi-device-developer-mode circle red"></i>
+                <span class="title">Java Web Developer</span>
+                <p>Computer Sciences Corporation (CSC) <br>
+                   Built New York's Health Benefit Exchange <a href="http://www.nystateofhealth.ny.gov"> NY State of Health</a> 
+                </p>
+                <a href="#!" class="secondary-content"><i class="mdi-communication-business"></i></a>
+              </li>
+              <li class="collection-item avatar">
+                <i class="mdi-action-bug-report circle red"></i>
+                <span class="title">Programmer Analyst Associate Professional</span>
+                <p>Computer Sciences Corporation (CSC) <br>
+                   Built custom applications for New York's <a href="http://www.emedny.org"> Medicare & Medicade System</a>
+                </p>
+                <a href="#!" class="secondary-content"><i class="mdi-communication-business"></i></a>
+              </li>
+              <li class="collection-item avatar">
+                <i class="mdi-hardware-memory circle red"></i>
+                <span class="title">System Engineer Senior Assistant</span>
+                <p>Computer Sciences Corporation (CSC) <br>
+                   Departments: Security, Architecture, Wintel, CNS (Network), Production Operations
+                </p>
+                <a href="#!" class="secondary-content"><i class="mdi-communication-business"></i></a>
+              </li>
+            </ul>
+            <br>
             </div>
           </div>
         </div>

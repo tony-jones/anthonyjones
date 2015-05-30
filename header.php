@@ -20,7 +20,6 @@
   <!--Let browser know website is optimized for mobile-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
   <meta name="keywords" content="" />
-  <meta name="description" content="<?php bloginfo( 'description' ); ?>">
   <meta name="author" content="Anthony Jones - @iamtonybagels">
 
   <link rel="profile" href="http://gmpg.org/xfn/11">
