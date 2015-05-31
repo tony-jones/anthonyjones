@@ -12,7 +12,7 @@
 <!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
 <!--[if IE 9 ]><html class="ie ie9" lang="en"> <![endif]-->
 <!--[if (gte IE 10)|!(IE)]><!-->
-<html <?php language_attributes(); ?>>
+<html id="skrollr-body" <?php language_attributes(); ?>>
 <head>
   <!-- Meta -->
   <meta charset="<?php bloginfo( 'charset' ); ?>">
@@ -51,7 +51,7 @@
   <?php wp_head(); ?>
 </head>
 
-<body id="skrollr-body" <?php body_class(); ?>>
+<body <?php body_class(); ?>>
 
 <div id="page" class="hfeed site">
   <span id="back-to-top" class="section scrollspy"></span>
@@ -95,12 +95,12 @@
             <i style="line-height: 39px; color:#383838" class="mdi-navigation-menu"></i>
           </a>
           <a href="<?php echo esc_url( home_url( '/' ) ); ?>" data-0="opacity: 1;" data-128="opacity: 0;" class="">
-            <img class="logo" src="/wp-content/uploads/2015/04/logo.png">
+            <img class="logo" src="/wp-content/uploads/2015/05/logo.png">
           </a>
           <ul id="nav-mobile" class="right">
-          <li>
+          <!-- <li>
             <a style="background: rgba(255, 255, 255, 0.97); box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);" class="btn-floating waves-effect grey clear-icon"><i style="line-height: 39px; color:#383838" class="mdi-action-search"></i></a>
-          </li>
+          </li> -->
             <!-- <li class="collection-item avatar">
               <img src="http://materializecss.com/images/yuna.jpg" alt="" class="circle">
             </li> -->

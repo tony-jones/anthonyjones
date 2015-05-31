@@ -10,7 +10,8 @@ get_header(); ?>
 <?php query_posts('post_type=post&post_status=publish&posts_per_page=10&paged='. get_query_var('paged')); ?>
 
   <div id="primary" class="content-area">
-    <main id="main" class="site-main" role="main" style="margin-top:125px;">
+    <div class="hide-on-small-only" style="margin-top: 125px;"></div>
+    <main id="main" class="site-main" role="main">
       <?php $c = 0; $style = '';
       if ( have_posts() ) : 
         while ( have_posts() ) : the_post(); 

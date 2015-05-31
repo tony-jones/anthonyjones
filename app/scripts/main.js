@@ -28,9 +28,12 @@
       accordion : false // A setting that changes the collapsible behavior to expandable instead of the default accordion style
     });
 
-    skrollr.init({
-      smoothScrolling: true,
-    });
+    if(!(/Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera)){
+      skrollr.init({
+        smoothScrolling: true,
+        forceHeight: false
+      });
+    }
 
     // Floating-Fixed table of contents
     if ($('nav').length && $('.tabs-wrapper').length) {

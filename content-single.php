@@ -3,7 +3,7 @@
  * @package anthonyjones
  */
 ?>
-
+  
   <!-- Set your background image for this header on the line below. -->
   <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
     <main role="main">
