@@ -651,8 +651,11 @@ span.badge.category {
     box-shadow: 0 0 1px rgba(0,0,0,.15);
   }
   #modal1 {
-  width: 90%;
-}
+    width: 90%;
+  }
+  .badges.inverse.right{
+    display:none;
+  }
 }
 @media only screen and (max-width: 993px) {
   .modal .modal-content {
