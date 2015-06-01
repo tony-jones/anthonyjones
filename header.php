@@ -95,7 +95,7 @@
             <i style="line-height: 39px; color:#383838" class="mdi-navigation-menu"></i>
           </a>
           <a href="<?php echo esc_url( home_url( '/' ) ); ?>" data-0="opacity: 1;" data-128="opacity: 0;" class="">
-            <img class="logo" src="/wp-content/uploads/2015/05/logo.png">
+            <img class="logo" src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="Logo for Anthony Jones" />
           </a>
           <ul id="nav-mobile" class="right">
           <!-- <li>

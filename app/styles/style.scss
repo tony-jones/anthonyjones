@@ -16,17 +16,15 @@ Use it to make something cool, have fun, and share what you've learned with othe
 anthonyjones is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
 */
 
+
 @charset "UTF-8";
+
 
 // import all components
 @import "components/components";
 
 // import html5 boilerplate 
 @import '_h5bp';
-
-// import Font Awesome icons
-@import 'font-awesome/font-awesome';
-
 
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS: If you don't use Sass, just add styles here.
@@ -156,6 +154,9 @@ ul.table-of-contents a.active {
     border-left: 2px solid #ff9800;
     padding: 16px 35px 35px 35px;
 }
+ul.table-of-contents a:visited {
+    color: #757575;
+}
 ul.table-of-contents a:hover {
     color: #a8a8a8;
     padding: 16px 35px 35px 35px;
@@ -185,8 +186,7 @@ background-size: cover;
 
 .image-caption {
   font-size: 12px;
-  padding-bottom:20px;
-  padding-top:10px;
+  padding: 10px 10px 20px 10px;
   color: #9E9E9E;
 }
 #page-faq .card-panel ul li {
@@ -226,6 +226,7 @@ nav.orange ul li {
 }
 .logo {
   max-height: 35px;
+  max-width: 52.5091px;
   padding-top: 0px;
   padding-left: 15px;
 }
@@ -361,11 +362,12 @@ nav a.button-collapse {
   color: #383838;
   border-left: solid 1px rgba(0,0,0,0.05);
   text-transform: uppercase;
+  display: inline-block;
 }
 .next-article a.modal-trigger {
   padding: 17px 15px;
   margin-left: -15px;
-  margin-right: -12px;
+  //margin-right: -12px;
 }
 
 #loadingbar.waiting dd, #loadingbar.waiting dt {
@@ -635,6 +637,28 @@ span.badge.category {
   margin-left: 10px;
   margin-bottom: 80px;
 }
+.article-link {
+  cursor: pointer; 
+  display: block; 
+  overflow: hidden; 
+  padding: 50px;
+}
+@media only screen and (max-width: 601px) {
+  .article-link {
+    padding: 10px;
+  }
+  .blog-item {
+    box-shadow: 0 0 1px rgba(0,0,0,.15);
+  }
+  #modal1 {
+  width: 90%;
+}
+}
+@media only screen and (max-width: 993px) {
+  .modal .modal-content {
+    padding: 17px 15px 0px 15px;
+  }
+}
 @media only screen and (min-width: 601px) {
   #disqus_thread {
     width: 70%;
@@ -645,7 +669,6 @@ span.badge.category {
   #disqus_thread {
     margin-left: 17.66667%;
     width: 63.66667%;
-
   }
 }
 .card.small {
@@ -832,11 +855,12 @@ aside {
 .top-article a {
   border-left: solid 1px rgba(0,0,0,.05);
   padding: 17px 20px;
-  margin-right: -20px;
+  //margin-right: -20px;
 }
 .top-article {
   padding: 17px 15px 17px 0px;
   margin-right: -4px;
+  display: inline-block;
 }
 #staggered-test li {
   opacity: 0;
@@ -904,7 +928,7 @@ body {
 } */
 .sidenav-logo {
   height: 160px;
-  background-image: url('//localhost:3000/wp-content/uploads/2015/05/apple-iphone-books-desk.jpg');
+  background-image: url('http://www.anthonyjones.me/wp-content/uploads/2015/05/apple-iphone-books-desk.jpg');
   background-position: center top;
   background-size: cover;
   background-attachment: scroll;
@@ -951,3 +975,38 @@ a.modal-trigger {
 #menu-main-navigation {
   text-transform: uppercase;
 }
+nav {
+  box-shadow: none;
+}
+.social-icons {
+  display: inline-flex;
+}
+.home-section {
+  padding: 50px 0px;
+}
+.card .card-content {
+  height: 200px;
+}
+.card-left-right {
+  padding: 0px 25px;
+}
+.modal-content a.social-share {
+  padding: 0px;
+}
+.fixed-social-links {
+  bottom: 40px;
+}
+.fixed-action-btn {
+  bottom: 64px; 
+  right: 24px;
+}
+.btn-padding {
+  margin: 10px 0px;
+}
+.btn-padding:visited {
+  color: white;
+}
+.footer-title {
+  font-size: 1.2rem;
+}
+

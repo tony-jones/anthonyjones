@@ -44,6 +44,15 @@ function anthonyjones_setup() {
 	 */
 	add_theme_support( 'title-tag' );
 
+  // Add support for a site logo upload.
+	$args = array(
+	'width'         => 180.5,
+	'height'        => 170,
+	'default-image' => get_template_directory_uri() . '/images/header.jpg',
+	'uploads'       => true, 
+  );
+  add_theme_support( 'custom-header', $args );
+
 	/*
 	 * Enable support for Post Thumbnails on posts and pages.
 	 *
@@ -195,6 +204,7 @@ function anthonyjones_scripts() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'anthonyjones_scripts' );
+
 
 /**
  * Implement the Custom Header feature.

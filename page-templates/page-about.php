@@ -35,24 +35,24 @@ get_header(); ?>
                 <div class="row center">
                   <div class="col s12 m6 l8 offset-m3 offset-l2">
                     <div class="social-media">
-                      <ul style="display: inline-flex;">
+                      <ul class="social-icons">
                         <li style="margin-right: 20px;">
-                          <a href="https://twitter.com/iamtonybagels" class="blue lighten-1 my-social waves-effect waves-circle waves-light btn-floating">
+                          <a href="https://twitter.com/iamtonybagels" class="blue lighten-1 my-social waves-effect waves-circle waves-light btn-floating" target="_blank">
                             <i class="fa fa-twitter"></i>
                           </a>
                         </li>
                         <li style="margin-right: 20px;">
-                          <a href="https://github.com/tony-jones" class="red darken-4 my-social waves-effect waves-circle waves-light btn-floating">
+                          <a href="https://github.com/tony-jones" class="red darken-4 my-social waves-effect waves-circle waves-light btn-floating" target="_blank">
                             <i class="fa fa-github"></i>
                           </a>
                         </li>
                         <li style="margin-right: 20px;">
-                          <a href="https://www.linkedin.com/profile/view?id=118712118&trk=hp-identity-photo" class="blue darken-2 my-social waves-effect waves-circle waves-light btn-floating">
+                          <a href="https://www.linkedin.com/profile/view?id=118712118&trk=hp-identity-photo" class="blue darken-2 my-social waves-effect waves-circle waves-light btn-floating" target="_blank">
                             <i class="fa fa-linkedin-square"></i>
                           </a>
                         </li>
                         <li>
-                          <a style="color:#3f729b;" href="https://instagram.com/iamtonybagels" class="black darken-1 my-social waves-effect waves-circle waves-light btn-floating">
+                          <a style="color:#3f729b;" href="https://instagram.com/iamtonybagels" class="black darken-1 my-social waves-effect waves-circle waves-light btn-floating" target="_blank">
                             <i class="fa fa-instagram"></i>
                           </a>
                         </li>
@@ -64,11 +64,11 @@ get_header(); ?>
             <br><br>
           </div>
         </div>
-      <div class="container white">
-        <div class="section">
+      <div class="home-section white">
+        <div class="section card-left-right">
           <div class="row">
-            <div class="col s12 m10 l8 offset-m1 offset-l2 center">
-              <h3><i style="font-size:45px" class="mdi-action-accessibility"></i></h3>
+            <div class="col s12 m10 l8 offset-m1 offset-l2">
+              <h3 class="center"><i style="font-size:45px" class="mdi-action-accessibility"></i></h3>
               <?php while ( have_posts() ) : the_post(); ?>
               <?php get_template_part( 'content', 'page' ); ?>
               <?php endwhile; // end of the loop. ?>
@@ -76,43 +76,43 @@ get_header(); ?>
           </div>
         </div>
       </div>
-      <div class="container">
-        <div class="section">
+      <div class="home-section teal">
+        <div class="section card-left-right">
           <!--   Icon Section   -->
           <div class="row">
           <div class="col s12 m10 l8 offset-m1 offset-l2">
             <div class="col s12 m4">
               <div class="icon-block">
-                <h2 class="center black-text"><i class="mdi-av-web"></i></h2>
-                <h5 class="center">Interface Design</h5>
-                <p class="light">Great user interface goes deeper than pretty pixels. We create interfaces that are delightful and intuitive.</p>
+                <h2 class="center white-text"><i class="mdi-av-web"></i></h2>
+                <h5 class="center white-text">Interface Design</h5>
+                <p class="light white-text">Great user interface goes deeper than pretty pixels. We create interfaces that are delightful and intuitive.</p>
               </div>
             </div>
             <div class="col s12 m4">
               <div class="icon-block">
-                <h2 class="center black-text"><i class="mdi-social-mood"></i></h2>
-                <h5 class="center">User Experience</h5>
-                <p class="light">Every interface needs a solid foundation. Well-executed UX exposes and helps us diagnose design challenges before they become problems.</p>
+                <h2 class="center white-text"><i class="mdi-social-mood"></i></h2>
+                <h5 class="center white-text">User Experience</h5>
+                <p class="light white-text">Every interface needs a solid foundation. Well-executed UX exposes and helps us diagnose design challenges before they become problems.</p>
               </div>
             </div>
             <div class="col s12 m4">
               <div class="icon-block">
-                <h2 class="center black-text"><i class="mdi-device-developer-mode"></i></h2>
-                <h5 class="center">Development</h5>
-                <p class="light">We love bringing our concepts to life, whether it's on the web, desktop, mobile, or all three, using a variety of languages and platforms.</p>
+                <h2 class="center white-text"><i class="mdi-device-developer-mode"></i></h2>
+                <h5 class="center white-text">Development</h5>
+                <p class="light white-text">We love bringing our concepts to life, whether it's on the web, desktop, mobile, or all three, using a variety of languages and platforms.</p>
               </div>
             </div>
             </div>
           </div>
         </div>
       </div> 
-      <div class="container">
+      <div class="home-section red lighten-1">
         <div class="section">
          <div class="row">
             <div class="col s12 m10 l8 offset-m1 offset-l2">
-              <h4 class="center"> My Recent Positions </h4>
+              <h4 class="center white-text"> My Recent Positions </h4>
               <br>
-               <ul class="collection">
+               <ul class="z-depth-1 collection">
               <li class="collection-item avatar">
                 <i class="mdi-av-web circle orange darken-2"></i>
                 <span class="title">UI UX Designer & Developer</span>
@@ -159,13 +159,13 @@ get_header(); ?>
           </div>
         </div>
       </div> 
-      <div class="container grey lighten-2">
+      <div class="home-section orange lighten-1">
         <div class="section">
           <div class="row">
-          <div class="col s12 m10 l8 offset-m1 offset-l2">
-          <h2 class="center">Some of the tools I used in making this site</h2>
-
-          <div class="row">
+          <div class="col s12 m12 l0">
+          <h2 class="white-text center">Some of the tools I used in making this site</h2>
+          <br>
+          <div class="row card-left-right">
             <div class="col s12 m6 l4">
               <div class="card">
                 <div class="card-content">
@@ -192,7 +192,7 @@ get_header(); ?>
               <div class="card">
                 <div class="card-content">
                   <span class="card-title black-text">Materialize</span>
-                  <p>Materialize is a modern responsive front-end framework based on Google's Material Design principles.</p>
+                  <p>Materialize is a modern responsive front-end framework based on material design principles.</p>
                 </div>
                 <div class="card-action">
                   <a href="http://materializecss.com/">Visit Materialize</a>
@@ -214,7 +214,7 @@ get_header(); ?>
               <div class="card">
                 <div class="card-content">
                   <span class="card-title black-text">Sublime</span>
-                  <p>Sublime is my favorite text editor for code and markup. Great plugins, user friendly, and very customizable</p>
+                  <p>Sublime is my favorite text editor for code and markup (Great plugins, user-friendly, and very customizable).</p>
                 </div>
                 <div class="card-action">
                   <a href="http://www.sublimetext.com/">Visit Sublime</a>
@@ -238,11 +238,11 @@ get_header(); ?>
         </div>
       </div>
   
-      <div class="contact container">
-        <div class="section">
+      <div class="home-section contact">
+        <div class="section card-left-right">
           <div class="center">
-            <h4> Feel free to send me email. I'll do my best to get back to you quickly! </h4> <br>
-            <a class="btn grey darken-1" onclick="Materialize.toast('hello@anthonyjones.me', 4000)">Contact Me</a>
+            <h5> Feel free to send me email. I'll do my best to get back to you quickly! </h5> <br>
+            <a href="mailto:hello@anthonyjones.me" class="btn grey darken-1">Contact Me</a>
           </div>
         </div> 
       </div>  

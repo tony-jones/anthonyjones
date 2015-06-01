@@ -19,7 +19,7 @@
 
 (function($){
   $(function(){
-
+    
     $('.sidenav_button').sideNav();
     $('.scrollspy').scrollSpy();
     $('.modal-trigger').leanModal();
