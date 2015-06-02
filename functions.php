@@ -205,6 +205,12 @@ function anthonyjones_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'anthonyjones_scripts' );
 
+/**
+ * Load Enqueued Scripts in the Footer
+ *
+ * Automatically move JavaScript code to page footer, speeding up page loading time.
+ */
+
 
 /**
  * Implement the Custom Header feature.
