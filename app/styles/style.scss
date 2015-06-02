@@ -201,9 +201,6 @@ background-size: cover;
 #page-faq .card-panel h3 {
   margin: 0 0 16px 0;
 }
-a:visited {
-  color: #551A8B;
-}
 a.sharer {
   color: white;
 }
@@ -298,17 +295,17 @@ footer {
   height:55px;
 }
 nav ul a {
+  color: grey;
+  font-size: 13px;
+}
+nav ul a:hover {
   color: #383838;
   font-size: 13px;
 }
 nav ul a:visited {
-  color: #383838;
-  //color: #a8adb0;
-  font-size: 13px;
-}
-.footer-bar {
   
 }
+
 nav a.button-collapse {
   color: #383838;
 }
@@ -528,8 +525,11 @@ clip: rect(-6px,185px,14px,25px);
 .headroom--unpinned {
     transform: translateY(-100%);
 }
-.copyright {
-
+#menu-main-navigation {
+  color:grey;
+}
+#menu-main-navigation:hover {
+  color:black;
 }
 .btn-floating.btn-large {
   width: 55px;
@@ -685,7 +685,7 @@ span.badge.category {
 .close-button {
   position: absolute;
   right: 0%;
-  top: -5%;
+  top: -3%;
   padding: 0px 9px;
 }
 span.badge.Decor {
@@ -862,7 +862,7 @@ aside {
   //margin-right: -20px;
 }
 .top-article {
-  padding: 17px 0px 17px 0px;
+  padding: 17px 0px;
   margin-right: -4px;
   display: inline-block;
 }
@@ -1014,6 +1014,10 @@ nav {
 .footer-title {
   font-size: 1.2rem;
 }
+.heading-lr-pad {
+  padding: 0px 20px;  
+}
+
 /* http://prismjs.com/download.html?themes=prism&languages=markup+css+clike+javascript+csharp+java+php+ruby+scss&plugins=line-numbers */
 /**
  * prism.js default theme for JavaScript, CSS and HTML

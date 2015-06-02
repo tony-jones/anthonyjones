@@ -72,7 +72,7 @@
                 <img src="http://materializecss.com/images/yuna.jpg" alt="" class="circle">
               </li> -->
             </ul>
-            <div class="right" style="width:350px;">
+            <div class="right">
               <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'hide-on-med-and-down' ) ); ?>     
             </div>
           </div>

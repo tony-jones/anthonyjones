@@ -47,7 +47,7 @@ get_header(); ?>
                           </a>
                         </li>
                         <li style="margin-right: 20px;">
-                          <a href="https://www.linkedin.com/profile/view?id=118712118&trk=hp-identity-photo" class="blue darken-2 my-social waves-effect waves-circle waves-light btn-floating" target="_blank">
+                          <a href="https://www.linkedin.com/pub/anthony-jones/33/90b/186" class="blue darken-2 my-social waves-effect waves-circle waves-light btn-floating" target="_blank">
                             <i class="fa fa-linkedin-square"></i>
                           </a>
                         </li>
@@ -85,21 +85,21 @@ get_header(); ?>
               <div class="icon-block">
                 <h2 class="center white-text"><i class="mdi-av-web"></i></h2>
                 <h5 class="center white-text">Interface Design</h5>
-                <p class="light white-text">Great user interface goes deeper than pretty pixels. We create interfaces that are delightful and intuitive.</p>
+                <p class="light white-text">Creating great content experiences through design is my goal. I create interfaces that are fun and help users interact with content, but not compete with it.</p>
               </div>
             </div>
             <div class="col s12 m4">
               <div class="icon-block">
                 <h2 class="center white-text"><i class="mdi-social-mood"></i></h2>
                 <h5 class="center white-text">User Experience</h5>
-                <p class="light white-text">Every interface needs a solid foundation. Well-executed UX exposes and helps us diagnose design challenges before they become problems.</p>
+                <p class="light white-text">In the world of opinionated design, I believe that a data-driven UX stratgey is key. I let real data inform my design decisions.</p>
               </div>
             </div>
             <div class="col s12 m4">
               <div class="icon-block">
                 <h2 class="center white-text"><i class="mdi-device-developer-mode"></i></h2>
                 <h5 class="center white-text">Development</h5>
-                <p class="light white-text">We love bringing our concepts to life, whether it's on the web, desktop, mobile, or all three, using a variety of languages and platforms.</p>
+                <p class="light white-text">With a strong background in object-oriented programming, I strive to deliver code that is well-documented, standards compliant, and secure.  </p>
               </div>
             </div>
             </div>
@@ -108,53 +108,58 @@ get_header(); ?>
       </div> 
       <div class="home-section red lighten-1">
         <div class="section">
-         <div class="row">
+          <div class="row">
             <div class="col s12 m10 l8 offset-m1 offset-l2">
               <h4 class="center white-text"> My Recent Positions </h4>
               <br>
-               <ul class="z-depth-1 collection">
-              <li class="collection-item avatar">
-                <i class="mdi-av-web circle orange darken-2"></i>
-                <span class="title">UI UX Designer & Developer</span>
-                <p>University of Virginia <br>
+              <ul class="z-depth-1 collection">
+                <li class="collection-item avatar">
+                  <i class="mdi-av-web circle orange darken-2"></i>
+                  <span class="title">UI UX Designer & Developer</span>
+                  <p>University of Virginia <br>
                    Technologies: Rails, jQuery, Polymer, Bootstrap, SASS, and WordPress
-                </p>
-                <a href="#!" class="secondary-content"><i class="mdi-action-account-balance"></i></a>
-              </li>
-              <li class="collection-item avatar">
-                <i class="mdi-action-accessibility circle red"></i>
-                <span class="title">Front-End Engineer</span>
-                <p>Computer Sciences Corporation (CSC) <br>
+                  </p>
+                  <a href="#!" class="secondary-content"><i class="mdi-action-account-balance"></i></a>
+                </li>
+                <li class="collection-item avatar">
+                  <i class="mdi-action-accessibility circle red"></i>
+                  <span class="title">Front-End Engineer</span>
+                  <p>Computer Sciences Corporation (CSC) <br>
                    Built New York's Health Benefit Exchange <a href="http://www.nystateofhealth.ny.gov"> NY State of Health</a> (UX Team)
-                </p>
-                <a href="#!" class="secondary-content"><i class="mdi-communication-business"></i></a>
-              </li>
-              <li class="collection-item avatar">
-                <i class="mdi-device-developer-mode circle red"></i>
-                <span class="title">Java Web Developer</span>
-                <p>Computer Sciences Corporation (CSC) <br>
-                   Built New York's Health Benefit Exchange <a href="http://www.nystateofhealth.ny.gov"> NY State of Health</a> 
-                </p>
-                <a href="#!" class="secondary-content"><i class="mdi-communication-business"></i></a>
-              </li>
-              <li class="collection-item avatar">
-                <i class="mdi-action-bug-report circle red"></i>
-                <span class="title">Programmer Analyst Associate Professional</span>
-                <p>Computer Sciences Corporation (CSC) <br>
-                   Built custom applications for New York's <a href="http://www.emedny.org"> Medicare & Medicade System</a>
-                </p>
-                <a href="#!" class="secondary-content"><i class="mdi-communication-business"></i></a>
-              </li>
-              <li class="collection-item avatar">
-                <i class="mdi-hardware-memory circle red"></i>
-                <span class="title">System Engineer Senior Assistant</span>
-                <p>Computer Sciences Corporation (CSC) <br>
-                   Departments: Security, Architecture, Wintel, CNS (Network), Production Operations
-                </p>
-                <a href="#!" class="secondary-content"><i class="mdi-communication-business"></i></a>
-              </li>
-            </ul>
-            <br>
+                  </p>
+                  <a href="#!" class="secondary-content"><i class="mdi-communication-business"></i></a>
+                </li>
+                <li class="collection-item avatar">
+                  <i class="mdi-device-developer-mode circle red"></i>
+                  <span class="title">Java Web Developer</span>
+                  <p>Computer Sciences Corporation (CSC) <br>
+                     Built New York's Health Benefit Exchange <a href="http://www.nystateofhealth.ny.gov"> NY State of Health</a> 
+                  </p>
+                  <a href="#!" class="secondary-content"><i class="mdi-communication-business"></i></a>
+                </li>
+                <li class="collection-item avatar">
+                  <i class="mdi-action-bug-report circle red"></i>
+                  <span class="title">Programmer Analyst Associate Professional</span>
+                  <p>Computer Sciences Corporation (CSC) <br>
+                     Built custom applications for New York's <a href="http://www.emedny.org"> Medicare & Medicade System</a>
+                  </p>
+                  <a href="#!" class="secondary-content"><i class="mdi-communication-business"></i></a>
+                </li>
+                <li class="collection-item avatar">
+                  <i class="mdi-hardware-memory circle red"></i>
+                  <span class="title">System Engineer Senior Assistant</span>
+                  <p>Computer Sciences Corporation (CSC) <br>
+                     Departments: Security, Architecture, Wintel, CNS (Network), Production Operations
+                  </p>
+                  <a href="#!" class="secondary-content"><i class="mdi-communication-business"></i></a>
+                </li>
+              </ul>
+              <br>
+              <div class="center">
+                <h6 class="white-text">Visit me on Linkedin for more info.</h6>
+                <br>
+                <a href="https://www.linkedin.com/pub/anthony-jones/33/90b/186" class="no-visited btn blue darken-1" target="_blank">Linkedin</a>
+              </div>
             </div>
           </div>
         </div>
@@ -163,7 +168,7 @@ get_header(); ?>
         <div class="section">
           <div class="row">
           <div class="col s12 m12 l0">
-          <h2 class="white-text center">Some of the tools I used in making this site</h2>
+          <h4 class="heading-lr-pad white-text center">Some of the tools I used in making this site</h4>
           <br>
           <div class="row card-left-right">
             <div class="col s12 m6 l4">
@@ -173,7 +178,7 @@ get_header(); ?>
                   <p>Sass is the most mature, stable, and powerful CSS extension language out there. But LESS is good also.</p>
                 </div>
                 <div class="card-action">
-                  <a href="http://sass-lang.com/">Visit SASS</a>
+                  <a href="http://sass-lang.com/" target="_blank">Visit SASS</a>
                 </div>
               </div>
             </div>
@@ -184,7 +189,7 @@ get_header(); ?>
                   <p>Gulp is a build system that can improve how you develop websites by automating common tasks.</p>
                 </div>
                 <div class="card-action">
-                  <a href="http://gulpjs.com/">Visit Gulp</a>
+                  <a href="http://gulpjs.com/" target="_blank">Visit Gulp</a>
                 </div>
               </div>
             </div>
@@ -195,7 +200,7 @@ get_header(); ?>
                   <p>Materialize is a modern responsive front-end framework based on material design principles.</p>
                 </div>
                 <div class="card-action">
-                  <a href="http://materializecss.com/">Visit Materialize</a>
+                  <a href="http://materializecss.com/" target="_blank">Visit Materialize</a>
                 </div>
               </div>
             </div>
@@ -206,7 +211,7 @@ get_header(); ?>
                   <p>WordPress is one of the easiest and most flexible website content management systems to develop with. </p>
                 </div>
                 <div class="card-action">
-                  <a href="http://wordpress.com/">Visit WordPress</a>
+                  <a href="http://wordpress.com/" target="_blank">Visit WordPress</a>
                 </div>
               </div>
             </div>
@@ -217,7 +222,7 @@ get_header(); ?>
                   <p>Sublime is my favorite text editor for code and markup (Great plugins, user-friendly, and very customizable).</p>
                 </div>
                 <div class="card-action">
-                  <a href="http://www.sublimetext.com/">Visit Sublime</a>
+                  <a href="http://www.sublimetext.com/" target="_blank">Visit Sublime</a>
                 </div>
               </div>
             </div>
@@ -228,7 +233,7 @@ get_header(); ?>
                   <p>A scrolling animation javascript library. It works well with mobile (Android, iOS, etc.) and desktop screens</p>
                 </div>
                 <div class="card-action">
-                  <a href="https://github.com/Prinzhorn/skrollr">Visit Skrollr</a>
+                  <a href="https://github.com/Prinzhorn/skrollr" target="_blank">Visit Skrollr</a>
                 </div>
               </div>
             </div>

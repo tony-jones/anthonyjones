@@ -10,7 +10,7 @@
 get_header(); ?>
 
 	<div id="primary" class="content-area">
-	  <div class="hide-on-small-only" style="margin-top: -100px;"></div>
+	  <div class="hide-on-small-only" style="margin-top: 100px;"></div>
     <main id="main" class="site-main" role="main">
 			  <?php if ( have_posts() ) : ?>
 
@@ -41,4 +41,5 @@ get_header(); ?>
 	</div><!-- #primary -->
  
 <?php get_sidebar(); ?>
+<div class="footer-padding"></div>
 <?php get_footer(); ?>

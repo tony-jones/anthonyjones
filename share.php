@@ -22,7 +22,7 @@
 ?>
 
 <div class="fixed-action-btn hide-on-small-only">
-  <a class="btn-floating btn-large grey darken-3">
+  <a class="tooltipped btn-floating btn-large grey darken-3" data-position="left" data-delay="50" data-tooltip="Share this Article!">
     <i class="large mdi-social-share"></i>
   </a>
   <ul style="fixed-social-links">
