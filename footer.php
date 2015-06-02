@@ -22,7 +22,7 @@
             <div class="waves-effect waves-black top-article">
               <a href="#back-to-top">TOP <i class="fa fa-caret-square-o-up"></i></a>
             </div>
-            <div class="waves-effect waves-black next-article">
+            <div class="waves-effect waves-light next-article">
               <a rel="next" class="modal-trigger" href="#modal3">More Articles <i class="mdi-navigation-arrow-forward"></i></a>      
             </div>
           </div>

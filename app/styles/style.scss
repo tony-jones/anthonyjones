@@ -359,13 +359,14 @@ nav a.button-collapse {
 }
 .next-article {
   padding: 17px;
-  color: #383838;
   border-left: solid 1px rgba(0,0,0,0.05);
   text-transform: uppercase;
   display: inline-block;
+  background: #099DB0;
 }
 .next-article a.modal-trigger {
-  padding: 17px 15px;
+  //padding: 17px 15px;
+  padding: 17px 0px 0px 20px;
   margin-left: -15px;
   //margin-right: -12px;
 }
@@ -856,7 +857,7 @@ aside {
   max-width: 150px;
 }
 .top-article a {
-  border-left: solid 1px rgba(0,0,0,.05);
+  border-left: solid 2px rgba(0,0,0,.05);
   padding: 17px 20px;
   //margin-right: -20px;
 }
@@ -940,12 +941,13 @@ body {
 }
 
 a.modal-trigger {
-    -webkit-animation-name: example; /* Chrome, Safari, Opera */
-    -webkit-animation-duration: 6s; /* Chrome, Safari, Opera */
+    /* -webkit-animation-name: example; 
+    -webkit-animation-duration: 6s; 
     animation-name: example;
     animation-duration: 6s;
     -webkit-animation-iteration-count: infinite;
-    animation-iteration-count: infinite;
+    animation-iteration-count: infinite; */
+    color: white;
 }
 
 /* Chrome, Safari, Opera */
