@@ -26,7 +26,7 @@
               <div class="badges center">
               <?php echo get_the_category_list(', '); ?>
               </div>
-              <h1 class="header center white-text"><?php the_title(); ?></h1>
+              <h1 class="title-padding header center white-text"><?php the_title(); ?></h1>
               <div class="row center">
                 <h5 class="light header col s12 white-text"><?php get_the_subtitle( $post ); ?></h5>
               </div>

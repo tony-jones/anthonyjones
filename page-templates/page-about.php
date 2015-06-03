@@ -113,7 +113,7 @@ get_header(); ?>
               <br>
               <ul class="z-depth-1 collection">
                 <li class="collection-item avatar">
-                  <i class="mdi-av-web circle orange darken-2"></i>
+                  <i class="mdi-av-web circle orange"></i>
                   <span class="title">UI/UX Designer & Developer</span>
                   <p>University of Virginia <br>
                    Technologies: Rails, jQuery, Polymer, Bootstrap, SASS, and WordPress
