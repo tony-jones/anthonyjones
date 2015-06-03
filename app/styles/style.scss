@@ -665,6 +665,9 @@ span.badge.category {
   .badges.inverse.right{
     display:none;
   }
+  .about-bg {
+    margin-top:-100px;
+  }
 }
 @media only screen and (max-width: 993px) {
   .modal .modal-content {
@@ -675,6 +678,9 @@ span.badge.category {
   #disqus_thread {
     width: 70%;
     margin-left: 25px;
+  }
+  .about-bg {
+    margin-top:-100px;
   }
 }
 @media only screen and (min-width: 993px) {
