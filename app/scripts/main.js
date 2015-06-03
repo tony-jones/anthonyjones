@@ -24,10 +24,6 @@
     $('.scrollspy').scrollSpy();
     $('.modal-trigger').leanModal();
 
-    $('.collapsible').collapsible({
-      accordion : false // A setting that changes the collapsible behavior to expandable instead of the default accordion style
-    });
-
     if(!(/Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera)){
       skrollr.init({
         smoothScrolling: true,

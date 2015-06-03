@@ -355,15 +355,14 @@ nav a.button-collapse {
   height: 0;
 }
 .next-article {
-  padding: 17px;
+  padding: 17px 0px 17px 17px;
   border-left: solid 1px rgba(0,0,0,0.05);
   text-transform: uppercase;
   display: inline-block;
   background: #099DB0;
 }
 .next-article a.modal-trigger {
-  //padding: 17px 15px;
-  padding: 17px 0px 0px 20px;
+  padding: 17px 15px 15px 20px;
   margin-left: -15px;
   //margin-right: -12px;
 }
@@ -1034,7 +1033,6 @@ code[class*="language-"],
 pre[class*="language-"] {
   color: black;
   text-shadow: 0 1px white;
-  font-family: Consolas, Monaco, 'Andale Mono', monospace;
   direction: ltr;
   text-align: left;
   white-space: pre;
