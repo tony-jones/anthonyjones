@@ -26,7 +26,7 @@
               <a href="#back-to-top">TOP <i class="fa fa-caret-square-o-up"></i></a>
             </div>
             <div class="waves-effect waves-light next-article">
-              <a rel="next" href="#modal3" class="modal-trigger waves-effect waves-light btn">Articles</a>
+              <a rel="next" href="#modal3" class="articles modal-trigger waves-effect waves-light btn">Articles</a>
               <!--  <a rel="next" class="modal-trigger" href="#modal3">Articles <i class="mdi-navigation-arrow-forward"></i></a> -->            </div>
           </div>
         </div>
