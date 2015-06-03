@@ -10,7 +10,7 @@
 		    <div class="blog-item col s12 m12 l10 offset-l1">
 		      <a class="article-link" href="<?php echo get_permalink(); ?>">
 		        <div class="col s12 m6">
-		          <h5 class="<?php foreach((get_the_category()) as $category) { echo $category->cat_name . '';} ?>"><?php the_title(); ?></h5>
+		          <h5 class="light <?php foreach((get_the_category()) as $category) { echo $category->cat_name . '';} ?>"><?php the_title(); ?></h5>
 		          <!-- <h6 class="grey-text"><?php get_the_subtitle( $post ); ?></h6> -->
 		          <!-- <br> -->
 		          <?php if ( 'post' == get_post_type() ) : ?>

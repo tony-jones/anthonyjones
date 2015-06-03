@@ -21,14 +21,13 @@ get_header(); ?>
                                                                   rgba(0, 0, 0, 0.15) ), 
                                                                  url('<?=$url?>');
                                                                  background-repeat: no-repeat;
-                                                                 background-color: grgulp serve
-                                                                 ;
+                                                                 background-color: grey;
                                                                  background-attachment: scroll;
                                                                  background-size: cover;
                                                                  -o-background-size: cover;">
           <div class="container">
             <div class="heading">
-              <h1 class="header center white-text">Anthony Jones</h1>
+              <h1 class="light header center white-text">Anthony Jones</h1>
               <div class="row center">
                 <h5 class="header col s12 light white-text">Universal Design Advocate</h5>
               </div>
@@ -68,7 +67,7 @@ get_header(); ?>
         <div class="section card-left-right">
           <div class="row">
             <div class="col s12 m10 l8 offset-m1 offset-l2">
-              <h3 class="center"><i style="font-size:45px" class="mdi-action-accessibility"></i></h3>
+              <!-- <h3 class="center"><i style="font-size:45px" class="mdi-action-accessibility"></i></h3> -->     
               <?php while ( have_posts() ) : the_post(); ?>
               <?php get_template_part( 'content', 'page' ); ?>
               <?php endwhile; // end of the loop. ?>
@@ -110,40 +109,40 @@ get_header(); ?>
         <div class="section">
           <div class="row">
             <div class="col s12 m10 l8 offset-m1 offset-l2">
-              <h4 class="center white-text"> My Recent Positions </h4>
+              <h4 class="light center white-text"> My Recent Positions </h4>
               <br>
               <ul class="z-depth-1 collection">
                 <li class="collection-item avatar">
                   <i class="mdi-av-web circle orange darken-2"></i>
-                  <span class="title">UI UX Designer & Developer</span>
+                  <span class="title">UI/UX Designer & Developer</span>
                   <p>University of Virginia <br>
                    Technologies: Rails, jQuery, Polymer, Bootstrap, SASS, and WordPress
                   </p>
-                  <a href="#!" class="secondary-content"><i class="mdi-action-account-balance"></i></a>
+                  <span class="secondary-content"><i class="fa fa-university"></i></span>
                 </li>
                 <li class="collection-item avatar">
                   <i class="mdi-action-accessibility circle red"></i>
                   <span class="title">Front-End Engineer</span>
                   <p>Computer Sciences Corporation (CSC) <br>
-                   Built New York's Health Benefit Exchange <a href="http://www.nystateofhealth.ny.gov"> NY State of Health</a> (UX Team)
+                   Built New York's Health Benefit Exchange <a href="http://www.nystateofhealth.ny.gov" target="_blank"> NY State of Health</a> (UX Team)
                   </p>
-                  <a href="#!" class="secondary-content"><i class="mdi-communication-business"></i></a>
+                  <span class="secondary-content"><i class="mdi-communication-business"></i></span>
                 </li>
                 <li class="collection-item avatar">
                   <i class="mdi-device-developer-mode circle red"></i>
                   <span class="title">Java Web Developer</span>
                   <p>Computer Sciences Corporation (CSC) <br>
-                     Built New York's Health Benefit Exchange <a href="http://www.nystateofhealth.ny.gov"> NY State of Health</a> 
+                     Built New York's Health Benefit Exchange <a href="http://www.nystateofhealth.ny.gov" target="_blank"> NY State of Health</a> (EE Team)
                   </p>
-                  <a href="#!" class="secondary-content"><i class="mdi-communication-business"></i></a>
+                  <span class="secondary-content" target="_blank"><i class="mdi-communication-business"></i></span>
                 </li>
                 <li class="collection-item avatar">
                   <i class="mdi-action-bug-report circle red"></i>
                   <span class="title">Programmer Analyst Associate Professional</span>
                   <p>Computer Sciences Corporation (CSC) <br>
-                     Built custom applications for New York's <a href="http://www.emedny.org"> Medicare & Medicade System</a>
+                     Built custom applications for New York's <a href="http://www.emedny.org" target="_blank"> Medicare and Medicaid</a> system
                   </p>
-                  <a href="#!" class="secondary-content"><i class="mdi-communication-business"></i></a>
+                  <span class="secondary-content" target="_blank"><i class="mdi-communication-business"></i></span>
                 </li>
                 <li class="collection-item avatar">
                   <i class="mdi-hardware-memory circle red"></i>
@@ -151,7 +150,7 @@ get_header(); ?>
                   <p>Computer Sciences Corporation (CSC) <br>
                      Departments: Security, Architecture, Wintel, CNS (Network), Production Operations
                   </p>
-                  <a href="#!" class="secondary-content"><i class="mdi-communication-business"></i></a>
+                  <span class="secondary-content" target="_blank"><i class="mdi-communication-business"></i></span>
                 </li>
               </ul>
               <br>
@@ -168,7 +167,7 @@ get_header(); ?>
         <div class="section">
           <div class="row">
           <div class="col s12 m12 l0">
-          <h4 class="heading-lr-pad white-text center">Some of the tools I used in making this site</h4>
+          <h4 class="light heading-lr-pad white-text center">Some of the tools I used in making this site</h4>
           <br>
           <div class="row card-left-right">
             <div class="col s12 m6 l4">
@@ -246,7 +245,7 @@ get_header(); ?>
       <div class="home-section contact">
         <div class="section card-left-right">
           <div class="center">
-            <h5> Feel free to send me email. I'll do my best to get back to you quickly! </h5> <br>
+            <h5 class="light"> Feel free to send me email. I'll do my best to get back to you quickly! </h5> <br>
             <a href="mailto:hello@anthonyjones.me" class="btn grey darken-1">Contact Me</a>
           </div>
         </div> 
