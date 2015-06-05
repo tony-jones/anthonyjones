@@ -546,6 +546,9 @@ clip: rect(-6px,185px,14px,25px);
     padding-top: 15px;
     padding-left: 35px;
   }
+  .title-padding {
+    padding: 0 10%;
+  }
 }
 @media only screen and (max-width: 480px) {
   .container {
@@ -667,6 +670,12 @@ span.badge.category {
   }
   .about-bg {
     margin-top:-100px;
+  }
+  h1 {
+    line-height: 2.916rem;
+  }
+  .title-padding {
+    padding: none;
   }
 }
 @media only screen and (max-width: 993px) {
@@ -1325,6 +1334,4 @@ span.unu, span.doi, span.trei {
 .articles {
   background-color: #099DB0;
 }
-.title-padding {
-  padding: 0 10% 0 10%;
-}
+
