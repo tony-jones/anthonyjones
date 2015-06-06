@@ -13,7 +13,7 @@ a {
 html{
   line-height: 1.5;
   
-  @media only screen and (max-width: $small-screen) {
+  @media only screen and (max-width: 0) {
     font-size: 14px;
     h1 {
       font-size: 2.56rem;
@@ -25,17 +25,31 @@ html{
   
   @media only screen and (max-width: $medium-screen) {
     font-size: 14.5px;
+    h4 {
+      font-size: 1.4rem;
+    }
   }
-  
+  @media only screen and (min-width: $medium-screen) {
+    h4 {
+      font-size: 1.5rem;
+    }
+  }
   @media only screen and (max-width: $large-screen) {
     font-size: 15px;
   }
+  @media only screen and (min-width: $large-screen) {
+    h4 {
+      font-size: 1.7rem;
+    }
+  }
+
   font-family: $body-font;
   font-weight: normal;
   color: $off-black;
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: $title-font;
+  line-height: 1.1;
 }
 h4 {
   padding-top: 25px;
@@ -62,10 +76,7 @@ small { font-size: 75%; }
   $i: 0;
   @while $i <= $intervals {
     @media only screen and (min-width : 360 + ($i * $interval-size)) {
-      font-size: .9rem * (1 + (.02 * $i));
-    }
-    @media only screen and (min-width : 0 + ($i * $interval-size)) {
-      line-height: .6rem * (1 + (.13 * $i));
+      font-size: 1.2rem * (1 + (.02 * $i));
     }
     $i: $i + 1;
   }

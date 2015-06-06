@@ -120,8 +120,8 @@ $off-black: rgba(0, 0, 0, 0.8) !default;
 $h1-fontsize: 3.56rem !default;
 $h2-fontsize: 2.20rem !default;
 $h3-fontsize: 2.10rem !default;
-$h4-fontsize: 1.6rem !default;
-$h5-fontsize: 1.5rem !default;
+$h4-fontsize: 1.4rem !default;
+$h5-fontsize: 1.2rem !default;
 $h6-fontsize: 1rem !default;
 
 // Footer
@@ -129,7 +129,7 @@ $footer-bg-color: $primary-color !default;
 
 // Flowtext
 $range : $large-screen - $small-screen !default;
-$intervals: 20 !default;
+$intervals: 5 !default;
 $interval-size: $range / $intervals !default;
 
 /*** Collections ***/

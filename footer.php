@@ -19,7 +19,7 @@
             <?php printf( __( '%1$s %2$s', 'anthonyjones' ), 'Source code:', '<a href="https://github.com/tony-jones/anthonyjones" target="_blank" class="orange-text" rel="designer"><i class="fa fa-github"></i> GitHub</a>' ); ?>
           </div>
           <div class="left location hide-on-med-and-up">
-            <?php printf( __( '%1$s %2$s', 'anthonyjones' ), '', '<a href="https://github.com/tony-jones/anthonyjones" target="_blank" class="orange-text" rel="designer"><i class="fa fa-github"></i> GitHub</a>' ); ?>
+            <?php printf( __( '%1$s %2$s', 'anthonyjones' ), '', '<a href="https://github.com/tony-jones/anthonyjones" target="_blank" class="orange-text" rel="designer"><i style="font-size:24px;" class="fa fa-github"></i></a>' ); ?>
           </div>
           <div class="right">
             <div class="waves-effect waves-black top-article">
