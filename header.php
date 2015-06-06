@@ -43,6 +43,7 @@
   <!--
   <link rel="canonical" href="http://www.example.com/">
   -->
+  <meta name="description" content="<?php bloginfo('description'); ?>" />
   <!-- Favicon -->
   <link rel="shortcut icon" href="/favicon.ico">
 
