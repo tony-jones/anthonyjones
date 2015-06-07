@@ -28,10 +28,10 @@ get_header(); ?>
           <div class="container">
             <div class="heading">
               <h1 class="light header center white-text">Anthony Jones</h1>
-              <div class="row center">
+              <div class="center">
                 <h5 class="header col s12 light white-text">Universal Design Advocate</h5>
               </div>
-                <div class="row center">
+                <div class="center">
                   <div class="col s12 m6 l8 offset-m3 offset-l2">
                     <div class="social-media">
                       <ul class="social-icons">
