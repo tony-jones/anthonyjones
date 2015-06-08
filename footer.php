@@ -66,7 +66,7 @@
           </div>
           <?php endwhile; ?>
         </div>
-        </ul>
+      </ul>
     </div>
   </div>
 </div><!-- #page -->
