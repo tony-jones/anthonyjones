@@ -47,7 +47,7 @@
           <?php $recentPosts->query('showposts=4'); ?>
           <?php while ($recentPosts->have_posts()) : $recentPosts->the_post(); ?>
           <?php $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?>
-          <div class="col s12 m6 l6">
+          <div class="no-padding col s12 m6 l6">
             <a class="close-x" href="<?php echo get_permalink(); ?>" style="cursor: pointer; display: block; overflow: hidden;">
             <div class="recommended">
               <li class="waves-effect waves-dark collection-item avatar">

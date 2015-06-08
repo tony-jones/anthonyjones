@@ -699,6 +699,11 @@ span.badge.category {
     width: 63.66667%;
   }
 }
+@media only screen and (min-width:$small-screen) and (max-width: $large-screen) {
+  .collection .collection-item.avatar {
+    min-height: 155px;
+  }
+}
 .card.small {
   height: 250px;
 }
@@ -710,7 +715,7 @@ span.badge.category {
   position: absolute;
   right: 0%;
   top: -3%;
-  padding: 0px 9px;
+  padding: 3px 10px 0px 10px;
 }
 span.badge.Decor {
   font-weight: 300;
@@ -931,6 +936,9 @@ article.sixth .blog-item:hover {
 .row.no-padding {
   margin-bottom: 0;
 }
+.row.col.no-padding {
+  padding: 0px;
+}
 .footer-categories {
   font-weight: 300;
   font-size: .8rem;
@@ -1036,6 +1044,7 @@ nav {
 }
 .footer-title {
   font-size: 1.2rem;
+  padding-bottom: 25px;
 }
 .heading-lr-pad {
   padding: 0px 20px;  
