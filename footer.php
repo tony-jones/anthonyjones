@@ -50,7 +50,7 @@
           <div class="no-padding col s12 m6 l6">
             <a class="close-x" href="<?php echo get_permalink(); ?>" style="cursor: pointer; display: block; overflow: hidden;">
             <div class="recommended">
-              <li class="waves-effect waves-dark collection-item avatar">
+              <li class="footer-articles waves-effect waves-dark collection-item avatar">
                 <img src="<?=$url?>" alt="" class="circle responsive-img">
                 <span class="title grey-text"><?php the_title(); ?></span>
                 <p>

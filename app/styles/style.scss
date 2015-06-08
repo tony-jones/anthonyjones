@@ -700,7 +700,7 @@ span.badge.category {
   }
 }
 @media only screen and (min-width:$small-screen) and (max-width: $large-screen) {
-  .collection .collection-item.avatar {
+  .collection .footer-articles.collection-item.avatar {
     min-height: 155px;
   }
 }
