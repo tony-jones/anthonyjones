@@ -36,22 +36,22 @@ get_header(); ?>
                     <div class="social-media">
                       <ul class="social-icons">
                         <li style="margin-right: 20px;">
-                          <a href="https://twitter.com/iamtonybagels" class="blue lighten-1 my-social waves-effect waves-circle waves-light btn-floating" target="_blank">
+                          <a href="https://twitter.com/iamtonybagels" title="link to visit me on twitter" class="blue lighten-1 my-social waves-effect waves-circle waves-light btn-floating" target="_blank">
                             <i class="fa fa-twitter"></i>
                           </a>
                         </li>
                         <li style="margin-right: 20px;">
-                          <a href="https://github.com/tony-jones" class="red darken-4 my-social waves-effect waves-circle waves-light btn-floating" target="_blank">
+                          <a href="https://github.com/tony-jones" title="link to visit me on github" class="red darken-4 my-social waves-effect waves-circle waves-light btn-floating" target="_blank">
                             <i class="fa fa-github"></i>
                           </a>
                         </li>
                         <li style="margin-right: 20px;">
-                          <a href="https://www.linkedin.com/pub/anthony-jones/33/90b/186" class="blue darken-2 my-social waves-effect waves-circle waves-light btn-floating" target="_blank">
+                          <a href="https://www.linkedin.com/pub/anthony-jones/33/90b/186" title="link to visit me on linkedin" class="blue darken-2 my-social waves-effect waves-circle waves-light btn-floating" target="_blank">
                             <i class="fa fa-linkedin-square"></i>
                           </a>
                         </li>
                         <li>
-                          <a style="color:#3f729b;" href="https://instagram.com/iamtonybagels" class="black darken-1 my-social waves-effect waves-circle waves-light btn-floating" target="_blank">
+                          <a style="color:#3f729b;" href="https://instagram.com/iamtonybagels" title="link to visit me on instagram" class="black darken-1 my-social waves-effect waves-circle waves-light btn-floating" target="_blank">
                             <i class="fa fa-instagram"></i>
                           </a>
                         </li>

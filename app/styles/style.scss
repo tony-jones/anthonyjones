@@ -297,11 +297,11 @@ footer {
   height:55px;
 }
 nav ul a {
-  color: grey;
+  color: #383838;
   font-weight: 300;
 }
 nav ul a:hover {
-  color: #383838;
+  color: #099DB0;;
 }
 nav ul a:visited {
   
@@ -887,11 +887,11 @@ aside {
 }
 .top-article a {
   border-left: solid 1px rgba(0,0,0,.05);
-  padding: 19px 20px;
+  padding: 19px 10px;
 }
 .top-article {
   padding: 17px 0px;
-  margin-right: 0px;
+  margin-right: -4px;
   display: inline-block;
 }
 #staggered-test li {
