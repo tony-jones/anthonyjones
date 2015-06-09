@@ -36,22 +36,22 @@ get_header(); ?>
                     <div class="social-media">
                       <ul class="social-icons">
                         <li style="margin-right: 20px;">
-                          <a href="https://twitter.com/iamtonybagels" title="link to visit me on twitter" class="blue lighten-1 my-social waves-effect waves-circle waves-light btn-floating" target="_blank">
+                          <a href="https://twitter.com/iamtonybagels" title="link to visit me on twitter" class="blue lighten-1 my-social waves-effect waves-circle waves-light btn-floating">
                             <i class="fa fa-twitter"></i>
                           </a>
                         </li>
                         <li style="margin-right: 20px;">
-                          <a href="https://github.com/tony-jones" title="link to visit me on github" class="red darken-4 my-social waves-effect waves-circle waves-light btn-floating" target="_blank">
+                          <a href="https://github.com/tony-jones" title="link to visit me on github" class="red darken-4 my-social waves-effect waves-circle waves-light btn-floating">
                             <i class="fa fa-github"></i>
                           </a>
                         </li>
                         <li style="margin-right: 20px;">
-                          <a href="https://www.linkedin.com/pub/anthony-jones/33/90b/186" title="link to visit me on linkedin" class="blue darken-2 my-social waves-effect waves-circle waves-light btn-floating" target="_blank">
+                          <a href="https://www.linkedin.com/pub/anthony-jones/33/90b/186" title="link to visit me on linkedin" class="blue darken-2 my-social waves-effect waves-circle waves-light btn-floating">
                             <i class="fa fa-linkedin-square"></i>
                           </a>
                         </li>
                         <li>
-                          <a style="color:#3f729b;" href="https://instagram.com/iamtonybagels" title="link to visit me on instagram   " class="black darken-1 my-social waves-effect waves-circle waves-light btn-floating" target="_blank">
+                          <a style="color:#3f729b;" href="https://instagram.com/iamtonybagels" title="link to visit me on instagram   " class="black darken-1 my-social waves-effect waves-circle waves-light btn-floating">
                             <i class="fa fa-instagram"></i>
                           </a>
                         </li>
@@ -124,7 +124,7 @@ get_header(); ?>
                   <i class="mdi-action-accessibility circle red"></i>
                   <span class="title">Front-End Engineer</span>
                   <p>Computer Sciences Corporation (CSC) <br>
-                   Built New York's Health Benefit Exchange <a href="http://www.nystateofhealth.ny.gov" target="_blank"> NY State of Health</a> (UX Team)
+                   Built New York's Health Benefit Exchange <a href="http://www.nystateofhealth.ny.gov"> NY State of Health</a> (UX Team)
                   </p>
                   <span class="secondary-content"><i class="mdi-communication-business"></i></span>
                 </li>
@@ -132,17 +132,17 @@ get_header(); ?>
                   <i class="mdi-device-developer-mode circle red"></i>
                   <span class="title">Java Web Developer</span>
                   <p>Computer Sciences Corporation (CSC) <br>
-                     Built New York's Health Benefit Exchange <a href="http://www.nystateofhealth.ny.gov" target="_blank"> NY State of Health</a> (EE Team)
+                     Built New York's Health Benefit Exchange <a href="http://www.nystateofhealth.ny.gov"> NY State of Health</a> (EE Team)
                   </p>
-                  <span class="secondary-content" target="_blank"><i class="mdi-communication-business"></i></span>
+                  <span class="secondary-content"><i class="mdi-communication-business"></i></span>
                 </li>
                 <li class="collection-item avatar">
                   <i class="mdi-action-bug-report circle red"></i>
                   <span class="title">Programmer Analyst Associate Professional</span>
                   <p>Computer Sciences Corporation (CSC) <br>
-                     Built custom applications for New York's <a href="http://www.emedny.org" target="_blank"> Medicare and Medicaid</a> system
+                     Built custom applications for New York's <a href="http://www.emedny.org"> Medicare and Medicaid</a> system
                   </p>
-                  <span class="secondary-content" target="_blank"><i class="mdi-communication-business"></i></span>
+                  <span class="secondary-content"><i class="mdi-communication-business"></i></span>
                 </li>
                 <li class="collection-item avatar">
                   <i class="mdi-hardware-memory circle red"></i>
@@ -150,14 +150,14 @@ get_header(); ?>
                   <p>Computer Sciences Corporation (CSC) <br>
                      Departments: Security, Architecture, Wintel, CNS (Network), Production Operations
                   </p>
-                  <span class="secondary-content" target="_blank"><i class="mdi-communication-business"></i></span>
+                  <span class="secondary-content"><i class="mdi-communication-business"></i></span>
                 </li>
               </ul>
               <br>
               <div class="center">
                 <h6 class="white-text">Visit me on Linkedin for more info.</h6>
                 <br>
-                <a href="https://www.linkedin.com/pub/anthony-jones/33/90b/186" class="no-visited btn blue darken-1" target="_blank">Linkedin</a>
+                <a href="https://www.linkedin.com/pub/anthony-jones/33/90b/186" class="no-visited btn blue darken-1">Linkedin</a>
               </div>
             </div>
           </div>
@@ -177,7 +177,7 @@ get_header(); ?>
                   <p>Sass is the most mature, stable, and powerful CSS extension language out there. But LESS is good also.</p>
                 </div>
                 <div class="card-action">
-                  <a href="http://sass-lang.com/" target="_blank">Visit SASS</a>
+                  <a href="http://sass-lang.com/">Visit SASS</a>
                 </div>
               </div>
             </div>
@@ -188,7 +188,7 @@ get_header(); ?>
                   <p>Gulp is a build system that can improve how you develop websites by automating common tasks.</p>
                 </div>
                 <div class="card-action">
-                  <a href="http://gulpjs.com/" target="_blank">Visit Gulp</a>
+                  <a href="http://gulpjs.com/">Visit Gulp</a>
                 </div>
               </div>
             </div>
@@ -199,7 +199,7 @@ get_header(); ?>
                   <p>Materialize is a modern responsive front-end framework based on material design principles.</p>
                 </div>
                 <div class="card-action">
-                  <a href="http://materializecss.com/" target="_blank">Visit Materialize</a>
+                  <a href="http://materializecss.com/">Visit Materialize</a>
                 </div>
               </div>
             </div>
@@ -210,7 +210,7 @@ get_header(); ?>
                   <p>WordPress is one of the easiest and most flexible website content management systems to develop with. </p>
                 </div>
                 <div class="card-action">
-                  <a href="http://wordpress.com/" target="_blank">Visit WordPress</a>
+                  <a href="http://wordpress.com/">Visit WordPress</a>
                 </div>
               </div>
             </div>
@@ -221,7 +221,7 @@ get_header(); ?>
                   <p>Sublime is my favorite text editor for code and markup (Great plugins, user-friendly, and very customizable).</p>
                 </div>
                 <div class="card-action">
-                  <a href="http://www.sublimetext.com/" target="_blank">Visit Sublime</a>
+                  <a href="http://www.sublimetext.com/">Visit Sublime</a>
                 </div>
               </div>
             </div>
@@ -232,7 +232,7 @@ get_header(); ?>
                   <p>A scrolling animation javascript library. It works well with mobile (Android, iOS, etc.) and desktop screens</p>
                 </div>
                 <div class="card-action">
-                  <a href="https://github.com/Prinzhorn/skrollr" target="_blank">Visit Skrollr</a>
+                  <a href="https://github.com/Prinzhorn/skrollr">Visit Skrollr</a>
                 </div>
               </div>
             </div>
