@@ -629,6 +629,17 @@ clip: rect(-6px,185px,14px,25px);
 .clear-icon {
   background-color: rgba(255, 255, 255, 0)!important;
 }
+#mobile-hamburger {
+  background: rgba(255, 255, 255, 0.97); 
+}
+i.mdi-navigation-menu {
+  color:#383838;
+  box-shadow: 0 0 1px rgba(0,0,0,.15);
+}
+i.mdi-navigation-menu:hover {
+  color: #2bbbad;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.62);
+}
 a.my-social.waves-effect.waves-circle.waves-light.btn-floating.secondary-content {
     margin-left: 10px;
 }

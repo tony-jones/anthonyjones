@@ -92,8 +92,8 @@
     <nav id="banner" class="uva-blue" role="navigation">
       <div class="container">
         <div class="nav-wrapper">
-          <a href="#" aria-controls="primary-menu" aria-expanded="false" data-activates="mobile-demo" style="background: rgba(255, 255, 255, 0.97); box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);" class="hide-on-large-only sidenav_button btn-floating waves-effect clear-icon">
-            <i style="line-height: 39px; color:#383838" class="mdi-navigation-menu"></i>
+          <a id="mobile-hamburger" href="#" aria-controls="primary-menu" aria-expanded="false" data-activates="mobile-demo" style="background: rgba(255, 255, 255, 0.97); box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);" class="hide-on-large-only sidenav_button btn-floating waves-effect clear-icon">
+            <i style="line-height: 39px;" class="mdi-navigation-menu"></i>
           </a>
           <a href="<?php echo esc_url( home_url( '/' ) ); ?>" data-0="opacity: 1;" data-128="opacity: 0;" class="">
             <img class="logo" src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="Logo for Anthony Jones" />
