@@ -48,8 +48,8 @@
           <?php while ($recentPosts->have_posts()) : $recentPosts->the_post(); ?>
           <?php $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?>
           <div class="no-padding col s12 m6 l6">
-            <a class="close-x" href="<?php echo get_permalink(); ?>" style="cursor: pointer; display: block; overflow: hidden;">
             <div class="recommended">
+              <a class="close-x" href="<?php echo get_permalink(); ?>" style="cursor: pointer; display: block; overflow: hidden;">
               <li class="footer-articles waves-effect waves-dark collection-item avatar">
                 <img src="<?=$url?>" alt="" class="circle responsive-img">
                 <span class="title grey-text"><?php the_title(); ?></span>
@@ -62,6 +62,7 @@
                   <?php echo $category ?>
                 </span>
               </li>
+              </a>
             </div>
           </div>
           <?php endwhile; ?>

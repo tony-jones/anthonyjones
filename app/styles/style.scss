@@ -715,6 +715,11 @@ span.badge.category {
     min-height: 155px;
   }
 }
+@media only screen and (min-width:846px) and (max-width: 1201px) {
+  li a.close-x {
+    padding-bottom:10%;
+  }
+}
 .card.small {
   height: 250px;
 }
