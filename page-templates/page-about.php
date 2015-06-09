@@ -51,7 +51,7 @@ get_header(); ?>
                           </a>
                         </li>
                         <li>
-                          <a style="color:#3f729b;" href="https://instagram.com/iamtonybagels" title="link to visit me on instagram" class="black darken-1 my-social waves-effect waves-circle waves-light btn-floating" target="_blank">
+                          <a style="color:#3f729b;" href="https://instagram.com/iamtonybagels" title="link to visit me on instagram   " class="black darken-1 my-social waves-effect waves-circle waves-light btn-floating" target="_blank">
                             <i class="fa fa-instagram"></i>
                           </a>
                         </li>
@@ -69,7 +69,7 @@ get_header(); ?>
             <div class="col s12 m10 l8 offset-m1 offset-l2">
               <!-- <h3 class="center"><i style="font-size:45px" class="mdi-action-accessibility"></i></h3> -->     
               <?php while ( have_posts() ) : the_post(); ?>
-              <?php get_template_part( 'content', 'page' ); ?>
+                <?php get_template_part( 'content', 'page' ); ?>
               <?php endwhile; // end of the loop. ?>
             </div>
           </div>
