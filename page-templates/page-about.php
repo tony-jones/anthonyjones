@@ -124,7 +124,7 @@ get_header(); ?>
                   <i class="mdi-action-accessibility circle red"></i>
                   <span class="title">Front-End Engineer</span>
                   <p>Computer Sciences Corporation (CSC) <br>
-                   Built New York's Health Benefit Exchange <a href="http://www.nystateofhealth.ny.gov"> NY State of Health</a> (UX Team)
+                   Built New York's Health Benefit Exchange <a href="http://www.nystateofhealth.ny.gov" class="anchor-blue"> NY State of Health</a> (UX Team)
                   </p>
                   <span class="secondary-content"><i class="mdi-communication-business"></i></span>
                 </li>
@@ -132,7 +132,7 @@ get_header(); ?>
                   <i class="mdi-device-developer-mode circle red"></i>
                   <span class="title">Java Web Developer</span>
                   <p>Computer Sciences Corporation (CSC) <br>
-                     Built New York's Health Benefit Exchange <a href="http://www.nystateofhealth.ny.gov"> NY State of Health</a> (EE Team)
+                     Built New York's Health Benefit Exchange <a href="http://www.nystateofhealth.ny.gov" class="anchor-blue"> NY State of Health</a> (EE Team)
                   </p>
                   <span class="secondary-content"><i class="mdi-communication-business"></i></span>
                 </li>
@@ -140,7 +140,7 @@ get_header(); ?>
                   <i class="mdi-action-bug-report circle red"></i>
                   <span class="title">Programmer Analyst Associate Professional</span>
                   <p>Computer Sciences Corporation (CSC) <br>
-                     Built custom applications for New York's <a href="http://www.emedny.org"> Medicare and Medicaid</a> system
+                     Built custom applications for New York's <a href="http://www.emedny.org" class="anchor-blue"> Medicare and Medicaid</a> system
                   </p>
                   <span class="secondary-content"><i class="mdi-communication-business"></i></span>
                 </li>
@@ -177,7 +177,7 @@ get_header(); ?>
                   <p>Sass is the most mature, stable, and powerful CSS extension language out there. But LESS is good also.</p>
                 </div>
                 <div class="card-action">
-                  <a href="http://sass-lang.com/">Visit SASS</a>
+                  <a href="http://sass-lang.com/" class="anchor-orange">Visit SASS</a>
                 </div>
               </div>
             </div>
@@ -188,7 +188,7 @@ get_header(); ?>
                   <p>Gulp is a build system that can improve how you develop websites by automating common tasks.</p>
                 </div>
                 <div class="card-action">
-                  <a href="http://gulpjs.com/">Visit Gulp</a>
+                  <a href="http://gulpjs.com/" class="anchor-orange">Visit Gulp</a>
                 </div>
               </div>
             </div>
@@ -199,7 +199,7 @@ get_header(); ?>
                   <p>Materialize is a modern responsive front-end framework based on material design principles.</p>
                 </div>
                 <div class="card-action">
-                  <a href="http://materializecss.com/">Visit Materialize</a>
+                  <a href="http://materializecss.com/" class="anchor-orange">Visit Materialize</a>
                 </div>
               </div>
             </div>
@@ -210,7 +210,7 @@ get_header(); ?>
                   <p>WordPress is one of the easiest and most flexible website content management systems to develop with. </p>
                 </div>
                 <div class="card-action">
-                  <a href="http://wordpress.com/">Visit WordPress</a>
+                  <a href="http://wordpress.com/" class="anchor-orange">Visit WordPress</a>
                 </div>
               </div>
             </div>
@@ -221,7 +221,7 @@ get_header(); ?>
                   <p>Sublime is my favorite text editor for code and markup (Great plugins, user-friendly, and very customizable).</p>
                 </div>
                 <div class="card-action">
-                  <a href="http://www.sublimetext.com/">Visit Sublime</a>
+                  <a href="http://www.sublimetext.com/" class="anchor-orange">Visit Sublime</a>
                 </div>
               </div>
             </div>
@@ -232,7 +232,7 @@ get_header(); ?>
                   <p>A scrolling animation javascript library. It works well with mobile (Android, iOS, etc.) and desktop screens</p>
                 </div>
                 <div class="card-action">
-                  <a href="https://github.com/Prinzhorn/skrollr">Visit Skrollr</a>
+                  <a href="https://github.com/Prinzhorn/skrollr" class="anchor-orange">Visit Skrollr</a>
                 </div>
               </div>
             </div>

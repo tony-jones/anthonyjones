@@ -1363,3 +1363,47 @@ span.unu, span.doi, span.trei {
 .align-with-title {
   margin-top: -8px;
 }
+.anchor-blue, .anchor-orange {
+  text-decoration: none;
+  background-repeat: repeat-x;
+  background-size: 2px 2px;
+  background-position: 0 16px;
+}
+.anchor-blue {
+  background-image: linear-gradient(to bottom,transparent 50%, #099DB0 50%);
+}
+.anchor-orange {
+  background-image: linear-gradient(to bottom,transparent 50%, #ffab40 50%);
+}
+.anchor-grey {
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0) 50%, rgba(0,0,0,0.6) 50%);
+}
+
+.tab > a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+.tab > a {
+  position: relative;
+ // color: #000;
+  text-decoration: none;
+}
+.tab > a:hover {
+  //color: #000;
+}
+.tab > a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #383838;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+  
