@@ -54,35 +54,6 @@ anthonyjones is based on Underscores http://underscores.me/, (C) 2012-2015 Autom
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
- /* 
-
- @font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 400;
-  src: url(app/fonts/open-sans/OpenSans-Regular.ttf);
-}
-
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 600;
-  src: url(app/fonts/open-sans/OpenSans-Bold.ttf);
-}
-
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 400;
-  src: url(app/fonts/lato/Lato-Regular.ttf);
-}
-
-@font-face {
-  font-family:t 'Lato';
-  font-style: normal;
-  font-weight: 300;
-  src: url(app/fonts/lato/Lato-Light.ttf);
-} */
 
 /*--------------------------------------------------------------
 # Elements
@@ -1367,7 +1338,7 @@ span.unu, span.doi, span.trei {
   text-decoration: none;
   background-repeat: repeat-x;
   background-size: 2px 2px;
-  background-position: 0 23px;
+  background-position: 0 21px;
 }
 .anchor-blue {
   background-image: linear-gradient(to bottom,transparent 50%, #099DB0 50%);
