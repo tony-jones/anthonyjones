@@ -35,23 +35,23 @@ get_header(); ?>
                   <div class="col s12 m6 l8 offset-m3 offset-l2">
                     <div class="social-media">
                       <ul class="social-icons">
-                        <li style="margin-right: 20px;">
+                        <li class="margin-r-20">
                           <a href="https://twitter.com/iamtonybagels" title="link to visit me on twitter" class="blue lighten-1 my-social waves-effect waves-circle waves-light btn-floating">
                             <i class="fa fa-twitter"></i>
                           </a>
                         </li>
-                        <li style="margin-right: 20px;">
+                        <li class="margin-r-20">
                           <a href="https://github.com/tony-jones" title="link to visit me on github" class="red darken-4 my-social waves-effect waves-circle waves-light btn-floating">
                             <i class="fa fa-github"></i>
                           </a>
                         </li>
-                        <li style="margin-right: 20px;">
+                        <li class="margin-r-20">
                           <a href="https://www.linkedin.com/pub/anthony-jones/33/90b/186" title="link to visit me on linkedin" class="blue darken-2 my-social waves-effect waves-circle waves-light btn-floating">
                             <i class="fa fa-linkedin-square"></i>
                           </a>
                         </li>
                         <li>
-                          <a style="color:#3f729b;" href="https://instagram.com/iamtonybagels" title="link to visit me on instagram   " class="black darken-1 my-social waves-effect waves-circle waves-light btn-floating">
+                          <a href="https://instagram.com/iamtonybagels" title="link to visit me on instagram" class="black darken-1 my-social waves-effect waves-circle waves-light btn-floating">
                             <i class="fa fa-instagram"></i>
                           </a>
                         </li>

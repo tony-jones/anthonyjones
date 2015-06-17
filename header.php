@@ -73,15 +73,9 @@
       <nav id="banner" data-0="height:130px" data-128="height: 64px" class="uva-blue headroom" role="navigation">
         <div class="container">
           <div class="nav-wrapper">
-            <a href="#" aria-controls="primary-menu" aria-expanded="false" data-activates="mobile-demo" style="background: rgba(255, 255, 255, 0.97); box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);" class="hide-on-large-only sidenav_button btn-floating waves-effect clear-icon">
-              <i style="line-height: 39px; color: #383838" class="mdi-navigation-menu"></i>
+            <a id="desktop-mobile-button" aria-controls="primary-menu" aria-expanded="false" data-activates="mobile-demo" class="mobile-button hide-on-large-only sidenav_button btn-floating waves-effect clear-icon">
+              <i id="desktop-icon" class="mdi-navigation-menu"></i>
             </a>
-            <ul id="nav-mobile" class="right">    
-              <!-- <a style="background: rgba(255, 255, 255, 0.97); box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);" class="btn-floating waves-effect grey clear-icon"><i style="line-height: 39px; color:#383838" class="mdi-action-search"></i></a> -->
-              <!-- <li class="collection-item avatar">
-                <img src="http://materializecss.com/images/yuna.jpg" alt="" class="circle">
-              </li> -->
-            </ul>
             <div class="right">
               <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'hide-on-med-and-down' ) ); ?>     
             </div>
@@ -101,20 +95,12 @@
     <nav id="banner" class="uva-blue" role="navigation">
       <div class="container">
         <div class="nav-wrapper">
-          <a id="mobile-hamburger" href="#" aria-controls="primary-menu" aria-expanded="false" data-activates="mobile-demo" style="background: rgba(255, 255, 255, 0.97); box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);" class="hide-on-large-only sidenav_button btn-floating waves-effect clear-icon">
-            <i style="line-height: 39px;" class="mdi-navigation-menu"></i>
+          <a id="mobile-hamburger" aria-controls="primary-menu" aria-expanded="false" data-activates="mobile-demo" class="mobile-button hide-on-large-only sidenav_button btn-floating waves-effect clear-icon">
+            <i id="mobile-icon" class="mdi-navigation-menu"></i>
           </a>
           <a href="<?php echo esc_url( home_url( '/' ) ); ?>" data-0="opacity: 1;" data-128="opacity: 0;" class="">
             <img class="logo" src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="Logo for Anthony Jones" />
           </a>
-          <ul id="nav-mobile" class="right">
-          <!-- <li>
-            <a style="background: rgba(255, 255, 255, 0.97); box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);" class="btn-floating waves-effect grey clear-icon"><i style="line-height: 39px; color:#383838" class="mdi-action-search"></i></a>
-          </li> -->
-            <!-- <li class="collection-item avatar">
-              <img src="http://materializecss.com/images/yuna.jpg" alt="" class="circle">
-            </li> -->
-          </ul>
           <div class="right">
             <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'tabs hide-on-med-and-down' ) ); ?>     
           </div>
@@ -127,7 +113,7 @@
   <nav class="orange white">
     <ul class="side-nav" id="mobile-demo">
       <div class="sidenav-logo grey lighten-3">
-        <a href="#" style="font-size: 2rem; padding: 0 18px;"class="waves-effect close-arrow">
+        <a id="side-close" class="waves-effect close-arrow">
           <i class="mdi-navigation-arrow-back"></i>
         </a>   
       </div>

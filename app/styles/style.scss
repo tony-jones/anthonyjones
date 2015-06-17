@@ -643,7 +643,7 @@ span.badge.category {
     padding: 10px;
   }
   .blog-item {
-    box-shadow: 0 0 1px rgba(0,0,0,.15);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
   }
   #modal1 {
     width: 90%;
@@ -1388,4 +1388,32 @@ span.unu, span.doi, span.trei {
 .github-icon {
   font-size:24px;
 }
-
+#side-close {
+  font-size: 2rem; 
+  padding: 0 18px;
+}
+#desktop-icon {
+  line-height: 39px; 
+}
+#mobile-icon {
+  line-height: 39px;
+}
+#writing-page {
+  margin-top: 125px;
+}
+#writing-page-mobile {
+  margin-top: 50px;
+}
+.margin-r-20 {
+  margin-right: 20px;
+}
+.mobile-button {
+  background: rgba(255, 255, 255, 0.97); 
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.15); 
+}
+#desktop-mobile-button:hover{
+  box-shadow: none;
+}
+#mobile-hamburger:hover {
+  box-shadow: none;
+}
