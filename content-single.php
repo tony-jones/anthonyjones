@@ -5,8 +5,8 @@
 ?>
   
   <!-- Set your background image for this header on the line below. -->
-  <article id="post-<?php the_ID(); ?>" <?php post_class(); ?> itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
-    <main role="main" itemprop="mainContentOfPage" itemscope="itemscope" itemtype="http://schema.org/Blog">
+  <article id="post-<?php the_ID(); ?>" <?php post_class(); ?> itemscope itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
+    <main role="main" itemscope itemtype="http://schema.org/Blog">
       <div class="content-single-top">
         <?php
 			  $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
@@ -34,7 +34,6 @@
                 <span class="date updated white-text" itemprop="datePublished">
                   <?php echo human_time_diff( get_the_time('U'), current_time('timestamp') ) . ' ago'; ?>
                 </span>
-                
                 <span class="bullet white-text">&nbsp;•&nbsp;</span>
                 <span class="author vcard white-text">
                 by <a class="white-text" title="" rel="author" itemscope="itemscope" itemtype="http://schema.org/Person" itemprop="author"><?php the_author(); ?></a>                      
@@ -59,7 +58,7 @@
             <div class="col s12 m12 l8 offset-l2">
               <?php get_template_part('share'); ?>   
               <div class="container">
-	              <div class="flow-text" itemprop="text">
+	              <div class="flow-text" itemprop="articleBody">
 	               
 	                <?php the_content(); ?>
 	                <?php

@@ -91,8 +91,8 @@
   </header>
 
   <!-- Mobile Device Navigation For CSS FIXED BUGS-->
-  <div id="toolbar" class="navbar-fixed hide-on-med-and-up">
-    <nav id="banner" class="uva-blue" role="navigation" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+  <div id="mobile-toolbar" class="navbar-fixed hide-on-med-and-up">
+    <nav id="mobile-banner" class="uva-blue" role="navigation" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
       <div class="container">
         <div class="nav-wrapper">
           <a id="mobile-hamburger" aria-controls="primary-menu" aria-expanded="false" data-activates="mobile-demo" class="mobile-button hide-on-large-only sidenav_button btn-floating waves-effect clear-icon">
@@ -108,17 +108,16 @@
       </div>
     </nav>
   </div>
-
   <!-- Navigation -->
   <nav class="orange white">
-    <ul class="side-nav" id="mobile-demo">
+    <div class="side-nav" id="mobile-demo">
       <div class="sidenav-logo grey lighten-3">
         <a id="side-close" class="waves-effect close-arrow">
           <i class="mdi-navigation-arrow-back"></i>
         </a>   
       </div>
       <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?> 
-    </ul>
+    </div>
   </nav>
   <div class="animsition">
 	<div id="content" class="site-content">

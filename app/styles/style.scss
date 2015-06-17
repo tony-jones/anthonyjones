@@ -240,7 +240,7 @@ div.legal a {
 .breadcrumb>.active {
   color: #ffffff;
 }
-#toolbar {
+#toolbar, #mobile-toolbar  {
   display: block;
   position: fixed;
   width: 100%;
@@ -673,13 +673,6 @@ span.badge.category {
   }
   .about-bg {
     margin-top:-100px;
-  }
-  #title {
-    font-size: 45px; 
-    padding: 0px 0px 24px 35px;
-  }
-  #banner {
-    height: 130px;
   }
 }
 @media only screen and (min-width: 993px) {

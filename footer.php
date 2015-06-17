@@ -16,10 +16,10 @@
       <div class="row">
         <div class="copyright">
           <div class="left location hide-on-small-only">
-            <?php printf( __( '%1$s %2$s', 'anthonyjones' ), 'Source code:', '<a href="https://github.com/tony-jones/anthonyjones" class="orange-text" rel="designer"><i class="fa fa-github"></i> GitHub</a>' ); ?>
+            <?php printf( __( '%1$s %2$s', 'anthonyjones' ), 'Source code:', '<a href="https://github.com/tony-jones/anthonyjones" class="orange-text"><i class="fa fa-github"></i> GitHub</a>' ); ?>
           </div>
           <div class="left location hide-on-med-and-up">
-            <?php printf( __( '%1$s %2$s', 'anthonyjones' ), '', '<a href="https://github.com/tony-jones/anthonyjones" class="orange-text" rel="designer"><i class="github-icon fa fa-github"></i></a>' ); ?>
+            <?php printf( __( '%1$s %2$s', 'anthonyjones' ), '', '<a href="https://github.com/tony-jones/anthonyjones" class="orange-text"><i class="github-icon fa fa-github"></i></a>' ); ?>
           </div>
           <div class="right">
             <div class="waves-effect waves-black top-article">
@@ -27,7 +27,7 @@
             </div>
             <div class="waves-effect waves-light next-article">
               <a rel="next" href="#modal3" class="articles modal-trigger waves-effect waves-light btn">Articles</a>
-              <!--  <a rel="next" class="modal-trigger" href="#modal3">Articles <i class="mdi-navigation-arrow-forward"></i></a> -->            </div>
+              <!--  <a rel="next" class="modal-trigger" href="#modal3">Articles <i class="mdi-navigation-arrow-forward"></i></a> --></div>
           </div>
         </div>
       </div>
