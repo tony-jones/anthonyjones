@@ -67,7 +67,6 @@ get_header(); ?>
         <div class="section card-left-right">
           <div class="row">
             <div class="col s12 m10 l8 offset-m1 offset-l2">
-              <!-- <h3 class="center"><i style="font-size:45px" class="mdi-action-accessibility"></i></h3> -->     
               <?php while ( have_posts() ) : the_post(); ?>
                 <?php get_template_part( 'content', 'page' ); ?>
               <?php endwhile; // end of the loop. ?>
@@ -246,7 +245,7 @@ get_header(); ?>
         <div class="section card-left-right">
           <div class="center">
             <h5 class="light"> Feel free to send me email. I'll do my best to get back to you quickly! </h5> <br>
-            <a href="mailto:hello@anthonyjones.me" class="btn grey darken-1">Contact Me</a>
+            <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;%68%65%6C%6C%6F%40%61%6E%74%68%6F%6E%79%6A%6F%6E%65%73%2E%6D%65" class="btn grey darken-1">Contact Me</a>
           </div>
         </div> 
       </div>  
