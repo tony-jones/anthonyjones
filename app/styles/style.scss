@@ -1428,25 +1428,36 @@ span.unu, span.doi, span.trei {
 }
 #menu-main-navigation li a {
   visibility: hidden;
+  opacity: 0;
 }
 a  {
   visibility: hidden;
+  opacity: 0;
 }
 .wf-loading #home-logo {
   visibility: hidden;
+  opacity: 0;
 }
 .wf-loading #menu-main-navigation li a {
   visibility: hidden;
+  opacity: 0;
 }
 .wf-loading a  {
   visibility: hidden;
+  opacity: 0;
 }
 .wf-active #home-logo {
   visibility: visible;
+  opacity: 1;
+  transition: opacity 2s linear;
 }
 .wf-active #menu-main-navigation li a {
   visibility: visible;
+  opacity: 1;
+  transition: opacity 2s linear;
 }
 .wf-active a {
   visibility: visible;
+  opacity: 1;
+  transition: opacity 2s linear;
 }
