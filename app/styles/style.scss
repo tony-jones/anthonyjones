@@ -1441,6 +1441,10 @@ a  {
   visibility: hidden;
   opacity: 0;
 }
+.location {
+  visibility: hidden;
+  opacity: 0;
+}
 .wf-loading #home-logo {
   visibility: hidden;
   opacity: 0;
@@ -1464,6 +1468,11 @@ a  {
   transition: opacity 2s linear;
 }
 .wf-active a {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 2s linear;
+}
+.wf-active .location {
   visibility: visible;
   opacity: 1;
   transition: opacity 2s linear;
