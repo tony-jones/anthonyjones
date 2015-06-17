@@ -15,7 +15,7 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 	  <div id="writing-page" class="hide-on-small-only"></div>
-		<main id="main" class="site-main" role="main" itemprop="mainContentOfPage" itemscope="itemscope" itemtype="http://schema.org/Blog">
+		<main id="main" class="site-main" role="main">
 		<?php $c = 0; $style = '';
 		  if ( have_posts() ) : 
 			  while ( have_posts() ) : the_post(); 
@@ -44,7 +44,7 @@ get_header(); ?>
 			    $style='last';
 			  }
         ?>
-        <article <?php post_class($style);?> id="post-<?php the_ID(); ?>" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
+        <article <?php post_class($style);?> id="post-<?php the_ID(); ?>">
         
         <?php
 					/* Include the Post-Format-specific template for the content.

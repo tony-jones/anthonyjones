@@ -5,8 +5,8 @@
 ?>
   
   <!-- Set your background image for this header on the line below. -->
-  <article id="post-<?php the_ID(); ?>" <?php post_class(); ?> itemscope itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
-    <main role="main" itemscope itemtype="http://schema.org/Blog">
+  <article id="post-<?php the_ID(); ?>" <?php post_class(); ?> itemscope itemtype="http://schema.org/Article">
+    <main role="main">
       <div class="content-single-top">
         <?php
 			  $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
@@ -28,7 +28,7 @@
               </div>
               <h1 itemprop="headline" class="title-padding header center white-text"><?php the_title(); ?></h1>
               <div class="center">
-                <h2 id="subtitle" class="light header col s12 white-text"><?php get_the_subtitle( $post ); ?></h2>
+                <h2 itemprop="alternativeHeadline" id="subtitle" class="light header col s12 white-text"><?php get_the_subtitle( $post ); ?></h2>
               </div>
               <div class="post-details center">
                 <span class="date updated white-text" itemprop="datePublished">
@@ -36,7 +36,9 @@
                 </span>
                 <span class="bullet white-text">&nbsp;•&nbsp;</span>
                 <span class="author vcard white-text">
-                by <a class="white-text" title="" rel="author" itemscope="itemscope" itemtype="http://schema.org/Person" itemprop="author"><?php the_author(); ?></a>                      
+                by <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+                  <a class="white-text" title="" rel="author" itemprop="name"><?php the_author(); ?></a>                      
+                   </span>
                 </span>
                 <!-- <span class="bullet white-text">&nbsp;•&nbsp;</span>
                 <i class="fa fa-comments white-text"></i>

@@ -43,7 +43,7 @@
   <!--
   <link rel="canonical" href="http://www.example.com/">
   -->
-  <meta name="description" content="<?php bloginfo('description'); ?>" />
+  
   <!-- Favicon -->
   <link rel="shortcut icon" href="/favicon.ico">
   <!-- asyncronous load of Typekit font -->
@@ -61,16 +61,16 @@
   <?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?> itemscope="itemscope" itemtype="http://schema.org/WebPage">
+<body <?php body_class(); ?>>
 
 <div id="page" class="hfeed site">
   <span id="back-to-top" class="section scrollspy"></span>
 	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'anthonyjones' ); ?></a>
   
 	<!-- Desktop Navigation -->
-  <header role="banner" class="hide-on-small-only" itemscope="itemscope" itemtype="http://schema.org/WPHeader">
+  <header role="banner" class="hide-on-small-only">
     <div id="toolbar" class="navbar-fixed">
-      <nav id="banner" data-0="height:130px" data-128="height: 64px" class="uva-blue headroom" role="navigation" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+      <nav id="banner" data-0="height:130px" data-128="height: 64px" class="uva-blue headroom" role="navigation">
         <div class="container">
           <div class="nav-wrapper">
             <a id="desktop-mobile-button" aria-controls="primary-menu" aria-expanded="false" data-activates="mobile-demo" class="mobile-button hide-on-large-only sidenav_button btn-floating waves-effect clear-icon">
@@ -92,7 +92,7 @@
 
   <!-- Mobile Device Navigation For CSS FIXED BUGS-->
   <div id="mobile-toolbar" class="navbar-fixed hide-on-med-and-up">
-    <nav id="mobile-banner" class="uva-blue" role="navigation" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+    <nav id="mobile-banner" class="uva-blue" role="navigation">
       <div class="container">
         <div class="nav-wrapper">
           <a id="mobile-hamburger" aria-controls="primary-menu" aria-expanded="false" data-activates="mobile-demo" class="mobile-button hide-on-large-only sidenav_button btn-floating waves-effect clear-icon">

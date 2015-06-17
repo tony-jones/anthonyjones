@@ -21,7 +21,7 @@
 		          <?php endif; ?>
 		        </div>
 		        <div class="col s12 m6">
-		        	<div class="align-with-title" itemprop="text">
+		        	<div class="align-with-title">
 		          <?php the_excerpt(); ?>
 							<?php
 							 wp_link_pages( array(
