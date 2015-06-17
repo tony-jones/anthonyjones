@@ -140,8 +140,8 @@ $(document).ready(function() {
   
     inClass               :   'fade-in-down-sm',
     outClass              :   'fade-out-down-sm',
-    inDuration            :    1500,
-    outDuration           :    800,
+    inDuration            :    1000,
+    outDuration           :    700,
     linkElement           :   '.animsition-link',
     // e.g. linkElement   :   'a:not([target="_blank"]):not([href^=#])'
     loading               :    true,
