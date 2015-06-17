@@ -1423,8 +1423,14 @@ span.unu, span.doi, span.trei {
   margin: .6rem 0 .48rem;
 }
 
+
+#banner {
+  visibility: hidden;
+  opacity: 0;
+}
 #home-logo {
   visibility: hidden;
+  opacity: 0;
 }
 #menu-main-navigation li a {
   visibility: hidden;
@@ -1450,23 +1456,32 @@ a  {
   visibility: hidden;
   opacity: 0;
 }
+.wf-loading #banner {
+  visibility: hidden;
+  opacity: 0;
+}
 .wf-active #home-logo {
   visibility: visible;
   opacity: 1;
-  transition: opacity 2s linear;
+  transition: opacity 1s linear;
 }
 .wf-active #menu-main-navigation li a {
   visibility: visible;
   opacity: 1;
-  transition: opacity 2s linear;
+  transition: opacity 1s linear;
 }
 .wf-active a {
   visibility: visible;
   opacity: 1;
-  transition: opacity 2s linear;
+  transition: opacity 1s linear;
 }
 .wf-active .location {
   visibility: visible;
   opacity: 1;
-  transition: opacity 2s linear;
+  transition: opacity 1s linear;
+}
+.wf-active #banner {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 1s linear;
 }
