@@ -19,7 +19,7 @@
             <?php printf( __( '%1$s %2$s', 'anthonyjones' ), 'Source code:', '<a href="https://github.com/tony-jones/anthonyjones" class="orange-text" rel="designer"><i class="fa fa-github"></i> GitHub</a>' ); ?>
           </div>
           <div class="left location hide-on-med-and-up">
-            <?php printf( __( '%1$s %2$s', 'anthonyjones' ), '', '<a href="https://github.com/tony-jones/anthonyjones" class="orange-text" rel="designer"><i style="font-size:24px;" class="fa fa-github"></i></a>' ); ?>
+            <?php printf( __( '%1$s %2$s', 'anthonyjones' ), '', '<a href="https://github.com/tony-jones/anthonyjones" class="orange-text" rel="designer"><i class="github-icon fa fa-github"></i></a>' ); ?>
           </div>
           <div class="right">
             <div class="waves-effect waves-black top-article">
@@ -49,9 +49,9 @@
           <?php $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?>
           <div class="no-padding col s12 m6 l6">
             <div class="recommended">
-              <a class="close-x" href="<?php echo get_permalink(); ?>" style="cursor: pointer; display: block; overflow: hidden;">
+              <a id="recommended-a" class="close-x" href="<?php echo get_permalink(); ?>">
               <li class="footer-articles waves-effect waves-dark collection-item avatar">
-                <img src="<?=$url?>" alt="" class="circle responsive-img">
+                <img src="<?=$url?>" alt="thumbnail image for recommended articles" class="circle responsive-img">
                 <span class="title grey-text"><?php the_title(); ?></span>
                 <p>
                   <?php get_the_subtitle( $post ); ?>

@@ -1377,4 +1377,15 @@ span.unu, span.doi, span.trei {
   -webkit-transition: all 0.3s ease-in-out 0s;
   transition: all 0.3s ease-in-out 0s;
 }
-  
+.content-single-top {
+  margin-top: -100px;
+}  
+#recommended-a {
+  cursor: pointer; 
+  display: block; 
+  overflow: hidden;
+}
+.github-icon {
+  font-size:24px;
+}
+
