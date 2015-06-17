@@ -5,13 +5,13 @@
 ?>
   
   <!-- Set your background image for this header on the line below. -->
-  <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-    <main role="main">
+  <article id="post-<?php the_ID(); ?>" <?php post_class(); ?> itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
+    <main role="main" itemprop="mainContentOfPage" itemscope="itemscope" itemtype="http://schema.org/Blog">
       <div class="content-single-top">
         <?php
 			  $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
 			  ?>
-        <div class="section no-pad-bot" id="index-banner" style="background-position: center top;
+        <div class="section no-pad-bot" itemprop="image" content="<?=$url?>" id="index-banner" style="background-position: center top;
 																																 background: linear-gradient( 
 																																  rgba(0, 0, 0, 0.3), 
 																																  rgba(0, 0, 0, 0.3) ), 
@@ -26,18 +26,18 @@
               <div class="badges center">
               <?php echo get_the_category_list(', '); ?>
               </div>
-              <h1 class="title-padding header center white-text"><?php the_title(); ?></h1>
+              <h1 itemprop="headline" class="title-padding header center white-text"><?php the_title(); ?></h1>
               <div class="center">
                 <h2 id="subtitle" class="light header col s12 white-text"><?php get_the_subtitle( $post ); ?></h2>
               </div>
               <div class="post-details center">
-                <span class="date updated white-text">
+                <span class="date updated white-text" itemprop="datePublished">
                   <?php echo human_time_diff( get_the_time('U'), current_time('timestamp') ) . ' ago'; ?>
                 </span>
                 
                 <span class="bullet white-text">&nbsp;•&nbsp;</span>
                 <span class="author vcard white-text">
-                by <a class="white-text" title="" rel="author"><?php the_author(); ?></a>                      
+                by <a class="white-text" title="" rel="author" itemscope="itemscope" itemtype="http://schema.org/Person" itemprop="author"><?php the_author(); ?></a>                      
                 </span>
                 <!-- <span class="bullet white-text">&nbsp;•&nbsp;</span>
                 <i class="fa fa-comments white-text"></i>
@@ -59,7 +59,7 @@
             <div class="col s12 m12 l8 offset-l2">
               <?php get_template_part('share'); ?>   
               <div class="container">
-	              <div class="flow-text">
+	              <div class="flow-text" itemprop="text">
 	               
 	                <?php the_content(); ?>
 	                <?php

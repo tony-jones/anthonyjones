@@ -27,9 +27,9 @@ get_header(); ?>
                                                                  -o-background-size: cover;">
           <div class="container">
             <div class="heading">
-              <h1 class="light header center white-text">Anthony Jones</h1>
+              <h1 itemprop="headline" class="light header center white-text">Anthony Jones</h1>
               <div class="center">
-                <h5 class="header col s12 light white-text">Universal Design Advocate</h5>
+                <h5 itemprop="description" class="header col s12 light white-text">Universal Design Advocate</h5>
               </div>
                 <div class="center">
                   <div class="col s12 m6 l8 offset-m3 offset-l2">

@@ -11,7 +11,7 @@
 	</div><!-- #content -->
   </div> <!-- animsition div -->
   <!-- Footer -->
-  <footer class="site-footer white" role="contentinfo">
+  <footer class="site-footer white" role="contentinfo" itemscope="itemscope" itemtype="http://schema.org/WPFooter">
     <div class="footer-bar">
       <div class="row">
         <div class="copyright">

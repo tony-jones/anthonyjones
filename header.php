@@ -61,16 +61,16 @@
   <?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>>
+<body <?php body_class(); ?> itemscope="itemscope" itemtype="http://schema.org/WebPage">
 
 <div id="page" class="hfeed site">
   <span id="back-to-top" class="section scrollspy"></span>
 	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'anthonyjones' ); ?></a>
   
 	<!-- Desktop Navigation -->
-  <header role="banner" class="hide-on-small-only">
+  <header role="banner" class="hide-on-small-only" itemscope="itemscope" itemtype="http://schema.org/WPHeader">
     <div id="toolbar" class="navbar-fixed">
-      <nav id="banner" data-0="height:130px" data-128="height: 64px" class="uva-blue headroom" role="navigation">
+      <nav id="banner" data-0="height:130px" data-128="height: 64px" class="uva-blue headroom" role="navigation" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
         <div class="container">
           <div class="nav-wrapper">
             <a id="desktop-mobile-button" aria-controls="primary-menu" aria-expanded="false" data-activates="mobile-demo" class="mobile-button hide-on-large-only sidenav_button btn-floating waves-effect clear-icon">
@@ -92,7 +92,7 @@
 
   <!-- Mobile Device Navigation For CSS FIXED BUGS-->
   <div id="toolbar" class="navbar-fixed hide-on-med-and-up">
-    <nav id="banner" class="uva-blue" role="navigation">
+    <nav id="banner" class="uva-blue" role="navigation" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
       <div class="container">
         <div class="nav-wrapper">
           <a id="mobile-hamburger" aria-controls="primary-menu" aria-expanded="false" data-activates="mobile-demo" class="mobile-button hide-on-large-only sidenav_button btn-floating waves-effect clear-icon">

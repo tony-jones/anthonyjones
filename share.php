@@ -25,7 +25,7 @@
   <a class="tooltipped btn-floating btn-large grey darken-3" data-position="left" data-delay="50" data-tooltip="Share this Article!">
     <i class="large mdi-social-share"></i>
   </a>
-  <ul style="fixed-social-links">
+  <ul class="fixed-social-links">
     <li><a href="https://plus.google.com/share?url='<?php echo $url; ?>" target="_blank" class="tooltipped btn-floating red" title="Share on Google +" data-position="left" data-delay="10" data-tooltip="Share on Google+"><i class="fa fa-google-plus"></i></a></li>
     <li><a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=<?php echo $url; ?>&amp;title=<?php echo $title; ?>" target="_blank" class="tooltipped btn-floating blue darken-1" title="Share on Linkedin" data-position="left" data-delay="50" data-tooltip="Share on Linkedin"><i class="fa fa-linkedin"></i></a></li>
     <li><a href="https://www.facebook.com/sharer/sharer.php?u='<?php echo $url; ?>" target="_blank" class="tooltipped btn-floating indigo" title="Share on Facebook" data-position="left" data-delay="50" data-tooltip="Share on Facebook"><i class="fa fa-facebook"></i></a></li>
