@@ -28,7 +28,7 @@
               </div>
               <h1 class="title-padding header center white-text"><?php the_title(); ?></h1>
               <div class="center">
-                <h5 class="light header col s12 white-text"><?php get_the_subtitle( $post ); ?></h5>
+                <h2 id="subtitle" class="light header col s12 white-text"><?php get_the_subtitle( $post ); ?></h2>
               </div>
               <div class="post-details center">
                 <span class="date updated white-text">
