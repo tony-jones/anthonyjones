@@ -1422,9 +1422,31 @@ span.unu, span.doi, span.trei {
   line-height: 1.32rem;
   margin: .6rem 0 .48rem;
 }
-.wf-loading #home-logo, .wf-loading #menu-main-navigation li a, .wf-loading a  {
+
+#home-logo {
   visibility: hidden;
 }
-.wf-active #home-logo, .wf-active #menu-main-navigation li a, .wf-active a {
+#menu-main-navigation li a {
+  visibility: hidden;
+}
+a  {
+  visibility: hidden;
+}
+.wf-loading #home-logo {
+  visibility: hidden;
+}
+.wf-loading #menu-main-navigation li a {
+  visibility: hidden;
+}
+.wf-loading a  {
+  visibility: hidden;
+}
+.wf-active #home-logo {
+  visibility: visible;
+}
+.wf-active #menu-main-navigation li a {
+  visibility: visible;
+}
+.wf-active a {
   visibility: visible;
 }
