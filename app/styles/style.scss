@@ -1422,3 +1422,9 @@ span.unu, span.doi, span.trei {
   line-height: 1.32rem;
   margin: .6rem 0 .48rem;
 }
+.wf-loading #home-logo, .wf-loading #menu-main-navigation li a, .wf-loading a  {
+  visibility: hidden;
+}
+.wf-active #home-logo, .wf-active #menu-main-navigation li a, .wf-active a {
+  visibility: visible;
+}

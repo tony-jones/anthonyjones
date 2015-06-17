@@ -70,7 +70,7 @@
 	<!-- Desktop Navigation -->
   <header role="banner" class="hide-on-small-only" itemscope="itemscope" itemtype="http://schema.org/WPHeader">
     <div id="toolbar" class="navbar-fixed">
-      <nav id="banner" data-0="height:130px" data-128="height: 64px" class="uva-blue headroom" role="navigation" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+      <nav id="banner" data-0="height:130px" data-128="height: 64px" class="uva-blue headroom" role="navigation" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement" style="height: 130px;">
         <div class="container">
           <div class="nav-wrapper">
             <a id="desktop-mobile-button" aria-controls="primary-menu" aria-expanded="false" data-activates="mobile-demo" class="mobile-button hide-on-large-only sidenav_button btn-floating waves-effect clear-icon">
@@ -80,7 +80,7 @@
               <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'hide-on-med-and-down' ) ); ?>     
             </div>
           </div>
-          <div id="title" data-0="font-size: 45px; padding: 0 0 24px 35px;" data-128="font-size: 26px; padding: 0 0 15px 50px;">
+          <div style="font-size: 45px; padding: 0px 0px 24px 35px;" id="title" data-0="font-size: 45px; padding: 0 0 24px 35px;" data-128="font-size: 26px; padding: 0 0 15px 50px;">
             <a id="home-logo" href="<?php echo esc_url( home_url( '/' ) ); ?>">
               <?php bloginfo( 'name' ); ?><span class="regular teal-text">.</span>
             </a>           
