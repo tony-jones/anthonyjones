@@ -49,7 +49,7 @@
           <?php $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?>
           <div class="no-padding col s12 m6 l6">
             <div class="recommended">
-              <a id="recommended-a" class="close-x" href="<?php echo get_permalink(); ?>">
+              <a class="recommended-a close-x" href="<?php echo get_permalink(); ?>">
               <li class="footer-articles waves-effect waves-dark collection-item avatar">
                 <img src="<?=$url?>" alt="thumbnail image for recommended articles" class="circle responsive-img">
                 <span class="title grey-text"><?php the_title(); ?></span>

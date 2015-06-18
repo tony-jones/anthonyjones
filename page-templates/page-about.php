@@ -11,7 +11,7 @@
 get_header(); ?>
    
   <div id="primary" class="content-area">
-    <main class="about-bg site-main" role="main">
+    <main class="about-bg site-main">
       <?php
         $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
         ?>

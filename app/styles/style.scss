@@ -1380,7 +1380,7 @@ span.unu, span.doi, span.trei {
 .content-single-top {
   margin-top: -100px;
 }  
-#recommended-a {
+.recommended-a {
   cursor: pointer; 
   display: block; 
   overflow: hidden;
@@ -1482,7 +1482,7 @@ a  {
   transition: opacity 1s linear;
 }
 .main-icon {
-  font-size: 2.2rem;
+  `sfont-size: 2.2rem;
   line-height: 2.42rem;
   margin: 1.1rem 0 .88rem;
 }

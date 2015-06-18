@@ -15,7 +15,7 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 	  <div id="writing-page" class="hide-on-small-only"></div>
-		<main id="main" class="site-main" role="main">
+		<main id="main" class="site-main">
 		<?php $c = 0; $style = '';
 		  if ( have_posts() ) : 
 			  while ( have_posts() ) : the_post(); 

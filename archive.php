@@ -11,7 +11,7 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 	  <div class="hide-on-small-only" style="margin-top: 100px;"></div>
-    <main id="main" class="site-main" role="main">
+    <main id="main" class="site-main">
 			  <?php if ( have_posts() ) : ?>
 
 		
