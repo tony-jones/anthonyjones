@@ -41,7 +41,7 @@
         <i class="mdi-navigation-close"></i>
       </a>
       <h5 class="footer-title">Recommended Articles</h5>
-       <div class="row">
+       <div class="row"> 
          <ul class="collection">
           <?php $recentPosts = new WP_Query(); ?>
           <?php $recentPosts->query('showposts=4'); ?>
