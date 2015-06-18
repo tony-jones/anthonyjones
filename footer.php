@@ -41,8 +41,8 @@
         <i class="mdi-navigation-close"></i>
       </a>
       <h5 class="footer-title">Recommended Articles</h5>
-       <ul class="collection">
-        <div class="row">
+       <div class="row">
+         <ul class="collection">
           <?php $recentPosts = new WP_Query(); ?>
           <?php $recentPosts->query('showposts=4'); ?>
           <?php while ($recentPosts->have_posts()) : $recentPosts->the_post(); ?>
@@ -56,30 +56,33 @@
                 <p>
                   <?php get_the_subtitle( $post ); ?>
                 </p>
-
-                <?php $category = get_the_category_list( __( ', ', 'anthonyjones' ) ); ?>
-                <span class="footer-categories"
-                  <?php echo $category ?>
+                <span class="footer-categories">
+                  <?php
+                    foreach((get_the_category()) as $category) {
+                      echo $category->cat_name . ' ';
+                    }
+                  ?>
                 </span>
               </li>
               </a>
             </div>
           </div>
           <?php endwhile; ?>
-        </div>
-      </ul>
+        </ul>
+      </div>
     </div>
   </div>
 </div><!-- #page -->
 
+<!-- asyncronous load of Typekit font -->
 <script>
-  (function(d) {
-    var config = {
-      kitId: 'kwr2coa',
-      scriptTimeout: 3000
-    },
-    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='//use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
-  })(document);
+(function(d) {
+  var config = {
+    kitId: 'kwr2coa',
+    scriptTimeout: 3000
+  },
+  h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='//use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+})(document);
 </script>
 
 <?php wp_footer(); ?>

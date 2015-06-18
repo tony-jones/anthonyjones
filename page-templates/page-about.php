@@ -81,21 +81,21 @@ get_header(); ?>
           <div class="col s12 m10 l8 offset-m1 offset-l2">
             <div class="col s12 m4">
               <div class="icon-block">
-                <h2 class="center white-text"><i class="mdi-av-web"></i></h2>
+                <div class="main-icon center white-text"><i class="mdi-av-web"></i></div>
                 <h5 class="center white-text">Interface Design</h5>
                 <p class="center light white-text">Creating great content experiences through design is my goal. I create interfaces that are fun and help users interact with content, but not compete with it.</p>
               </div>
             </div>
             <div class="col s12 m4">
               <div class="icon-block">
-                <h2 class="center white-text"><i class="mdi-social-mood"></i></h2>
+                <div class="main-icon center white-text"><i class="mdi-social-mood"></i></div>
                 <h5 class="center white-text">User Experience</h5>
                 <p class="center light white-text">In the world of opinionated design, I believe that a data-driven UX stratgey is key. I let real data inform my design decisions.</p>
               </div>
             </div>
             <div class="col s12 m4">
               <div class="icon-block">
-                <h2 class="center white-text"><i class="mdi-device-developer-mode"></i></h2>
+                <div class="main-icon center white-text"><i class="mdi-device-developer-mode"></i></div>
                 <h5 class="center white-text">Development</h5>
                 <p class="center light white-text">With a strong background in object-oriented programming, I strive to deliver code that is well-documented, standards compliant, and secure.  </p>
               </div>
