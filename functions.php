@@ -173,6 +173,11 @@ function foobar_func( $atts ){
 }
 add_shortcode( 'foobar', 'foobar_func' );
 
+function custom_theme_setup() {
+    add_theme_support( 'advanced-image-compression' );
+}
+add_action( 'after_setup_theme', 'custom_theme_setup' );
+
 /**
  * Register widget area.
  *

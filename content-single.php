@@ -6,21 +6,21 @@
   
   <!-- Set your background image for this header on the line below. -->
   <article id="post-<?php the_ID(); ?>" <?php post_class(); ?> itemscope itemtype="http://schema.org/Article">
-    <main role="main">
+    <main>
       <div class="content-single-top">
         <?php
 			  $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
 			  ?>
-        <div class="section no-pad-bot" itemprop="image" content="<?=$url?>" id="index-banner" style="background-position: center top;
-																																 background: linear-gradient( 
-																																  rgba(0, 0, 0, 0.3), 
-																																  rgba(0, 0, 0, 0.3) ), 
-																																 url('<?=$url?>');
-																																 background-repeat: no-repeat;
-																																 background-color: rgba(0, 148, 255, 0.26);
-																																 background-attachment: scroll;
-																																 background-size: cover;
-																																 -o-background-size: cover;">
+        <div class="section no-pad-bot overlay" itemprop="image" content="<?=$url?>" id="index-banner" style="background-color: rgba(0, 148, 255, 0.26);
+                                            																																  background-image: linear-gradient( 
+                                            																																  rgba(0, 0, 0, 0.3), 
+                                            																																  rgba(0, 0, 0, 0.3) ), 
+                                            																																  url('<?=$url?>');
+                                            																																  background-repeat: no-repeat;
+                                                                                                              background-attachment: scroll;
+                                            																																  background-position: center top;
+                                            																																  background-size: cover;
+                                            																																  -o-background-size: cover;">
           <div class="container">
             <div class="heading">
               <div class="badges center">
