@@ -109,5 +109,5 @@
       <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?> 
     </div>
   </nav>
-  <div class="animsition">
+  <!-- <div class="animsition"> -->
 	<div id="content" class="site-content">

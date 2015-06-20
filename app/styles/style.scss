@@ -1422,7 +1422,10 @@ span.unu, span.doi, span.trei {
   line-height: 1.32rem;
   margin: .6rem 0 .48rem;
 }
-
+#content {
+  visibility: hidden;
+  opacity: 0;
+}
 #banner {
   visibility: hidden;
   opacity: 0;
@@ -1455,6 +1458,10 @@ a  {
   visibility: hidden;
   opacity: 0;
 }
+.wf-loading #content {
+  visibility: hidden;
+  opacity: 0;
+}
 .wf-active #home-logo {
   visibility: visible;
   opacity: 1;
@@ -1476,6 +1483,11 @@ a  {
   transition: opacity 1s linear;
 }
 .wf-active #banner {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 1s linear;
+}
+.wf-active #content {
   visibility: visible;
   opacity: 1;
   transition: opacity 1s linear;

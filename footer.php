@@ -127,7 +127,10 @@ s.src = '//' + disqus_shortname + '.disqus.com/count.js';
           $.getJSON( url, data, function( json ) {
             if( json && json.count ) {
               $count.text( json.count ); // Update the count without page refresh
-              $(".my-post-like").attr("disabled", true);
+              $('.my-post-like').attr("disabled", true);
+              $('.my-post-like').html('<i class="fa fa-thumbs-o-up"></i> Liked <span class="like-count"></span>');
+              $('.fa-thumbs-o-up').addClass('teal-text');
+              $('.badges.inverse a.my-post-like').css('border', '2px solid #099DB0');
             }
           });
         });
