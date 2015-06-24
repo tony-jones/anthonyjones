@@ -1473,3 +1473,13 @@ a  {
 .widgettitle, .page-title, .entry-title {
   font-weight: 200;
 }
+.nav-previous, .nav-next {
+  padding-top: 20px;
+}
+.nav-previous a, .nav-next a {
+  border: 1px solid #E0E0E0;
+  padding: 7px;
+  border-radius: 3px;
+  margin-left: 15%;
+}
+
