@@ -86,17 +86,34 @@
 </script>
 
 <?php wp_footer(); ?>
-<script>
-/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-var disqus_shortname = 'anthonyjones'; // required: replace example with your forum shortname
-
-/* * * DON'T EDIT BELOW THIS LINE * * */
-(function () {
-var s = document.createElement('script'); s.async = true;
-s.type = 'text/javascript';
-s.src = '//' + disqus_shortname + '.disqus.com/count.js';
-(document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-}());
+<script type="text/javascript">
+jQuery(document).ready(function ($) {
+  var disqus_shortname = 'anthonyjones'; // required: replace example with your forum shortname
+  var disqus_div = $("#disqus_thread");
+  if (disqus_div.size() > 0 ) {
+    var ds_loaded = false,
+    top = disqus_div.offset().top,
+    disqus_data = disqus_div.data(),
+    check = function() {
+      if ( !ds_loaded && $(window).scrollTop() + $(window).height() > top ) {
+        ds_loaded = true;
+        for (var key in disqus_data) {
+          if (key.substr(0,6) == 'disqus') {
+            window['disqus_' + key.replace('disqus','').toLowerCase()] = disqus_data[key];
+          }
+        }
+        // s.async = true;
+        var dsq = document.createElement('script'); 
+        dsq.type = 'text/javascript';
+        dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      }
+    };
+    $(window).scroll(check);
+    check();
+  }
+});
 </script>
 
 <script>

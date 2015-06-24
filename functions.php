@@ -75,7 +75,7 @@ function anthonyjones_setup() {
 
 	/*
 	 * Enable support for Post Formats.
-	 * See http://codex.wordpress.org/Post_Formats
+	 * See http://codex.wordpress.org/Post_Fedormats
 	 */
 	add_theme_support( 'post-formats', array(
 		'aside', 'image', 'video', 'quote', 'link',
@@ -211,16 +211,14 @@ function anthonyjones_scripts() {
 add_action( 'wp_enqueue_scripts', 'anthonyjones_scripts' );
 
 /**
- * Load Enqueued Scripts in the Footer
- *
- * Automatically move JavaScript code to page footer, speeding up page loading time.
- */
-
-
-/**
  * Implement the Custom Header feature.
  */
-//require get_template_directory() . '/inc/custom-header.php';
+// require get_template_directory() . '/inc/custom-header.php';
+
+/**
+ * Customizer additions.
+ */
+// require get_template_directory() . '/inc/customizer.php';
 
 /**
  * Custom template tags for this theme.
@@ -233,12 +231,12 @@ require get_template_directory() . '/inc/template-tags.php';
 require get_template_directory() . '/inc/extras.php';
 
 /**
- * Customizer additions.
- */
-require get_template_directory() . '/inc/customizer.php';
-
-/**
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+/**
+ * Load Custom Post Types
+ */
+require get_template_directory() . '/inc/custom_post_types.php';
 

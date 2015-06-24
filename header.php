@@ -63,11 +63,11 @@
       <nav id="banner" data-0="height:130px" data-128="height: 64px" class="uva-blue headroom" role="navigation">
         <div class="container">
           <div class="nav-wrapper">
-            <a id="desktop-mobile-button" data-activates="mobile-demo" class="mobile-button hide-on-large-only sidenav_button btn-floating waves-effect clear-icon">
+            <a id="desktop-mobile-button" data-activates="mobile-demo" class="mobile-button hide-on-med-and-up sidenav_button btn-floating waves-effect clear-icon">
               <i id="desktop-icon" class="mdi-navigation-menu"></i>
             </a>
             <div class="right">
-              <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'hide-on-med-and-down' ) ); ?>     
+              <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'hide-on-small' ) ); ?>     
             </div>
           </div>
           <div id="title" data-0="font-size: 45px; padding: 0 0 24px 35px;" data-128="font-size: 26px; padding: 0 0 15px 50px;">
@@ -85,7 +85,7 @@
     <nav id="mobile-banner" class="uva-blue" role="navigation">
       <div class="container">
         <div class="nav-wrapper">
-          <a id="mobile-hamburger" data-activates="mobile-demo" class="mobile-button hide-on-large-only sidenav_button btn-floating waves-effect clear-icon">
+          <a id="mobile-hamburger" data-activates="mobile-demo" class="mobile-button hide-on-med-only sidenav_button btn-floating waves-effect clear-icon">
             <i id="mobile-icon" class="mdi-navigation-menu"></i>
           </a>
           <a href="<?php echo esc_url( home_url( '/' ) ); ?>" data-0="opacity: 1;" data-128="opacity: 0;" class="">
