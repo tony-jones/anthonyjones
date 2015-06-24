@@ -497,7 +497,7 @@ clip: rect(-6px,185px,14px,25px);
     transition: transform 200ms linear;
 }
 .headroom--pinned {
-    transform: translateY(0%);
+    transition: translateY(0%);
 }
 .headroom--unpinned {
     transform: translateY(-100%);
@@ -1455,7 +1455,7 @@ a  {
 .wf-active #banner {
   visibility: visible;
   opacity: 1;
-  transition: opacity .5s linear;
+  //transition: opacity .5s linear;
 }
 .wf-active #content {
   visibility: visible;

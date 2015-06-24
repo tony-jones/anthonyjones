@@ -1,5 +1,4 @@
 /*!
- *
  *  AnthonyJones.me
  *  Copyright 2015 Anthony. All rights reserved.
  *

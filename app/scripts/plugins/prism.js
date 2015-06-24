@@ -1,17 +1,16 @@
-/* http://prismjs.com/download.html?themes=prism&languages=markup+css+clike+javascript+csharp+java+php+ruby+scss&plugins=line-numbers */
-self = (typeof window !== 'undefined')
+/*!
+ * Prism: Lightweight, robust, elegant syntax highlighting
+ * MIT license http://www.opensource.org/licenses/mit-license.php/
+ * @author Lea Verou http://lea.verou.me
+ */
+
+ self = (typeof window !== 'undefined')
   ? window   // if in browser
   : (
     (typeof WorkerGlobalScope !== 'undefined' && self instanceof WorkerGlobalScope)
     ? self // if in worker
     : {}   // if in node js
   );
-
-/**
- * Prism: Lightweight, robust, elegant syntax highlighting
- * MIT license http://www.opensource.org/licenses/mit-license.php/
- * @author Lea Verou http://lea.verou.me
- */
 
 var Prism = (function(){
 
