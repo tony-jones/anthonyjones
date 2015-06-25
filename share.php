@@ -29,7 +29,7 @@
     <li><a href="https://plus.google.com/share?url='<?php echo $url; ?>" target="_blank" class="tooltipped btn-floating red" title="Share on Google +" data-position="left" data-delay="10" data-tooltip="Share on Google+"><i class="fa fa-google-plus"></i></a></li>
     <li><a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=<?php echo $url; ?>&amp;title=<?php echo $title; ?>" target="_blank" class="tooltipped btn-floating blue darken-1" title="Share on Linkedin" data-position="left" data-delay="50" data-tooltip="Share on Linkedin"><i class="fa fa-linkedin"></i></a></li>
     <li><a href="https://www.facebook.com/sharer/sharer.php?u='<?php echo $url; ?>" target="_blank" class="tooltipped btn-floating indigo" title="Share on Facebook" data-position="left" data-delay="50" data-tooltip="Share on Facebook"><i class="fa fa-facebook"></i></a></li>
-    <li><a href="https://twitter.com/intent/tweet?text='<?php echo $title; ?>'&amp;url='<?php echo $url; ?>'&amp;via=iamtonybagels" target="_blank" class="tooltipped btn-floating blue lighten-1" title="Share on Twitter" data-position="left" data-delay="50" data-tooltip="Share on Twitter"><i class="fa fa-twitter"></i></a></li>
+    <li><a href="https://twitter.com/intent/tweet?original_referer=<?php echo wp_get_shortlink(); ?>&amp;text=<?php the_title(); ?>&tw_p=tweetbutton&url=<?php echo wp_get_shortlink(); ?>&via=iamtonybagels" target="_blank" class="tooltipped btn-floating blue lighten-1" title="Share on Twitter" data-position="left" data-delay="50" data-tooltip="Share on Twitter"><i class="fa fa-twitter"></i></a></li>
   </ul>
 </div>
 
@@ -45,7 +45,7 @@
     <a href="https://plus.google.com/share?url='<?php echo $url; ?>" target="_blank" class="social-share sharer btn red" title="Share on Google +"><i class="fa fa-google-plus"></i></a>
     <a href="https://www.facebook.com/sharer/sharer.php?u='<?php echo $url; ?>" target="_blank" class="social-share sharer btn blue darken-2" title="Share on Facebook"><i class="fa fa-facebook"></i></a>
     <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=<?php echo $url; ?>&amp;title=<?php echo $title; ?>" target="_blank" class="social-share sharer btn blue darken-3" title="Share on Linkedin"><i class="fa fa-linkedin"></i></a>
-    <a href="https://twitter.com/intent/tweet?text='<?php echo $title; ?>'&amp;url='<?php echo $url; ?>'&amp;via=iamtonybagels" target="_blank" class="social-share sharer btn blue" title="Share on Twitter"><i class="fa fa-twitter"></i></a>
+    <a href="https://twitter.com/intent/tweet?original_referer=<?php echo wp_get_shortlink(); ?>&amp;text=<?php the_title(); ?>&tw_p=tweetbutton&url=<?php echo wp_get_shortlink(); ?>&via=iamtonybagels" class="social-share sharer btn blue" title="Share on Twitter" target="_blank"><i class="fa fa-twitter"></i></a>
   </div>
   <div class="modal-footer">
     <a href="#!" class="modal-action modal-close waves-effect waves-orange btn-flat">Close</a>
