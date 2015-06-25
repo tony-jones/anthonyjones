@@ -660,6 +660,10 @@ span.badge.category {
   .title-padding {
     padding: none;
   }
+  .border-radius-image-mobile {
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+  }
 }
 @media only screen and (max-width: 993px) {
   .modal .modal-content {
@@ -673,6 +677,10 @@ span.badge.category {
   }
   .about-bg {
     margin-top:-100px;
+  }
+  .border-radius-right-image {
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
   }
 }
 @media only screen and (min-width: 993px) {
@@ -703,6 +711,42 @@ span.badge.category {
   right: 0%;
   top: -3%;
   padding: 3px 10px 0px 10px;
+}
+.web.development {
+  color: #3C72C5;
+}
+.illustration {
+  color: #099DB0;
+}
+.branding {
+  color: #EA5B42;
+}
+span.badge.illustration {
+  font-weight: 300;
+  font-size: .85rem;
+  color: #fff;
+  background-color: #099DB0;
+  border-radius: 2px;
+  float:left;
+  text-transform: capitalize;
+}
+span.badge.branding {
+  font-weight: 300;
+  font-size: .85rem;
+  color: #fff;
+  background-color: #EA5B42;
+  border-radius: 2px;
+  float:left;
+  text-transform: capitalize;
+}
+span.badge.web.development {
+  font-weight: 300;
+  font-size: .85rem;
+  color: #fff;
+  background-color: #3C72C5;
+  border-radius: 2px;
+  float:left;
+  text-transform: capitalize;
 }
 span.badge.Decor {
   font-weight: 300;
@@ -906,6 +950,9 @@ article .blog-item {
   margin-bottom: 0;
 }
 .row.col.no-padding {
+  padding: 0px;
+}
+.row .col.no-padding {
   padding: 0px;
 }
 .footer-categories {
@@ -1340,7 +1387,7 @@ a.anchor {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #383838;
+  background-color: #757575;
   visibility: hidden;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
@@ -1482,4 +1529,41 @@ a  {
   border-radius: 3px;
   margin-left: 15%;
 }
-
+.portfolio-blog-item {
+  background-color: #fff;
+  border-radius: 3px;
+}
+.blog-item {
+  background-color: #fff;
+  border-radius: 3px;
+}
+.portfolio-blog-item:hover {
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,.02),0 2px 10px 0 rgba(0,0,0,.08);
+}
+.portfolio-article-link {
+  cursor: pointer;
+  display: block;
+  overflow: hidden;
+}
+.portfolio-description {
+  padding: 10px;
+}
+.portfolio-cat {
+  text-transform: uppercase;
+}
+.footer-articles {
+  border-radius: 3px;
+}
+.recommended-a:hover, .close-button:hover {
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,.02),0 2px 10px 0 rgba(0,0,0,.08);
+}
+.top-article a:hover, .location a:hover {
+  color: #383838;
+}
+.post-details {
+  padding-top: 15px;
+}
+.not-active {
+   pointer-events: none;
+   cursor: default;
+}

@@ -7,21 +7,27 @@
 get_header(); ?>
 
   <div id="primary" class="content-area">
-    <div class="hide-on-small-only" style="margin-top: 100px;"></div>
+    <div class="hide-on-small-only" style="margin-top: 130px;"></div>
     <main id="main" class="site-main">
-        <?php if ( have_posts() ) : ?>
+      
+      <?php
+      $args = array(
+        'post_type' => 'portfolio',
+      );
+      $query = new WP_Query( $args );
+      ?>
 
-    
+      <?php if ( $query->have_posts() ) : ?>
 
       <?php /* Start the Loop */ ?>
-      <?php while ( have_posts() ) : the_post(); ?>
+      <?php while ( $query->have_posts() ) : $query->the_post(); ?>
 
         <?php
           /* Include the Post-Format-specific template for the content.
            * If you want to override this in a child theme, then include a file
            * called content-___.php (where ___ is the Post Format name) and that will be used instead.
            */
-          get_template_part( 'content', get_post_format() );
+          get_template_part( 'content', 'portfolio');
         ?>
 
       <?php endwhile; ?>

@@ -61,4 +61,41 @@ function create_taxonomies_portfolio() {
 
 add_action( 'init', 'create_taxonomies_portfolio', 0 );
 
+/**
+ * Add Meta Box to Portfolio
+ */
+function portfolio_meta_box(){  
+  add_meta_box('projInfo-meta', 'Project Options', 'portfolio_meta_options', 'portfolio', 'side', 'low');  
+}  
+   
+/**
+ * Add Mata Options From to WP Backend
+ */
+function portfolio_meta_options() {  
+  global $post;  
+  if ( defined('DOING_AUTOSAVE') && DOING_AUTOSAVE ) return $post_id;
+  $custom = get_post_custom($post->ID);  
+  $link = $custom["projLink"][0];  
+  ?>  
+    <label>Link:</label><input name="projLink" value="<?php echo $link; ?>" />  
+  <?php  
+}
+add_action('admin_init', 'portfolio_meta_box'); 
+
+/**
+ * Save Meta Options
+ */
+function save_project_link(){  
+  global $post;  
+   
+  if ( defined('DOING_AUTOSAVE') && DOING_AUTOSAVE ) { 
+    return $post_id;
+  }
+  else {
+    update_post_meta($post->ID, "projLink", $_POST["projLink"]); 
+  } 
+}
+
+add_action('save_post', 'save_project_link'); 
+
 ?>

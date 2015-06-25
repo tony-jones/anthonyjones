@@ -211,6 +211,14 @@ function anthonyjones_scripts() {
 add_action( 'wp_enqueue_scripts', 'anthonyjones_scripts' );
 
 /**
+ * Allow subtitle for custom post types
+ */
+function my_wp_subtitle_page_part_support() {
+	add_post_type_support( 'portfolio', 'wps_subtitle' );
+}
+add_action( 'init', 'my_wp_subtitle_page_part_support' );
+
+/**
  * Implement the Custom Header feature.
  */
 // require get_template_directory() . '/inc/custom-header.php';
