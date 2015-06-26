@@ -521,6 +521,9 @@ clip: rect(-6px,185px,14px,25px);
   .title-padding {
     padding: 0 10%;
   }
+  .alt-padding {
+    padding: 0 20%;
+  }
 }
 @media only screen and (max-width: 480px) {
   .container {
@@ -681,6 +684,9 @@ span.badge.category {
   .border-radius-right-image {
     border-top-right-radius: 3px;
     border-bottom-right-radius: 3px;
+  }
+  .alt-padding {
+    padding: 0 10%;
   }
 }
 @media only screen and (min-width: 993px) {
@@ -1436,7 +1442,7 @@ a.anchor {
 }
 #subtitle {
   font-size: 1.5rem;
-  line-height: 1.32rem;
+  line-height: 1.7rem;
   margin: .6rem 0 .48rem;
 }
 #content {
@@ -1492,7 +1498,7 @@ a  {
 .wf-active a {
   visibility: visible;
   opacity: 1;
-  transition: opacity 1s linear;
+  // transition: opacity 1s linear;
 }
 .wf-active .location {
   visibility: visible;

@@ -16,7 +16,10 @@
         $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
         $terms_as_text = get_the_term_list( $post->ID, 'portfolio_category', '', ', ', '' ) ;
         ?>
-        <div class="section no-pad-bot overlay" itemprop="image" content="<?=$url?>" id="index-banner" style="background-image: url('<?=$url?>');
+        <div class="section no-pad-bot overlay" itemprop="image" content="<?=$url?>" id="index-banner" style="background-image: linear-gradient( 
+                                                                                                              rgba(0, 0, 0, 0.19), 
+                                                                                                              rgba(0, 0, 0, 0.14) ),
+                                                                                                              url('<?=$url?>');
                                                                                                               background-repeat: no-repeat;
                                                                                                               background-attachment: scroll;
                                                                                                               background-position: center top;
@@ -29,7 +32,7 @@
               </div>
               <h1 itemprop="headline" class="title-padding header center white-text"><?php the_title(); ?></h1>
               <div class="center">
-                <h2 itemprop="alternativeHeadline" id="subtitle" class="light header col s12 white-text"><?php get_the_subtitle( $post ); ?></h2>
+                <h2 itemprop="alternativeHeadline" id="subtitle" class="alt-padding light header col s12 white-text"><?php get_the_subtitle( $post ); ?></h2>
               </div>
             </div>
             <br><br>
