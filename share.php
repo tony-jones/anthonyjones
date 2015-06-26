@@ -36,10 +36,10 @@
 <!-- Modal Structure -->
 <div id="modal1" class="modal">
   <div class="modal-content center">
-    <h6 class="grey-text">Share This Article</h6>
-    <h4 class="blue-text text-darken-3"><?php the_title(); ?></h4>
-    <h5 class="grey-text text-darken-2"><?php get_the_subtitle( $post ); ?></h5>
-    by <a class="grey-text" title="" rel="author"><?php the_author(); ?></a>
+    <h6 class="regular grey-text text-darken-2">Share This Article</h6>
+    <h4 class="regular blue-text text-darken-3"><?php the_title(); ?></h4>
+    <h5 class="light grey-text text-darken-2"><?php get_the_subtitle( $post ); ?></h5>
+    <span class="light grey-text text-darken-2">by <?php the_author(); ?></span>
     <br><br>
     
     <a href="https://plus.google.com/share?url='<?php echo $url; ?>" target="_blank" class="social-share sharer btn red" title="Share on Google +"><i class="fa fa-google-plus"></i></a>
