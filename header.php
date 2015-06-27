@@ -43,7 +43,7 @@
   <!--
   <link rel="canonical" href="http://www.example.com/">
   -->
-  
+  <script>document.documentElement.className += ' wf-loading';</script>
   <!-- Favicon -->
   <link rel="shortcut icon" href="/favicon.ico">
   <!-- External Styles  -->
