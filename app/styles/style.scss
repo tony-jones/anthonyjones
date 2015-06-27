@@ -1445,24 +1445,58 @@ a.anchor {
   margin: .6rem 0 .48rem;
 }
 
-.wf-loading #home-logo, 
-.wf-loading a,
-.wf-loading h1, 
-.wf-loading h2,
-.wf-loading p,
 .wf-loading #toolbar {
   visibility: hidden;
 }
-.wf-active #home-logo, 
-.wf-active a 
-.wf-active h1, 
-.wf-active h2,
-.wf-active p,
 .wf-active #toolbar {
   visibility: visible;
 }
-
-
+.wf-loading #home-logo {
+  visibility: hidden;
+  opacity: 0;
+}
+.wf-loading #menu-main-navigation li a {
+  visibility: hidden;
+  opacity: 0;
+}
+.wf-loading a  {
+  visibility: hidden;
+  opacity: 0;
+}
+.wf-loading #content {
+  visibility: hidden;
+  opacity: 0;
+}
+.wf-active #home-logo {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 1s linear;
+}
+.wf-active #menu-main-navigation li a {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 1s linear;
+}
+.wf-active a {
+  visibility: visible;
+  opacity: 1;
+  // transition: opacity 1s linear;
+}
+.wf-active .location {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 1s linear;
+}
+.wf-active #banner {
+  visibility: visible;
+  opacity: 1;
+  //transition: opacity .5s linear;
+}
+.wf-active #content {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 1s linear;
+}
 
 .main-icon {
   font-size: 2.2rem;
