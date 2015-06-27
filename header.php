@@ -19,6 +19,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <script>document.documentElement.className += ' wf-loading';</script>
   <style>
+    #page {
+      visibility: hidden;
+      opacity: 0;
+    }
     .wf-loading {
       visibility: hidden;
       opacity: 0;
@@ -27,6 +31,10 @@
       visibility: visible;
       opacity: 1;
       transition: opacity 1s linear;
+    }
+    .wf-active #page {
+      visibility: visible;
+      opacity: 1;
     }
   </style>
   <!--Let browser know website is optimized for mobile-->
