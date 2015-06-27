@@ -17,6 +17,9 @@
   <!-- Meta -->
   <meta charset="<?php bloginfo( 'charset' ); ?>">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <script>document.documentElement.className += ' wf-loading';</script>
+  
   <!--Let browser know website is optimized for mobile-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
   <meta name="keywords" content="" />
@@ -50,7 +53,7 @@
     .wf-loading a,
     .wf-loading #content,
     .wf-loading #menu-main-navigation li a,
-    .wf-loading #home-logo    {
+    .wf-loading #home-logo {
       visibility: hidden;
       opacity: 0;
     }
@@ -71,7 +74,6 @@
       transition: opacity 1s linear;
     }
   </style>
-  <script>document.documentElement.className += 'wf-loading';</script>
   <!-- Favicon -->
   <link rel="shortcut icon" href="/favicon.ico">
   <!-- External Styles  -->
