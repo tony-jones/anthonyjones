@@ -7,7 +7,7 @@
   <div class="container">
 		<div class="row no-padding">
 		  <div class="blog-link">
-		    <div class="waves-effect blog-item col s12 m12 l10 offset-l1">
+		    <div class="hoverable waves-effect blog-item col s12 m12 l10 offset-l1">
 		      <a class="article-link" href="<?php echo get_permalink(); ?>">
 		        <div class="col s12 m6">
 		          <h5 itemprop="headline" class="light <?php foreach((get_the_category()) as $category) { echo $category->cat_name . '';} ?>"><?php the_title(); ?></h5>

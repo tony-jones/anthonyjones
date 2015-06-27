@@ -11,7 +11,7 @@
   <div class="container">
     <div class="row no-padding">
       <div class="blog-link">
-        <div class="portfolio-blog-item no-padding col s12 m12 l10 offset-l1">
+        <div class="hoverable portfolio-blog-item no-padding col s12 m12 l10 offset-l1">
           <a class="waves-effect portfolio-article-link" href="<?php echo get_permalink(); ?>">
             <div class="col s12 m6" style="padding: 15px 25px 30px 40px;">
               <h3 itemprop="headline" class="<?php echo strip_tags($terms_as_text); ?> light"><?php the_title(); ?></h3>

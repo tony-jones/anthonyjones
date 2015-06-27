@@ -89,7 +89,8 @@
 
   </article> <!-- #post-## -->
 
-   
+<?php comments_template( '', true ); ?>  
+
 <?php endwhile; endif; ?>
 <div class="footer-padding"></div>
 <?php get_footer(); ?>
