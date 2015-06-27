@@ -23,6 +23,10 @@
       visibility: hidden;
       opacity: 0;
     }
+    footer {
+      visibility: hidden;
+      opacity: 0;
+    }
     .wf-loading {
       visibility: hidden;
       opacity: 0;
@@ -35,6 +39,11 @@
     .wf-active #page {
       visibility: visible;
       opacity: 1;
+    }
+    .wf-active footer {
+      visibility: visible;
+      opacity: 1;
+      transition: opacity 1s linear;
     }
   </style>
   <!--Let browser know website is optimized for mobile-->
@@ -67,6 +76,7 @@
   <link rel="shortcut icon" href="/favicon.ico">
   <!-- External Styles  -->
 </head>
+<?php wp_head(); ?>
 
 <body <?php body_class(); ?>>
 
