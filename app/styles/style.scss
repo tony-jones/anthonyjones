@@ -1444,55 +1444,28 @@ a.anchor {
   line-height: 1.7rem;
   margin: .6rem 0 .48rem;
 }
-
 .wf-loading #toolbar {
   visibility: hidden;
+}
+.wf-loading a,
+.wf-loading #content,
+.wf-loading #menu-main-navigation li a,
+.wf-loading #home-logo    {
+  visibility: hidden;
+  opacity: 0;
 }
 .wf-active #toolbar {
   visibility: visible;
 }
-.wf-loading #home-logo {
-  visibility: hidden;
-  opacity: 0;
+.wf-active a,
+.wf-active #banner  {
+  visibility: visible;
+  opacity: 1;
 }
-.wf-loading #menu-main-navigation li a {
-  visibility: hidden;
-  opacity: 0;
-}
-.wf-loading a  {
-  visibility: hidden;
-  opacity: 0;
-}
-.wf-loading #content {
-  visibility: hidden;
-  opacity: 0;
-}
+.wf-active .location, 
+.wf-active #content, 
+.wf-active #menu-main-navigation li a,
 .wf-active #home-logo {
-  visibility: visible;
-  opacity: 1;
-  transition: opacity 1s linear;
-}
-.wf-active #menu-main-navigation li a {
-  visibility: visible;
-  opacity: 1;
-  transition: opacity 1s linear;
-}
-.wf-active a {
-  visibility: visible;
-  opacity: 1;
-  // transition: opacity 1s linear;
-}
-.wf-active .location {
-  visibility: visible;
-  opacity: 1;
-  transition: opacity 1s linear;
-}
-.wf-active #banner {
-  visibility: visible;
-  opacity: 1;
-  //transition: opacity .5s linear;
-}
-.wf-active #content {
   visibility: visible;
   opacity: 1;
   transition: opacity 1s linear;

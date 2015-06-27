@@ -43,7 +43,35 @@
   <!--
   <link rel="canonical" href="http://www.example.com/">
   -->
-  <script>document.documentElement.className += ' wf-loading';</script>
+  <style>
+    .wf-loading #toolbar {
+      visibility: hidden;
+    }
+    .wf-loading a,
+    .wf-loading #content,
+    .wf-loading #menu-main-navigation li a,
+    .wf-loading #home-logo    {
+      visibility: hidden;
+      opacity: 0;
+    }
+    .wf-active #toolbar {
+      visibility: visible;
+    }
+    .wf-active a,
+    .wf-active #banner  {
+      visibility: visible;
+      opacity: 1;
+    }
+    .wf-active .location, 
+    .wf-active #content, 
+    .wf-active #menu-main-navigation li a,
+    .wf-active #home-logo {
+      visibility: visible;
+      opacity: 1;
+      transition: opacity 1s linear;
+    }
+  </style>
+  <script>document.documentElement.className += 'wf-loading';</script>
   <!-- Favicon -->
   <link rel="shortcut icon" href="/favicon.ico">
   <!-- External Styles  -->
