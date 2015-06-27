@@ -17,9 +17,18 @@
   <!-- Meta -->
   <meta charset="<?php bloginfo( 'charset' ); ?>">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
   <script>document.documentElement.className += ' wf-loading';</script>
-  
+  <style>
+    .wf-loading {
+      visibility: hidden;
+      opacity: 0;
+    }
+    .wf-active {
+      visibility: visible;
+      opacity: 1;
+      transition: opacity 1s linear;
+    }
+  </style>
   <!--Let browser know website is optimized for mobile-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
   <meta name="keywords" content="" />
@@ -46,39 +55,9 @@
   <!--
   <link rel="canonical" href="http://www.example.com/">
   -->
-  <style>
-    .wf-loading #toolbar {
-      visibility: hidden;
-    }
-    .wf-loading a,
-    .wf-loading #content,
-    .wf-loading #menu-main-navigation li a,
-    .wf-loading #home-logo {
-      visibility: hidden;
-      opacity: 0;
-    }
-    .wf-active #toolbar {
-      visibility: visible;
-    }
-    .wf-active a,
-    .wf-active #banner  {
-      visibility: visible;
-      opacity: 1;
-    }
-    .wf-active .location, 
-    .wf-active #content, 
-    .wf-active #menu-main-navigation li a,
-    .wf-active #home-logo {
-      visibility: visible;
-      opacity: 1;
-      transition: opacity 1s linear;
-    }
-  </style>
   <!-- Favicon -->
   <link rel="shortcut icon" href="/favicon.ico">
   <!-- External Styles  -->
-
-  <?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
