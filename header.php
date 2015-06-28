@@ -17,8 +17,8 @@
   <!-- Meta -->
   <meta charset="<?php bloginfo( 'charset' ); ?>">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <script>document.documentElement.className += ' wf-loading';</script>
-  <style>
+  <!-- <script>document.documentElement.className += ' wf-loading';</script> -->
+  <!--   <style>
     #page {
       visibility: hidden;
       opacity: 0;
@@ -45,7 +45,7 @@
       opacity: 1;
       transition: opacity 1s linear;
     }
-  </style>
+  </style> -->
   <!--Let browser know website is optimized for mobile-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
   <meta name="keywords" content="" />
@@ -94,7 +94,8 @@
               <i id="desktop-icon" class="mdi-navigation-menu"></i>
             </a>
             <div class="right">
-              <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'hide-on-small' ) ); ?>     
+              <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'hide-on-small' ) ); ?> 
+              <!-- <a style="background: rgba(255, 255, 255, 0.97); box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);" class="btn-floating waves-effect grey clear-icon"><i style="line-height: 39px; color:#383838" class="mdi-action-search"></i></a> -->    
             </div>
           </div>
           <div id="title" data-0="font-size: 45px; padding: 0 0 24px 35px;" data-128="font-size: 26px; padding: 0 0 15px 50px;">
@@ -120,6 +121,7 @@
           </a>
           <div class="right">
             <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'tabs hide-on-med-and-down' ) ); ?>     
+            <a href="" style="background: rgba(255, 255, 255, 0.97); box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);" class="btn-floating waves-effect grey clear-icon"><i style="line-height: 39px; color:#383838" class="mdi-action-search"></i></a>
           </div>
         </div>
       </div>

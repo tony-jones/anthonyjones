@@ -74,7 +74,6 @@
   </div>
 </div><!-- #page -->
 
-<?php wp_head(); ?>
 <!-- asyncronous load of Typekit font -->
 <script>
 (function(d) {
