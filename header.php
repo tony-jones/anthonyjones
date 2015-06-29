@@ -121,7 +121,7 @@
           </a>
           <div class="right">
             <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'tabs hide-on-med-and-down' ) ); ?>     
-            <a href="" style="background: rgba(255, 255, 255, 0.97); box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);" class="btn-floating waves-effect grey clear-icon"><i style="line-height: 39px; color:#383838" class="mdi-action-search"></i></a>
+            <!-- <a href="" style="background: rgba(255, 255, 255, 0.97); box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);" class="btn-floating waves-effect grey clear-icon"><i style="line-height: 39px; color:#383838" class="mdi-action-search"></i></a> -->
           </div>
         </div>
       </div>
