@@ -52,11 +52,12 @@ gulp.task('jshint', function () {
 
 // Not included in the build pipeline. Have to run manually. I use a sublime plugin now.
 gulp.task('phplint', function(cb) {
-  phplint(['*.php'], {limit: 10}, function (err, stdout, stderr) {
+  phplint(['**/*.php'], {limit: 10}, function (err, stdout, stderr) {
     if (err) {
       cb(err);
       process.exit(1);
     }
+    cb();
   });
 });
 
