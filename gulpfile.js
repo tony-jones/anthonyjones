@@ -27,7 +27,7 @@ var runSequence = require('run-sequence');
 var browserSync = require('browser-sync');
 var pagespeed = require('psi');
 var reload = browserSync.reload;
-var phplint = require('phplint').lint;
+//var phplint = require('phplint').lint;
 
 var AUTOPREFIXER_BROWSERS = [
   'ie >= 10',
@@ -48,17 +48,6 @@ gulp.task('jshint', function () {
     .pipe($.jshint())
     .pipe($.jshint.reporter('jshint-stylish'))
     .pipe($.if(!browserSync.active, $.jshint.reporter('fail')));
-});
-
-// Not included in the build pipeline. Have to run manually. I use a sublime plugin now.
-gulp.task('phplint', function(cb) {
-  phplint(['**/*.php'], {limit: 10}, function (err, stdout, stderr) {
-    if (err) {
-      cb(err);
-      process.exit(1);
-    }
-    cb();
-  });
 });
 
 gulp.task('test', ['phplint']);
