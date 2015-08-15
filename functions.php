@@ -11,6 +11,18 @@
 if ( ! isset( $content_width ) ) {
 	$content_width = 640; /* pixels */
 }
+/**
+ * Register a new thumbnail for posts that shows as 'Secondary Image' in the admin metabox.
+ */
+if (class_exists('MultiPostThumbnails')) {
+    new MultiPostThumbnails(
+        array(
+            'label' => 'Secondary Image',
+            'id' => 'secondary-image',
+            'post_type' => 'portfolio'
+        )
+    );
+}
 
 if ( ! function_exists( 'anthonyjones_setup' ) ) :
 /**

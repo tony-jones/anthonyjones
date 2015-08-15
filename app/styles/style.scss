@@ -258,6 +258,15 @@ div.legal a {
   font-family: 'myriad-pro', sans-serif;
   font-size: 25px;
 }
+.bg-img-half {
+  width: 100%;
+  min-height: 400px;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-size: cover !important;
+  background-position: 50% 50% !important;
+}
 footer {
   position: fixed;
   bottom: 0;

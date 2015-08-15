@@ -195,7 +195,7 @@ gulp.task('serve:dist', ['default'], function () {
 
 // Build production files, the default task
 gulp.task('default', ['clean'], function (cb) {
-  runSequence('styles', ['jshint', 'html', 'images', 'fonts', 'copy', 'phplint'], cb);
+  runSequence('styles', ['jshint', 'html', 'images', 'fonts', 'copy'], cb);
 });
 
 // Gulp serve shortcut

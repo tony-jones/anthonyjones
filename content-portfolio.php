@@ -6,6 +6,9 @@
   <?php
   $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
   $terms_as_text = get_the_term_list( $post->ID, 'portfolio_category', '', ', ', '' ) ;
+  if (class_exists('MultiPostThumbnails')) :
+    $thumbnail_url = MultiPostThumbnails::get_post_thumbnail_url(get_post_type(), 'secondary-image');
+  endif; 
   ?>
 
   <div class="container">
@@ -21,7 +24,10 @@
               <?php echo strip_tags($terms_as_text); ?></span>
             </div>
             <div class="col s12 m6 no-padding">
-              <img style="min-width: 413px;" class="border-radius-image-mobile border-radius-right-image responsive-img" src="<?php echo $url; ?>">
+              <div class="bg-img-half" style="background-image: url('<?php echo $thumbnail_url; ?>')">
+              </div>
+             
+              <!-- <img style="min-width: 413px;" class="border-radius-image-mobile border-radius-right-image responsive-img" src="<?php echo $url; ?>"> -->
               <?php
                wp_link_pages( array(
                 'before' => '<div class="page-links">' . __( 'Pages:', 'anthonyjones' ),
