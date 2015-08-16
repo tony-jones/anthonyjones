@@ -88,7 +88,13 @@
     </main>
 
   </article> <!-- #post-## -->
-
+  <div class="container">
+    <div class="row">
+      <div class="col s12 m12 l8 offset-l2">
+        <?php the_portfolio_navigation();  ?>
+      </div>
+    </div>
+  </div>
 <?php comments_template( '', true ); ?>  
 
 <?php endwhile; endif; ?>

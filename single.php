@@ -14,7 +14,13 @@ get_header(); ?>
 
 			<?php get_template_part( 'content', 'single' ); ?>
 
-			<?php /* the_post_navigation(); */ ?>
+      <div class="container">
+		    <div class="row">
+		      <div class="col s12 m12 l8 offset-l2">
+		        <?php the_writing_navigation();  ?>
+		      </div>
+		    </div>
+		  </div>
 			
 			<?php
 				// If comments are open or we have at least one comment, load up the comment template

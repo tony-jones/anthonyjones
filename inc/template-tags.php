@@ -24,13 +24,13 @@ function the_posts_navigation() {
 }
 endif;
 
-if ( ! function_exists( 'the_post_navigation' ) ) :
+if ( ! function_exists( 'the_writing_navigation' ) ) :
 /**
  * Display navigation to next/previous post when applicable.
  *
  * @todo Remove this function when WordPress 4.3 is released.
  */
-function the_post_navigation() {
+function the_writing_navigation() {
 	// Don't print empty markup if there's nowhere to navigate.
 	$previous = ( is_attachment() ) ? get_post( get_post()->post_parent ) : get_adjacent_post( false, '', true );
 	$next     = get_adjacent_post( false, '', false );
@@ -42,9 +42,43 @@ function the_post_navigation() {
 	<nav class="navigation post-navigation" role="navigation">
 		<h2 class="screen-reader-text"><?php _e( 'Post navigation', 'anthonyjones' ); ?></h2>
 		<div class="nav-links">
+		<!-- <i class="mdi-navigation-arrow-back"></i> -->
 			<?php
-				previous_post_link( '<div class="nav-previous">%link</div>', '%title' );
-				next_post_link( '<div class="nav-next">%link</div>', '%title' );
+			  previous_post_link( '%link', __( '<i class="mdi-navigation-arrow-back"></i> Previous' ) );
+			  next_post_link( '%link', __( 'Next  <i class="mdi-navigation-arrow-forward"></i>' ) ); 
+				//previous_post_link( '<div class="nav-previous">%link</div>', '%title' );
+				//next_post_link( '<div class="nav-next">%link</div>', '%title' );
+			?>
+		</div><!-- .nav-links -->
+	</nav><!-- .navigation -->
+	<?php
+}
+endif;
+
+if ( ! function_exists( 'the_portfolio_navigation' ) ) :
+/**
+ * Display navigation to next/previous post when applicable.
+ *
+ * @todo Remove this function when WordPress 4.3 is released.
+ */
+function the_portfolio_navigation() {
+	// Don't print empty markup if there's nowhere to navigate.
+	$previous = ( is_attachment() ) ? get_post( get_post()->post_parent ) : get_adjacent_post( false, '', true );
+	$next     = get_adjacent_post( false, '', false );
+
+	if ( ! $next && ! $previous ) {
+		return;
+	}
+	?>
+	<nav class="navigation post-navigation" role="navigation">
+		<h2 class="screen-reader-text"><?php _e( 'Post navigation', 'anthonyjones' ); ?></h2>
+		<div class="nav-links">
+		<!-- <i class="mdi-navigation-arrow-back"></i> -->
+			<?php
+			  previous_post_link( '%link', __( '<i class="mdi-navigation-arrow-back"></i> Previous' ) );
+			  next_post_link( '%link', __( 'Next  <i class="mdi-navigation-arrow-forward"></i>' ) ); 
+				//previous_post_link( '<div class="nav-previous">%link</div>', '%title' );
+				//next_post_link( '<div class="nav-next">%link</div>', '%title' );
 			?>
 		</div><!-- .nav-links -->
 	</nav><!-- .navigation -->

@@ -115,7 +115,22 @@ anthonyjones is based on Underscores http://underscores.me/, (C) 2012-2015 Autom
 .section.no-pad-bot {
   padding-bottom: 0px;
 }
-
+.nav-links {
+  color: #099DB0;
+  font-size: 20px;
+}
+.nav-links a {
+  border: 2px solid;
+  padding: 10px 20px;
+  border-radius: 30px;
+  margin-right: 10px;
+}
+.nav-links a:hover {
+  background-color: #EAEAEA;
+}
+.nav-links  a i::before {
+  vertical-align: bottom;
+}
 .tabs-wrapper {
   padding-top: 80px;
 }
