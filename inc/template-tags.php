@@ -43,9 +43,9 @@ function the_writing_navigation() {
 		<h2 class="screen-reader-text"><?php _e( 'Post navigation', 'anthonyjones' ); ?></h2>
 		<div class="nav-links">
 		<!-- <i class="mdi-navigation-arrow-back"></i> -->
-			<?php
-			  previous_post_link( '%link', __( '<i class="mdi-navigation-arrow-back"></i> Previous' ) );
-			  next_post_link( '%link', __( 'Next  <i class="mdi-navigation-arrow-forward"></i>' ) ); 
+			<?php		  
+			  next_post_link( '%link', __( '<i class="mdi-navigation-arrow-back"></i> Previous' ) );
+			  previous_post_link( '%link', __( 'Next <i class="mdi-navigation-arrow-forward"></i>' ) ); 
 				//previous_post_link( '<div class="nav-previous">%link</div>', '%title' );
 				//next_post_link( '<div class="nav-next">%link</div>', '%title' );
 			?>
@@ -75,8 +75,8 @@ function the_portfolio_navigation() {
 		<div class="nav-links">
 		<!-- <i class="mdi-navigation-arrow-back"></i> -->
 			<?php
-			  previous_post_link( '%link', __( '<i class="mdi-navigation-arrow-back"></i> Previous' ) );
-			  next_post_link( '%link', __( 'Next  <i class="mdi-navigation-arrow-forward"></i>' ) ); 
+			  next_post_link( '%link', __( '<i class="mdi-navigation-arrow-back"></i> Previous' ) );
+			  previous_post_link( '%link', __( 'Next <i class="mdi-navigation-arrow-forward"></i>' ) );
 				//previous_post_link( '<div class="nav-previous">%link</div>', '%title' );
 				//next_post_link( '<div class="nav-next">%link</div>', '%title' );
 			?>
