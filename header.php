@@ -17,35 +17,23 @@
   <!-- Meta -->
   <meta charset="<?php bloginfo( 'charset' ); ?>">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <!-- <script>document.documentElement.className += ' wf-loading';</script> -->
-  <!--   <style>
-    #page {
+  <style>
+    #page, footer {
       visibility: hidden;
       opacity: 0;
+      filter:alpha(opacity=0); /* For IE8 and earlier */
+      -moz-transition: opacity 0.75s ease-in-out;
+      -webkit-transition: opacity 0.75s ease-in-out;
+      -o-transition: opacity 0.75s ease-in-out;
+      -ms-transition: opacity 0.75s ease-in-out;
+      transition: opacity 0.75s ease-in-out;
     }
-    footer {
-      visibility: hidden;
-      opacity: 0;
-    }
-    .wf-loading {
-      visibility: hidden;
-      opacity: 0;
-    }
-    .wf-active {
+    .wf-active #page, .wf-active footer {
       visibility: visible;
       opacity: 1;
-      transition: opacity 1s linear;
+      filter:alpha(opacity=100); /* For IE8 and earlier */
     }
-    .wf-active #page {
-      visibility: visible;
-      opacity: 1;
-    }
-    .wf-active footer {
-      visibility: visible;
-      opacity: 1;
-      transition: opacity 1s linear;
-    }
-  </style> -->
+  </style>
   <!--Let browser know website is optimized for mobile-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
   <meta name="keywords" content="" />
