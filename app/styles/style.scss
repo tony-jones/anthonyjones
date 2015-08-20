@@ -674,6 +674,9 @@ span.badge.category {
   .blog-item {
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
   }
+  .nav-links a {
+    font-size: 14px;
+  }
   #modal1 {
     width: 90%;
   }
@@ -1002,13 +1005,7 @@ article .blog-item {
 }
 body {
   background-color: #FFFFFF;
-  //background-color: #F9F9F9;
-  //background-color: #F2F2F2;
 }
-/* .current_page_item {
-  font-weight: 600;
-  color: #383838;
-} */
 .sidenav-logo {
   height: 160px;
   background-image: url('http://www.anthonyjones.me/wp-content/uploads/2015/05/pencils-books-iphone-macbook.jpg');
@@ -1020,29 +1017,7 @@ body {
 }
 
 a.modal-trigger {
-    /* -webkit-animation-name: example; 
-    -webkit-animation-duration: 6s; 
-    animation-name: example;
-    animation-duration: 6s;
-    -webkit-animation-iteration-count: infinite;
-    animation-iteration-count: infinite; */
     color: white;
-}
-
-/* Chrome, Safari, Opera */
-@-webkit-keyframes example {
-    0%   {color: #099DB0;}
-    25%  {color: #f57c00;}
-    50%  {color: #3C72C5;}
-    100% {color: #EA5B42;}
-}
-
-/* Standard syntax */
-@keyframes example {
-    0%   {color: #099DB0;;}
-    25%  {color: #f57c00;}
-    50%  {color: #3C72C5;}
-    100% {color: #EA5B42;}
 }
 .caption-secondary {
   margin-top: -30px;
@@ -1055,9 +1030,6 @@ a.modal-trigger {
 }
 #home-logo:visited {
   color: #383838;
-}
-#menu-main-navigation {
-  // text-transform: uppercase;
 }
 nav {
   box-shadow: none;
@@ -1276,119 +1248,6 @@ pre.line-numbers > code {
   display: block;
   padding-right: 0.8em;
   text-align: right;
-}
-.mouse-middle {
-  position: absolute;
-  margin: auto;
-  padding-top: 45px;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-}
-span.unu, span.doi, span.trei {
-  display: block;
-  width: 7px;
-  height: 7px;
-  -ms-transform: rotate(45deg); /* IE 9 */
-  -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
-  transform: rotate(45deg);
-  border-right: 2px solid #383838;
-  border-bottom: 2px solid #383838;
-  margin: 0 0 2px 6px;
-}
-.unu {
-  margin-top: 4px;
-}
-
-.unu, .doi, .trei {
-  -webkit-animation: mouse-scroll 1s infinite;
-  -moz-animation: mouse-scroll 1s infinite;
-}
-
-.unu {
-  -webkit-animation-delay: .1s;
-  -moz-animation-delay: .1s;
-  -webkit-animation-direction: alternate;
-}
-
-.doi {
-  -webkit-animation-delay: .2s;
-  -moz-animation-delay: .2s;
-  -webkit-animation-direction: alternate;
-}
-
-.trei {
-  -webkit-animation-delay: .3s;
-  -moz-animation-delay: .3s;
-  -webkit-animation-direction: alternate;
-}
-.mouse {
-  height: 30px;
-  width: 20px;
-  border-radius: 10px;
-  transform: none;
-  border: 2px solid #383838;
-}
-.wheel {
-  height: 5px;
-  width: 2px;
-  display: block;
-  margin: 5px auto;
-  background: #383838;
-  position: relative;
-}
-
-.wheel {
-  -webkit-animation: mouse-wheel 1.2s ease infinite;
-  -moz-animation: mouse-wheel 1.2s ease infinite;
-}
-
-@-webkit-keyframes mouse-wheel
-{
-   0% {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-    -ms-transform: translateY(0);
-    transform: translateY(0);
-  }
-
-  100% {
-    opacity: 0;
-    -webkit-transform: translateY(6px);
-    -ms-transform: translateY(6px);
-    transform: translateY(6px);
-  }
-}
-
-@-moz-keyframes mouse-wheel
-{
-  0% { top: 1px; }
-  50% { top: 2px; }
-  100% { top: 3px;}
-}
-
-@-webkit-keyframes mouse-scroll {
-
-  0%   { opacity: 0;}
-  50%  { opacity: .5;}
-  100% { opacity: 1;}
-}
-@-moz-keyframes mouse-scroll {
-
-  0%   { opacity: 0; }
-  50%  { opacity: .5; }
-  100% { opacity: 1; }
-}
-@-o-keyframes mouse-scroll {
-
-  0%   { opacity: 0; }
-  50%  { opacity: .5; }
-  100% { opacity: 1; }
-}
-@keyframes mouse-scroll {
-
-  0%   { opacity: 0; }
-  50%  { opacity: .5; }
-  100% { opacity: 1; }
 }
 .articles {
   background-color: #099DB0;
