@@ -26,7 +26,7 @@
               <a href="#back-to-top">TOP <i class="fa fa-caret-square-o-up"></i></a>
             </div>
             <div class="waves-effect waves-light next-article">
-              <a rel="next" href="#modal3" class="articles modal-trigger waves-effect waves-light btn">Articles</a>
+              <button id="articles-modal" rel="next" role="button" href="#modal3" class="articles modal-trigger waves-effect waves-light btn">Articles</button>
               <!--  <a rel="next" class="modal-trigger" href="#modal3">Articles <i class="mdi-navigation-arrow-forward"></i></a> --></div>
           </div>
         </div>
@@ -37,7 +37,7 @@
   <!-- Recommended Articles Footer -->
   <div id="modal3" class="modal bottom-sheet">
     <div class="modal-content">
-      <a href="#" class="waves-effect close-arrow close-x close-button">
+      <a href="#" title="close-modal" class="waves-effect close-arrow close-x close-button">
         <i class="mdi-navigation-close"></i>
       </a>
       <h5 class="footer-title">Recommended Articles</h5>

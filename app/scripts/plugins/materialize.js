@@ -683,6 +683,11 @@ if ($) { Vel = $.Velocity } else { Vel = Velocity};
     leanModal: function(options) {
       return this.each(function() {
         // Close Handlers
+        $("#articles-modal").keyup(function(event){
+				  if(event.keyCode == 13){
+				    $(modal).openModal(options);
+				  }
+				});
         $(this).click(function(e) {
           var modal_id = $(this).attr("href") || '#' + $(this).data('target');
           $(modal_id).openModal(options);
