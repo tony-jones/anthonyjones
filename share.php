@@ -36,7 +36,7 @@
 </div>
 
 <!-- Modal Structure -->
-<div id="modal1" class="modal">
+<div id="modal1" class="modal" aria-hidden="true"> <!-- Screen Readers Don't Need The Modal -->
   <div class="modal-content center">
     <h6 class="regular grey-text text-darken-2">Share This Article</h6>
     <h4 class="regular blue-text text-darken-3"><?php the_title(); ?></h4>
