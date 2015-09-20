@@ -108,7 +108,7 @@
             <img class="logo" src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="Logo for Anthony Jones" />
           </a>
           <div class="right">
-            <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'tabs hide-on-med-and-down' ) ); ?>     
+            <?php wp_nav_menu( array( 'theme_location' => 'mobile', 'menu_class' => 'tabs hide-on-med-and-down' ) ); ?>     
             <!-- <a href="" style="background: rgba(255, 255, 255, 0.97); box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);" class="btn-floating waves-effect grey clear-icon"><i style="line-height: 39px; color:#383838" class="mdi-action-search"></i></a> -->
           </div>
         </div>
@@ -123,7 +123,7 @@
           <i class="mdi-navigation-arrow-back"></i>
         </a>   
       </div>
-      <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?> 
+      <?php wp_nav_menu( array( 'theme_location' => 'mobile' ) ); ?> 
     </div>
   </nav>
   <!-- <div class="animsition"> -->
